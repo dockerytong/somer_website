@@ -228,7 +228,7 @@ https://github.com/your-name/somer-website.git
 
 ```bash
 git branch -M main
-git remote add origin https://github.com/your-name/somer-website.git
+git remote add origin https://github.com/dockerytong/somer_website.git
 git push -u origin main
 ```
 
@@ -351,4 +351,4 @@ summary: 摘要
 ---
 ```
 
-`---` 必须成对出现，字段冒号后面要有空格。
+ `---` 必须成对出现，字段冒号后面要有空格。

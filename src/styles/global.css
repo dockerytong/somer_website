@@ -602,6 +602,17 @@ code {
   line-height: 1.9;
 }
 
+.research-major {
+  margin-top: 28px;
+}
+
+.research-major-list {
+  margin: 16px 0 0;
+  padding-left: 1.2em;
+  line-height: 2;
+  font-weight: 700;
+}
+
 .research-block img {
   display: block;
   width: min(760px, 100%);

@@ -7,8 +7,16 @@ const research = (await getCollection('research')).sort((a, b) => a.data.order -
 <BaseLayout title="研究方向 | SOMER研究小组">
   <article class="research-page">
     <p class="research-intro">
-      本研究小组从土壤发生学角度出发，深入探究矿区尾矿及退化土壤结构与生态功能构建及稳定性维持的机理过程和调控因素，发展尾矿成土成套技术和退化土壤降污、提质、增碳技术体系。
+      本研究小组从土壤发生学角度出发，深入探究矿区尾矿及退化土壤结构与生态功能构建及稳定性维持的机理过程和调控因素，并发展尾矿成土成套技术和退化土壤降污提质增碳技术体系，为我国生态环境保护和实现“双碳目标”提供科技支撑。
     </p>
+
+    <section class="research-block research-major">
+      <h2>主要研究方向</h2>
+      <ul class="research-major-list">
+        <li>矿区尾矿生物地球化学过程与生态重建</li>
+        <li>退化土壤结构与生态功能重建</li>
+      </ul>
+    </section>
 
     {research.map((item, index) => (
       <section class="research-block">
