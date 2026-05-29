@@ -1,0 +1,21 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('news');
+  return entries.map((entry) => ({ params: { slug: entry.slug }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const formattedDate = new Intl.DateTimeFormat('zh-CN', { dateStyle: 'long' }).format(entry.data.date);
+---
+<BaseLayout title={`${entry.data.title} | News`} description={entry.data.summary}>
+  <article class="content-card prose">
+    <p class="meta">{formattedDate}</p>
+    <h1>{entry.data.title}</h1>
+    <p>{entry.data.summary}</p>
+    <Content />
+  </article>
+</BaseLayout>

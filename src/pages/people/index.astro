@@ -1,0 +1,30 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PersonCard from '../../components/PersonCard.astro';
+
+const people = (await getCollection('people')).sort((a, b) => a.data.order - b.data.order);
+const groups = [
+  ['staff', '职工'],
+  ['postdoc', '博士后'],
+  ['phd', '博士生'],
+  ['master', '硕士生'],
+  ['alumni', '毕业学生和博士后'],
+] as const;
+---
+<BaseLayout title="团队成员 | SOMER研究小组">
+  {groups.map(([key, label]) => {
+    const members = people.filter((person) => person.data.group === key);
+    if (!members.length) return null;
+    return (
+      <section class="member-section">
+        <div class="section-heading"><h2>{label}</h2></div>
+        <ul class:list={['member-list', key === 'staff' ? 'member-list-staff' : 'member-list-two-column']}>
+          {members.map((person) => (
+            <PersonCard {...person.data} href={key === 'staff' ? `/people/${person.slug}/` : undefined} />
+          ))}
+        </ul>
+      </section>
+    );
+  })}
+</BaseLayout>

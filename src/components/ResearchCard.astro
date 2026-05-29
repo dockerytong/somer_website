@@ -1,0 +1,14 @@
+---
+interface Props {
+  title: string;
+  summary: string;
+  href: string;
+}
+const { title, summary, href } = Astro.props;
+---
+<article class="card">
+  <p class="eyebrow">研究主线</p>
+  <h3>{title}</h3>
+  <p>{summary}</p>
+  <a class="card-link" href={href}>查看详情</a>
+</article>

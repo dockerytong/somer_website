@@ -1,0 +1,14 @@
+---
+interface Props {
+  title: string;
+  summary?: string;
+  date: Date;
+  href: string;
+}
+const { title, date, href } = Astro.props;
+const formattedDate = new Intl.DateTimeFormat('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' }).format(date);
+---
+<li class="news-row">
+  <time datetime={date.toISOString()}>{formattedDate}</time>
+  <a href={href}>{title}</a>
+</li>

@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PublicationCard from '../../components/PublicationCard.astro';
+import scholarData from '../../data/scholar-publications.json';
+
+const publications = scholarData.combined.filter((paper) => paper.year);
+const years = [...new Set(publications.map((paper) => paper.year))];
+---
+<BaseLayout title="研究成果 | SOMER研究小组">
+  {years.map((year) => (
+    <section class="pub-year-section">
+      <h2>{year}</h2>
+      <ol class="bib-list">
+        {publications.filter((paper) => paper.year === year).map((paper) => <PublicationCard authors={paper.authors.split(', ').filter(Boolean)} journal={paper.journal} year={paper.year!} title={paper.title} />)}
+      </ol>
+    </section>
+  ))}
+</BaseLayout>

@@ -1,0 +1,34 @@
+---
+interface Props {
+  name: string;
+  role: string;
+  research?: string;
+  email?: string;
+  scholar?: string;
+  note?: string;
+  period?: string;
+  origin?: string;
+  destination?: string;
+  href?: string;
+}
+const { name, role, research, email, scholar, note, period, origin, destination, href } = Astro.props;
+---
+<li class="member-item">
+  <div>
+    {href ? <a class="member-name" href={href}>{name}</a> : <span class="member-name">{name}</span>}
+    <span class="member-role">{role}</span>
+    {note && <span class="member-note">（{note}）</span>}
+    {research && <p>{research}</p>}
+    {(period || origin || destination) && (
+      <p class="member-meta">
+        {period && <span>在组时间：{period}</span>}
+        {origin && <span>来源：{origin}</span>}
+        {destination && <span>去向：{destination}</span>}
+      </p>
+    )}
+  </div>
+  <div class="member-links">
+    {scholar && <a class="text-link" href={scholar}>Google Scholar</a>}
+    {email && <a class="text-link" href={`mailto:${email}`}>邮箱</a>}
+  </div>
+</li>

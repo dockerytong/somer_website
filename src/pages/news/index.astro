@@ -1,0 +1,14 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import NewsCard from '../../components/NewsCard.astro';
+
+const news = (await getCollection('news')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+<BaseLayout title="组内动态 | SOMER研究小组">
+  <ul class="news-list-simple">
+    {news.map((item) => (
+      <NewsCard title={item.data.title} date={item.data.date} href={`/news/${item.slug}/`} />
+    ))}
+  </ul>
+</BaseLayout>

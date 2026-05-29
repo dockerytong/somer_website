@@ -1,0 +1,19 @@
+---
+interface Props {
+  title: string;
+  authors: string[];
+  journal: string;
+  year: number;
+  volume?: string;
+  pages?: string;
+  doi?: string;
+}
+const { title, authors, journal, year, volume, pages, doi } = Astro.props;
+---
+<li class="bib-item">
+  <span class="bib-authors">{authors.join(', ')}</span>
+  <span> ({year}). </span>
+  <span class="bib-title">{title}. </span>
+  <em>{journal}</em>{volume && <span>, {volume}</span>}{pages && <span>, {pages}</span>}.
+  {doi && <a class="text-link" href={`https://doi.org/${doi}`}> DOI</a>}
+</li>

@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const research = (await getCollection('research')).sort((a, b) => a.data.order - b.data.order);
+---
+<BaseLayout title="研究方向 | SOMER研究小组">
+  <article class="research-page">
+    <p class="research-intro">
+      本研究小组从土壤发生学角度出发，深入探究矿区尾矿及退化土壤结构与生态功能构建及稳定性维持的机理过程和调控因素，发展尾矿成土成套技术和退化土壤降污、提质、增碳技术体系。
+    </p>
+
+    {research.map((item, index) => (
+      <section class="research-block">
+        <h2>{index + 1}. {item.data.title}</h2>
+        <p>{item.data.summary}</p>
+        {item.data.cover && <img src={item.data.cover} alt={item.data.title} />}
+        <p><a class="text-link" href={`/research/${item.slug}/`}>详细内容</a></p>
+      </section>
+    ))}
+  </article>
+</BaseLayout>

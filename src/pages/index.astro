@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NewsCard from '../components/NewsCard.astro';
+
+const news = (await getCollection('news')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 8);
+---
+<BaseLayout title="SOMER研究小组 | 土壤有机-矿物互作与生态修复">
+  <section class="hero compact-hero">
+    <div class="hero-copy">
+      <h1>土壤有机-矿物互作与生态修复</h1>
+      <p>
+        SOMER研究小组关注土壤中有机-矿物互作机制及其调控的生物地球化学过程，
+        面向矿区尾矿和退化土壤生态修复开展基础与应用研究。
+      </p>
+    </div>
+    <aside class="hero-panel" aria-label="SOMER生态工程概念图">
+      <img src="/images/docx/image2.png" alt="SOMER生态工程概念图" />
+    </aside>
+  </section>
+
+  <section>
+    <div class="section-heading">
+      <h2>组内动态</h2>
+      <a class="text-link" href="/news/">全部动态</a>
+    </div>
+    <ul class="news-list-simple">
+      {news.map((item) => (
+        <NewsCard title={item.data.title} date={item.data.date} href={`/news/${item.slug}/`} />
+      ))}
+    </ul>
+  </section>
+</BaseLayout>
