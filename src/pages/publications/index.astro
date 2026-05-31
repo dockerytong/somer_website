@@ -5,6 +5,29 @@ import scholarData from '../../data/scholar-publications.json';
 
 const publications = scholarData.combined.filter((paper) => paper.year && paper.year >= 2023);
 const years = [...new Set(publications.map((paper) => paper.year))];
+const earlyPublications = [
+  'Li, Z., Wu, S.*, Liu, Y., Yi, Q., Nguyen, T. A., Ma, Y., You, F., Hall, M., Chan, T., Huang, Y., Huang, L. (2022). Plant biomass amendment regulates arbuscular mycorrhizal role in organic carbon and nitrogen sequestration in eco-engineered iron ore tailings. Geoderma, 428, 116178.',
+  'Yu, L., You, F., Wu, S.*, Lu, Z., Hastwell, A., Ferguson, B., Huang, L. (2022). Nodule formation and nitrogen fixation in Acacia holosericea plants grown in soil admixed with iron ore tailings. Journal of Soil Science and Plant Nutrition, 1-11.',
+  'Liu, Y.#, Wu, S.# (co-first author), Nguyen, T. A., Chan, T. S., Lu, Y. R., Huang, L. (2021). Biochar mediated uranium immobilization in magnetite rich Cu tailings subject to organic matter amendment and native plant colonization. Journal of Hazardous Materials, 127860.',
+  'Wu, S.*, You, F., Boughton, B., Liu, Y., Nguyen, T.A., Wykes, J., Southam, G., Robertson, L.M., Chan, T.S., Lu, Y.R. and Lutz, A., Yu, D., Yi Q., Saha, N., Huang, L.* (2021). Chemodiversity of dissolved organic matter and its molecular changes driven by rhizosphere activities in Fe ore tailings undergoing Eco-Engineered pedogenesis. Environmental Science & Technology. 55, 19, 13045-13060.',
+  'Li, Z., Wu, S.*, Liu, Y., Yi, Q., You, F., Ma, Y., Thomsen, L., Chan, T.S., Lu, Y.R., Hall, M., Saha, N., Huang, L. (2022). Arbuscular mycorrhizal symbiosis enhances water stable aggregate formation and organic matter stabilization in Fe ore tailings. Geoderma, 406, 115528.',
+  'Yi, Q., Wu, S*., Southam, G., Robertson, L., You, F., Liu, Y., Wang, S., Saha, N., Webb, R., Wykes, J., Chan, T. S., Lu, Y. R., Huang, L*. (2021). Acidophilic iron-and sulfur-oxidizing bacteria, Acidithiobacillus ferrooxidans, drives alkaline pH neutralization and mineral weathering in Fe ore tailings. Environmental Science & Technology, 55, 12, 8020-8034.',
+  'Wu, S., Liu, Y., Southam, G., Robertson, L.M., Wykes, J., Yi, Q., Hall, M., Li, Z., Sun, Q., Saha, N., Chan, T.S. (2021). Rhizosphere drives biotite-like mineral weathering and secondary Fe-Si mineral formation in Fe ore tailings. ACS Earth and Space Chemistry, 5, 618-631.',
+  'Wu, S., You, F., Hall, M. and Huang, L. (2021). Native plant Maireana brevifolia drives prokaryotic microbial community development in alkaline Fe ore tailings under semi-arid climatic conditions. Science of The Total Environment, 760, 144019.',
+  'Wu, S., You, F., Wu, Z., Bond, P., Hall, M., Huang, L. (2020). Molecular diversity of arbuscular mycorrhizal fungal communities across the gradient of alkaline Fe ore tailings, revegetated waste rock to natural soil sites. Environmental Science and Pollution Research, 27, 11968-11979.',
+  'Wu, S., Liu, Y., Bougoure, J. J., Southam, G., Chan, T. S., Lu, Y. R., Haw, S.C., Nguyen, T.A., You, F. and Huang, L. (2019). Organic matter amendment and plant colonization drive mineral weathering, organic carbon sequestration, and Water-Stable Aggregation in Magnetite Fe Ore Tailings. Environmental Science & Technology, 53, 23, 13720-13731.',
+  'Wu, S., Nguyen, T. A., Liu, Y., Southam, G., Huang, L. (2019). Deficiencies of amorphous Fe (oxy)hydroxides associated with phyllosilicates and organic carbon limit the formation of water-stable aggregates in Fe-ore tailings. Chemical Geology, 523, 73-87.',
+  'Wu, S., Cajthaml T, Semerad J, Filipova A, Klementova M, Skala R, Vitkova M, Michalkova Z, Teodoro M, Wu ZX, Martinez-Fernandez D, Komarek M. (2019). Nano zero-valent iron aging interacts with soil microbial community: a microcosm study. Environmental Science: Nano. 6, 1189-1206.',
+  'Wu, S., Chen, B., Zhang, X., Huang, L. (2019). Arbuscular Mycorrhiza and plant chromium tolerance. Soil Ecology Letters, 1, 3-4, 94-104.',
+  'Wu, S., Liu, Y., Southam, G., Robertson, L., Chiu, T.H., Cross, A.T., Dixon, K.W., Stevens, J.C., Zhong, H., Chan, T.S. and Lu, Y.J. (2019). Geochemical and mineralogical constraints in iron ore tailings limit soil formation for direct phytostabilization. Science of the Total Environment, 651, 192-202.',
+  'Wu, S., Vosatka M, Vogel-Mikus K, Kavcic A, Kelemen M, Sepec L, Pelicon P, Skala R, Powter AR, Teodoro M, Michalkova Z. (2018). Nano zero-valent iron mediated metal (loid) uptake and translocation by arbuscular mycorrhizal symbioses. Environmental Science & Technology, 52, 14, 7640-7651.',
+  'Wu, S., Hu, Y., Zhang, X., Sun, Y., Wu, Z., Li, T., Lv, J., Li, J., Zhang, J., Zheng, L. and Huang, L. (2018). Chromium detoxification in arbuscular mycorrhizal symbiosis mediated by sulfur uptake and metabolism. Environmental and Experimental Botany, 147, 43-52.',
+  'Wu, S., Zhang, X., Sun, Y., Wu, Z., Li, T., Hu, Y., Lv, J., Li, G., Zhang, Z., Zhang, J. and Zheng, L., Chen, B. (2016). Chromium immobilization by extra- and intraradical fungal structures of arbuscular mycorrhizal symbioses. Journal of Hazardous Materials, 316, 34-42.',
+  'Wu, S., Zhang, X., Chen, B., Wu, Z., Li, T., Hu, Y., Sun, Y. and Wang, Y. (2016). Chromium immobilization by extraradical mycelium of arbuscular mycorrhiza contributes to plant chromium tolerance. Environmental and Experimental Botany, 122, 10-18.',
+  'Zhang, X.#, Wu, S.# (co-first author), Ren, B.H., Chen, B.D. (2016). Water management, rice varieties and mycorrhizal inoculation influence arsenic concentration and speciation in rice grains. Mycorrhiza, 26, 4, 299-309.',
+  'Wu, S., Zhang, X., Sun, Y., Wu, Z., Li, T., Hu, Y., Su, D., Lv, J., Li, G., Zhang, Z. and Zheng, L. (2015). Transformation and immobilization of chromium by arbuscular mycorrhizal fungi as revealed by SEM-EDS, TEM-EDS and XAFS. Environmental Science & Technology, 49, 24, 14036-14047.',
+  'Wu, S., Chen, B.D., Sun, Y.Q., Ren, B.H., Zhang, X. and Wang, Y.S. (2014). Chromium resistance of dandelion (Taraxacum platypecidum Diels.) and bermudagrass (Cynodon dactylon (Linn.) Pers.) is enhanced by arbuscular mycorrhiza in Cr (VI) contaminated soils. Environmental Toxicology and Chemistry, 33, 9, 2105-2113.',
+];
 ---
 <BaseLayout title="研究成果 | SOMER研究小组">
   {years.map((year) => (
@@ -15,4 +38,10 @@ const years = [...new Set(publications.map((paper) => paper.year))];
       </ol>
     </section>
   ))}
+  <section class="pub-year-section">
+    <h2>2022年及以前论文发表</h2>
+    <ol class="bib-list" start="22">
+      {earlyPublications.map((paper) => <li class="bib-item">{paper}</li>)}
+    </ol>
+  </section>
 </BaseLayout>
