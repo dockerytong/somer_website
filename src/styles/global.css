@@ -177,6 +177,11 @@ p {
   color: var(--muted);
 }
 
+.motto {
+  color: var(--green);
+  font-weight: 700;
+}
+
 .hero-actions,
 .inline-actions,
 .link-row {

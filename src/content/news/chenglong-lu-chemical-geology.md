@@ -1,10 +1,10 @@
 ---
-title: 博士后卢承龙论文被 Chemical Geology 接收
+title: 卢承龙论文被 Chemical Geology 接收
 date: 2026-05-10
 summary: 卢承龙等关于铝土矿赤泥风化过程中矿物相转化驱动溶解性有机质分子分馏的研究被 Chemical Geology 接收。
 ---
 
-博士后卢承龙的论文 **Mineral phase transformation drives molecular fractionation of dissolved organic matter during organic acid-driven weathering of bauxite residue** 被 *Chemical Geology* 接收。
+卢承龙论文 **Mineral phase transformation drives molecular fractionation of dissolved organic matter during organic acid-driven weathering of bauxite residue** 被 *Chemical Geology* 接收。
 
 **作者：** C Lu, S Wu, F You, D Yu, J Vongsvivut, A Klein, L Thomsen, D Parry, TS Chan, L Huang
 

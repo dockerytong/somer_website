@@ -1,10 +1,10 @@
 ---
-title: 刘通一作论文被 Nature Communications 接收
+title: 刘通论文被 Nature Communications 接收
 date: 2026-05-09
 summary: 刘通等关于矿物光催化介导真光层 Fe(II)/Fe(III) 循环的研究被 Nature Communications 接收。
 ---
 
-刘通一作论文 **Cycling of Fe(II)/Fe(III) in the euphotic zone mediated by mineral photocatalysis** 被 *Nature Communications* 接收。
+刘通论文 **Cycling of Fe(II)/Fe(III) in the euphotic zone mediated by mineral photocatalysis** 被 *Nature Communications* 接收。
 
 **作者：** Tong Liu, Hongrui Ding, Anhuai Lu, Lingzi Meng, Xiao Ge, Ying Liu, Fangchao Zhu, Shuo Yu, Qunjian Yin, Yan Li, Changqiu Wang, Juan Liu, Song Jin
 

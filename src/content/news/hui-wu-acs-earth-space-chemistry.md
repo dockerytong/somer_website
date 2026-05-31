@@ -1,10 +1,10 @@
 ---
-title: 博士后武慧论文被 ACS Earth and Space Chemistry 接收
+title: 武慧论文被 ACS Earth and Space Chemistry 接收
 date: 2026-05-29
 summary: 武慧等关于长期覆土对铁尾矿矿物风化、有机质累积及覆土质量影响的研究被 ACS Earth and Space Chemistry 接收。
 ---
 
-博士后武慧的论文 **Decade-Long Soil Cover Promotes Mineral Weathering and Organic Matter Accrual in Fe Ore Tailings But Deteriorates Topsoil** 被 *ACS Earth and Space Chemistry* 接收。
+武慧论文 **Decade-Long Soil Cover Promotes Mineral Weathering and Organic Matter Accrual in Fe Ore Tailings But Deteriorates Topsoil** 被 *ACS Earth and Space Chemistry* 接收。
 
 **作者：** H Wu, W Fu, Z Yang, C Lu, S Chen, Y Wu, Y Liu, M Wang, CW Kao, TS Chan, B Chen, S Wu
 

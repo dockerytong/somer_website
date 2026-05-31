@@ -3,7 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import PublicationCard from '../../components/PublicationCard.astro';
 import scholarData from '../../data/scholar-publications.json';
 
-const publications = scholarData.combined.filter((paper) => paper.year);
+const publications = scholarData.combined.filter((paper) => paper.year && paper.year >= 2023);
 const years = [...new Set(publications.map((paper) => paper.year))];
 ---
 <BaseLayout title="研究成果 | SOMER研究小组">

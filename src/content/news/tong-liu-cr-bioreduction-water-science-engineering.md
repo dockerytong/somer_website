@@ -1,10 +1,10 @@
 ---
-title: 刘通一作论文被 Water Science and Engineering 接收
+title: 刘通论文被 Water Science and Engineering 接收
 date: 2026-02-28
 summary: 刘通等关于微生物-矿物-生物质复合体系增强 Cr(VI) 连续流生物还原稳定性和效率的研究被 Water Science and Engineering 接收。
 ---
 
-刘通一作论文 **An integrated microbial-mineral-biomass composite strategy for enhancing the stability and efficiency of Cr(VI) bioreduction under continuous flow** 被 *Water Science and Engineering* 接收。
+刘通论文 **An integrated microbial-mineral-biomass composite strategy for enhancing the stability and efficiency of Cr(VI) bioreduction under continuous flow** 被 *Water Science and Engineering* 接收。
 
 **作者：** Tong Liu, Lin-lin Ma, Yu-tian Hu, Nan Chen, Chuan-ping Feng
 

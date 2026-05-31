@@ -1,9 +1,10 @@
 ---
 name: 杨爽
-role: 硕士生
-group: master
-research: 根际过程与成土机制。
+role: 博士生
+group: phd
+research: 尾矿土壤结构发生。
+note: 客座
 period: 待补充
-origin: 待补充
-order: 2
+origin: 中国农业大学
+order: 4
 ---
