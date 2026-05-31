@@ -10,8 +10,10 @@ interface Props {
   origin?: string;
   destination?: string;
   href?: string;
+  lang?: 'zh' | 'en';
 }
-const { name, role, research, email, scholar, note, period, origin, destination, href } = Astro.props;
+const { name, role, research, email, scholar, note, period, origin, destination, href, lang = 'zh' } = Astro.props;
+const isEn = lang === 'en';
 ---
 <li class="member-item">
   <div>
@@ -21,9 +23,9 @@ const { name, role, research, email, scholar, note, period, origin, destination,
     {research && <p>{research}</p>}
     {(period || origin || destination) && (
       <p class="member-meta">
-        {period && <span>在组时间：{period}</span>}
-        {origin && <span>来源：{origin}</span>}
-        {destination && <span>去向：{destination}</span>}
+        {period && <span>{isEn ? 'Period: ' : '在组时间：'}{period}</span>}
+        {origin && <span>{isEn ? 'From: ' : '来源：'}{origin}</span>}
+        {destination && <span>{isEn ? 'Current: ' : '去向：'}{destination}</span>}
       </p>
     )}
   </div>

@@ -1,0 +1,39 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PersonCard from '../../../components/PersonCard.astro';
+import { enPeople } from '../../../data/en-site';
+
+const people = (await getCollection('people')).sort((a, b) => a.data.order - b.data.order);
+const groups = [
+  ['staff', 'Staff'],
+  ['postdoc', 'Postdoctoral Researchers'],
+  ['phd', 'PhD Students'],
+  ['master', 'Master Students'],
+  ['alumni', 'Alumni and Former Visitors'],
+] as const;
+---
+<BaseLayout lang="en" title="People | SOMER Group">
+  {groups.map(([key, label]) => {
+    const members = people.filter((person) => person.data.group === key);
+    if (!members.length) return null;
+    return (
+      <section class="member-section">
+        <div class="section-heading"><h2>{label}</h2></div>
+        <ul class:list={['member-list', key === 'staff' ? 'member-list-staff' : 'member-list-two-column']}>
+          {members.map((person) => {
+            const translated = enPeople[person.slug] ?? {};
+            return (
+              <PersonCard
+                {...person.data}
+                {...translated}
+                lang="en"
+                href={key === 'staff' ? `/en/people/${person.slug}/` : undefined}
+              />
+            );
+          })}
+        </ul>
+      </section>
+    );
+  })}
+</BaseLayout>

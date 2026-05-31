@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import NewsCard from '../../components/NewsCard.astro';
+import { enNews } from '../../data/en-site';
+
+const news = enNews.slice(0, 5);
+---
+<BaseLayout lang="en" title="SOMER Group | Soil Organo-Mineral Interactions and Ecological Rehabilitation">
+  <section class="hero compact-hero">
+    <div class="hero-copy">
+      <h1>Soil Organo-Mineral Interactions and Ecological Rehabilitation</h1>
+      <p>
+        SOMER studies organo-mineral interactions and biogeochemical processes in soils, with a focus on mine tailings,
+        degraded soils, ecological rehabilitation, and carbon stabilization.
+      </p>
+      <p class="motto">Understanding Earth processes, designing better landscapes.</p>
+    </div>
+    <aside class="hero-panel" aria-label="SOMER ecological engineering concept">
+      <img src="/images/docx/image2.png" alt="SOMER ecological engineering concept" />
+    </aside>
+  </section>
+
+  <section>
+    <div class="section-heading">
+      <h2>News</h2>
+      <a class="text-link" href="/en/news/">All news</a>
+    </div>
+    <ul class="news-list-simple">
+      {news.map((item) => <NewsCard title={item.title} date={item.date} href={`/en/news/${item.slug}/`} locale="en" />)}
+    </ul>
+  </section>
+</BaseLayout>

@@ -1,13 +1,13 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import PublicationCard from '../../components/PublicationCard.astro';
-import scholarData from '../../data/scholar-publications.json';
-import { earlyPublications } from '../../data/early-publications';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PublicationCard from '../../../components/PublicationCard.astro';
+import scholarData from '../../../data/scholar-publications.json';
+import { earlyPublications } from '../../../data/early-publications';
 
 const publications = scholarData.combined.filter((paper) => paper.year && paper.year >= 2023);
 const years = [...new Set(publications.map((paper) => paper.year))];
 ---
-<BaseLayout title="研究成果 | SOMER研究小组">
+<BaseLayout lang="en" title="Publications | SOMER Group">
   {years.map((year) => (
     <section class="pub-year-section">
       <h2>{year}</h2>
@@ -17,7 +17,7 @@ const years = [...new Set(publications.map((paper) => paper.year))];
     </section>
   ))}
   <section class="pub-year-section">
-    <h2>2022年及以前论文发表</h2>
+    <h2>Publications in 2022 and earlier</h2>
     <ol class="bib-list" start="22">
       {earlyPublications.map((paper) => <li class="bib-item">{paper}</li>)}
     </ol>

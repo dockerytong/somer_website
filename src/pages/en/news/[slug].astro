@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { enNews } from '../../../data/en-site';
+
+export function getStaticPaths() {
+  return enNews.map((item) => ({ params: { slug: item.slug }, props: { item } }));
+}
+
+const { item } = Astro.props;
+const formattedDate = new Intl.DateTimeFormat('en', { year: 'numeric', month: 'long', day: 'numeric' }).format(item.date);
+---
+<BaseLayout lang="en" title={`${item.title} | SOMER Group`} description={item.summary}>
+  <article class="content-card prose">
+    <p class="meta">{formattedDate}</p>
+    <h1>{item.title}</h1>
+    <p>{item.summary}</p>
+    {item.image && <img src={item.image} alt={item.title} />}
+  </article>
+</BaseLayout>

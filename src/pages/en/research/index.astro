@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { enResearch } from '../../../data/en-site';
+---
+<BaseLayout lang="en" title="Research | SOMER Group">
+  <article class="research-page">
+    <p class="research-intro">
+      SOMER investigates the mechanisms and controlling factors that build and maintain soil structure and ecological
+      functions in mine tailings and degraded soils. The group develops ecological engineering strategies for tailing
+      pedogenesis and degraded soil remediation, quality improvement, and carbon enhancement.
+    </p>
+
+    <div class="research-grid">
+      {enResearch.map((item, index) => (
+        <section class="research-block">
+          <h2>{index + 1}. {item.title}</h2>
+          <p>{item.summary}</p>
+          {item.cover && <img src={item.cover} alt={item.title} />}
+        </section>
+      ))}
+    </div>
+  </article>
+</BaseLayout>

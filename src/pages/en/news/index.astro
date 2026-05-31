@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import NewsCard from '../../../components/NewsCard.astro';
+import { enNews } from '../../../data/en-site';
+---
+<BaseLayout lang="en" title="News | SOMER Group">
+  <ul class="news-list-simple">
+    {enNews.map((item) => <NewsCard title={item.title} date={item.date} href={`/en/news/${item.slug}/`} locale="en" />)}
+  </ul>
+</BaseLayout>
