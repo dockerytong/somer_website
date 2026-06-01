@@ -16,6 +16,14 @@ Research Center for Eco-Environmental Sciences, CAS
 
 伍松林：`slwu@rcees.ac.cn`
 
+## 公众号
+
+![土壤有机-矿物互作和生态修复公众号图标](/images/contact/wechat-account.jpg)
+
+**土壤有机-矿物互作和生态修复**
+
+本公众号为SOMER研究小组（Soil organo-mineral and ecological rehabilitation）管理，以土壤有机-矿物互作为核心，探究关键生物驱动的元素地球化学过程，为尾矿和退化土壤生态修复提供技术支撑。
+
 ## 加入我们
 
 欢迎对土壤有机-矿物互作、尾矿成土、退化土壤生态修复、根际微生物过程和多尺度表征感兴趣的同学与合作者联系。

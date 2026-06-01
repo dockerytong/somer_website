@@ -1,7 +1,7 @@
 ---
 title: 退化土壤结构与生态功能重建
 summary: 研究植物根系、根际微生物和丛枝菌根真菌对团聚体形成、有机质积累、养分循环和植物抗逆性的调控作用。
-cover: /images/docx/image14.png
+cover: /images/research/root-mineral-aggregate-formation.jpg
 order: 2
 ---
 
@@ -9,4 +9,8 @@ order: 2
 
 我们结合野外调查、控制实验和多尺度表征手段，评估AMF多样性、菌丝网络和菌根源有机质对有机碳、氮及矿物组分空间耦合的影响，揭示其在退化土壤提质、尾矿生态重建和极端气候响应中的功能贡献。研究目标是建立可用于生态修复实践的植物-微生物调控策略。
 
-![AM真菌促进有机-矿物复合体形成](/images/docx/image14.png)
+![根系-矿物互作促进水稳性团聚体形成](/images/research/root-mineral-aggregate-formation.jpg)
+*植物根系和微生物活动促进铁尾矿矿物风化、有机质累积和有机-矿物复合体形成，进而增强团聚体结构稳定性。*
+
+![覆土与作物种植条件下的尾矿生态修复试验](/images/research/cropland-tailings-rehabilitation.png)
+*覆土、作物种植和植物根系输入共同影响尾矿剖面养分积累、金属迁移和表层土壤质量，是评价农业利用型修复模式的重要试验场景。*

@@ -21,7 +21,7 @@ const groups = [
         <div class="section-heading"><h2>{label}</h2></div>
         <ul class:list={['member-list', key === 'staff' ? 'member-list-staff' : 'member-list-two-column']}>
           {members.map((person) => (
-            <PersonCard {...person.data} href={key === 'staff' ? `/people/${person.slug}/` : undefined} />
+            <PersonCard {...person.data} href={key === 'staff' || person.slug === 'postdoc-na-li' ? `/people/${person.slug}/` : undefined} />
           ))}
         </ul>
       </section>
