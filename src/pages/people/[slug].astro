@@ -14,9 +14,14 @@ const publications = scholarData.byPerson[entry.slug as keyof typeof scholarData
 ---
 <BaseLayout title={`${entry.data.name} | SOMER研究小组`} description={entry.data.research}>
   <article class="content-card prose profile-page">
-    <h1>{entry.data.name}</h1>
-    <p><strong>{entry.data.role}</strong></p>
-    {entry.data.research && <p>{entry.data.research}</p>}
+    <div class="profile-header">
+      <div>
+        <h1>{entry.data.name}</h1>
+        <p><strong>{entry.data.role}</strong></p>
+        {entry.data.research && <p>{entry.data.research}</p>}
+      </div>
+      {entry.data.photo && <img class="profile-photo" src={entry.data.photo} alt={entry.data.name} />}
+    </div>
     <p>
       {entry.data.email && <a class="text-link" href={`mailto:${entry.data.email}`}>邮箱</a>}
       {entry.data.email && entry.data.scholar && <span> · </span>}

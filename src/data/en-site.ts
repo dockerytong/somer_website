@@ -220,5 +220,12 @@ export const enPeople: Record<string, { name: string; role: string; research?: s
   'master-li-yanyan': { name: 'Yanyan Li', role: 'Master Student' },
   'master-sheng-linxuan': { name: 'Linxuan Sheng', role: 'Master Student', note: 'Visiting', origin: 'China University of Geosciences (Beijing)' },
   'guest-wang-yifan': { name: 'Yifan Wang', role: 'Master Student', note: 'Visiting', origin: 'China University of Geosciences (Beijing)' },
-  'visitor-huixia-tian': { name: 'Huixia Tian', role: 'Visiting Scholar', note: 'Former member', destination: 'Former visiting scholar' },
+  'visitor-huixia-tian': {
+    name: 'Huixia Tian',
+    role: 'Visiting Scholar',
+    note: 'Alumni',
+    research: 'Forest ecology, soil phosphorus cycling, and sustainable forest development.',
+    origin: 'College of Environment and Resources, Taiyuan University of Science and Technology',
+    destination: 'College of Environment and Resources, Taiyuan University of Science and Technology',
+  },
 };
