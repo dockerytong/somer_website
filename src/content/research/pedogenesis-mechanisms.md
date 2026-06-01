@@ -1,7 +1,7 @@
 ---
 title: 尾矿成土与生态重建机制
 summary: 解析矿区尾矿在植物-微生物作用下的矿物风化、次生矿物形成、有机碳稳定和结构发育过程，评估尾矿向类土基质转化的关键限制因素。
-cover: /images/docx/image4.png
+cover: /images/research/tailing-rehabilitation-contrast.png
 order: 1
 ---
 
@@ -9,4 +9,14 @@ order: 1
 
 我们重点关注Fe、Si、Al等矿物相转化与有机质稳定化之间的耦合关系，阐明根际过程、微生物群落演替和有机-矿物复合体形成对团聚体发育、碳氮积累和污染物固持的影响。相关研究为尾矿成土技术参数优化、长期生态稳定性评估和矿山生态重建提供机制依据。
 
-![土壤发生过程示意图](/images/docx/image4.png)
+![尾矿地貌、植被恢复和土壤剖面对比](/images/research/tailing-rehabilitation-contrast.png)
+*不同修复阶段和不同尾矿类型之间的对比，有助于识别限制尾矿成土速率和生态功能恢复的关键环境因子。*
+
+![尾矿成土过程中矿物风化、有机碳输入与稳定化的概念框架](/images/research/tailing-pedogenesis-organic-carbon-framework.jpg)
+*尾矿由初始矿质基质向类土基质转化过程中，植物残体、根系沉积物和微生物来源有机质持续输入；矿物风化形成的次生黏土矿物和Fe/Al氧化物提高有机碳吸附与稳定化能力。*
+
+![尾矿生态修复前后地表覆盖与植被恢复对比](/images/research/tailing-rehabilitation-before-after.jpg)
+*野外尺度的修复前后对比显示，植被建植和地表覆盖能够显著改变尾矿表层结构、侵蚀风险和生态恢复基础条件。*
+
+![尾矿生态重建样地与作物修复试验](/images/research/field-rehabilitation-plots.jpg)
+*长期样地和控制试验用于评估不同修复措施对尾矿理化性质、植物生长、团聚体形成和碳氮积累的综合影响。*

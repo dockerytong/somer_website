@@ -16,6 +16,7 @@ import { enResearch } from '../../../data/en-site';
           <h2>{index + 1}. {item.title}</h2>
           <p>{item.summary}</p>
           {item.cover && <img src={item.cover} alt={item.title} />}
+          <p><a class="text-link" href={`/en/research/${item.slug}/`}>Details</a></p>
         </section>
       ))}
     </div>

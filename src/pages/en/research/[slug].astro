@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { enResearch } from '../../../data/en-site';
+
+export function getStaticPaths() {
+  return enResearch.map((entry) => ({ params: { slug: entry.slug }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+---
+<BaseLayout lang="en" title={`${entry.title} | Research`} description={entry.summary}>
+  <article class="content-card prose research-detail">
+    <h1>{entry.title}</h1>
+    <p>{entry.summary}</p>
+    {entry.details?.map((paragraph) => <p>{paragraph}</p>)}
+    {entry.figures?.map((figure) => (
+      <figure>
+        <img src={figure.src} alt={figure.alt} />
+        <figcaption>{figure.caption}</figcaption>
+      </figure>
+    ))}
+  </article>
+</BaseLayout>

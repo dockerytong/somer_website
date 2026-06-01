@@ -4,7 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import scholarData from '../../data/scholar-publications.json';
 
 export async function getStaticPaths() {
-  const entries = (await getCollection('people')).filter((entry) => entry.data.group === 'staff');
+  const entries = (await getCollection('people')).filter((entry) => entry.data.group === 'staff' || entry.slug === 'postdoc-na-li');
   return entries.map((entry) => ({ params: { slug: entry.slug }, props: { entry } }));
 }
 

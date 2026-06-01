@@ -28,7 +28,7 @@ const groups = [
                 {...person.data}
                 {...translated}
                 lang="en"
-                href={key === 'staff' ? `/en/people/${person.slug}/` : undefined}
+                href={key === 'staff' || person.slug === 'postdoc-na-li' ? `/en/people/${person.slug}/` : undefined}
               />
             );
           })}

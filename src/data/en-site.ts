@@ -62,25 +62,115 @@ export const enResearch = [
     title: 'Tailing pedogenesis and ecological reconstruction',
     summary:
       'We investigate mineral weathering, secondary mineral formation, organic carbon stabilization, and structural development during the transformation of mine tailings into soil-like substrates.',
-    cover: '/images/docx/image4.png',
+    cover: '/images/research/tailing-rehabilitation-contrast.png',
+    details: [
+      'Mine tailings commonly have narrow particle-size distribution, limited aggregate structure, low organic matter and nutrient contents, abnormal pH or salinity, and potential metal mobility. These constraints limit plant establishment and ecological function recovery. This direction studies mineral weathering, element release, and secondary mineral formation during tailing pedogenesis driven by organic inputs, plant roots, and microbial activity.',
+      'We focus on the coupling between Fe, Si, and Al mineral transformation and organic matter stabilization, and examine how rhizosphere processes, microbial succession, and organo-mineral complexation regulate aggregate development, carbon and nitrogen accumulation, and contaminant retention. These results provide mechanistic support for optimizing tailing pedogenesis technologies and evaluating long-term ecological stability.',
+    ],
+    figures: [
+      {
+        src: '/images/research/tailing-rehabilitation-contrast.png',
+        alt: 'Contrasts among tailing landforms, vegetation recovery, and soil profiles',
+        caption:
+          'Comparisons among rehabilitation stages and tailing types help identify key environmental factors that limit tailing pedogenesis rates and ecological function recovery.',
+      },
+
+      {
+        src: '/images/research/tailing-pedogenesis-organic-carbon-framework.jpg',
+        alt: 'Conceptual framework of mineral weathering and organic carbon stabilization during tailing pedogenesis',
+        caption:
+          'During the transformation from initial tailings to soil-like substrates, plant residues, rhizodeposits, and microbial organic matter are continuously supplied; secondary clay minerals and Fe/Al oxides formed by mineral weathering increase organic carbon adsorption and stabilization.',
+      },
+
+      {
+        src: '/images/research/tailing-rehabilitation-before-after.jpg',
+        alt: 'Surface cover and vegetation recovery before and after tailing rehabilitation',
+        caption:
+          'Field-scale comparisons before and after rehabilitation show that vegetation establishment and surface cover modify tailing surface structure, erosion risk, and the basic conditions for ecological recovery.',
+      },
+
+      {
+        src: '/images/research/field-rehabilitation-plots.jpg',
+        alt: 'Field plots for tailing ecological reconstruction',
+        caption:
+          'Long-term field plots and controlled experiments are used to evaluate how different rehabilitation measures affect tailing physicochemical properties, plant growth, aggregate formation, and carbon and nitrogen accumulation.',
+      },
+        ],
   },
   {
     slug: 'mycorrhizal-strategies',
     title: 'Soil structure and ecological function reconstruction',
     summary:
       'We examine how plant roots, rhizosphere microorganisms, and arbuscular mycorrhizal fungi regulate aggregate formation, organic matter accumulation, nutrient cycling, and plant stress resistance.',
-    cover: '/images/docx/image14.png',
+    cover: '/images/research/root-mineral-aggregate-formation.jpg',
+    details: [
+      'Degraded soils and early-stage tailing substrates often have insufficient structural stability, low nutrient cycling efficiency, and slow recovery of ecological functions. This direction examines how plant-microbe interactions shape soil structure and functional recovery, with particular attention to arbuscular mycorrhizal fungi (AMF) in rhizosphere carbon input, mineral surface reactions, aggregate stability, and plant stress resistance.',
+      'By combining field surveys, controlled experiments, and multi-scale characterization, we evaluate how AMF diversity, hyphal networks, and mycorrhiza-derived organic matter influence the spatial coupling of organic carbon, nitrogen, and mineral components. The goal is to develop plant-microbe regulation strategies that can be used in ecological rehabilitation practice.',
+    ],
+    figures: [
+      {
+        src: '/images/research/root-mineral-aggregate-formation.jpg',
+        alt: 'Root-mineral interactions and water-stable aggregate formation',
+        caption:
+          'Plant roots and microbial activity promote mineral weathering, organic matter accumulation, and organo-mineral complex formation in Fe ore tailings, thereby enhancing aggregate stability.',
+      },
+
+      {
+        src: '/images/research/cropland-tailings-rehabilitation.png',
+        alt: 'Tailing rehabilitation under soil cover and crop cultivation',
+        caption:
+          'Soil cover, crop cultivation, and root inputs jointly influence nutrient accumulation, metal mobility, and topsoil quality in tailing profiles, providing an important scenario for evaluating agriculture-oriented rehabilitation.',
+      },
+        ],
   },
   {
     slug: 'interface-processes',
     title: 'Organo-mineral interface processes and element cycling',
     summary:
       'We characterize electron transfer, mineral dissolution and precipitation, metal transformation, and molecular fractionation of organic matter at mineral-water-organic matter-microbe interfaces.',
-    cover: '/images/docx/image13.png',
+    cover: '/images/research/mineral-weathering-spectroscopy.png',
+    details: [
+      'Organo-mineral interface reactions control element mobility, contaminant speciation, and organic carbon stabilization in tailings and degraded soils. This direction focuses on mineral weathering, sulfur and iron redox processes, metal retention, dissolved organic matter molecular fractionation, and microbially mediated interfacial transformations.',
+      'Using synchrotron-based XAFS/STXM, NanoSIMS, FTICR-MS, Orbitrap-MS, and related techniques, we resolve the binding forms, spatial distribution, and reaction pathways of organic matter associated with Fe, Al, and Si mineral phases from molecular to nano- and micrometer scales.',
+    ],
+    figures: [
+      {
+        src: '/images/research/mineral-weathering-spectroscopy.png',
+        alt: 'Microscopic and spectroscopic evidence for mineral weathering and interfacial reactions',
+        caption:
+          'Micro-scale morphology, elemental occurrence, and synchrotron spectroscopic information help identify primary mineral weathering, secondary mineral formation, and changes in metal speciation.',
+      },
+
+      {
+        src: '/images/research/multiscale-organo-mineral-characterization.png',
+        alt: 'Multi-scale morphology, elemental distribution, and spectroscopy of organo-mineral complexes',
+        caption:
+          'Microscopic imaging, elemental mapping, X-ray diffraction/absorption spectroscopy, and NanoSIMS are used to resolve spatial coupling among Fe-Si secondary minerals, organic carbon, and aggregate microstructures.',
+      },
+        ],
+  },
+  {
+    slug: 'organic-matter-microecology',
+    title: 'Soil microecology and molecular transformation of organic matter',
+    summary:
+      'We elucidate how biological systems, including plants, soil animals, and microorganisms, drive the formation, transformation, and stabilization of soil organic matter in tailings and degraded soils.',
+    cover: '/images/research/organic-matter-molecular-stabilization.jpg',
+    details: [
+      'This direction aims to elucidate the biological-system-driven formation, transformation, and stabilization mechanisms of soil organic matter, with a focus on plants, soil animals, and microorganisms. By combining high-resolution mass spectrometry for molecular characterization of organic matter with microbial ecological principles and techniques, we investigate how micro-ecosystems in complex environments such as mine tailings and degraded soils drive molecular-level dynamics and stabilization of organic matter.',
+      'Research topics include molecular transformation of plant residues and rhizodeposits, selective association between microbial organic matter and mineral surfaces, regulation of organic matter decomposition and re-synthesis by soil animals and microbial communities, and the effects of reactive Fe/Al/Si mineral phases on the stability of different molecular components.',
+    ],
+    figures: [
+      {
+        src: '/images/research/organic-matter-molecular-stabilization.jpg',
+        alt: 'Biological inputs, microbial communities, and Fe-Si secondary minerals regulate organic matter stabilization',
+        caption:
+          'Plant inputs, microbial communities, and mineral weathering jointly modify organic matter molecular composition; carboxyl-rich, aromatic, or polyphenolic components can selectively associate with Fe-Si secondary minerals and promote organic matter stabilization.',
+      },
+    ],
   },
 ];
 
-export const enPeople: Record<string, { name: string; role: string; research?: string; note?: string; origin?: string; period?: string; destination?: string }> = {
+export const enPeople: Record<string, { name: string; role: string; research?: string; note?: string; origin?: string; period?: string; destination?: string; bio?: string[] }> = {
   'songlin-wu': {
     name: 'Songlin Wu',
     role: 'Professor / PhD Supervisor',
@@ -91,9 +181,9 @@ export const enPeople: Record<string, { name: string; role: string; research?: s
   'wei-fu': {
     name: 'Wei Fu',
     role: 'Assistant Professor',
-    research: 'Arbuscular mycorrhizal fungi, soil ecology, and ecosystem responses to climate extremes.',
+    research: 'Soil microecology, molecular transformation of organic matter, and soil ecological rehabilitation.',
     period: '2024-present',
-    origin: 'To be updated',
+    origin: 'PhD, RCEES, CAS; visiting scholar in the Matthias Rillig group in Germany from late 2024 to early 2026',
   },
   'tong-liu': {
     name: 'Tong Liu',
@@ -105,8 +195,20 @@ export const enPeople: Record<string, { name: string; role: string; research?: s
   'postdoc-hui-wu': { name: 'Hui Wu', role: 'Postdoctoral Researcher', research: 'Mine tailing pedogenesis and soil organic matter stabilization.', origin: 'RCEES, CAS' },
   'postdoc-shiqi-zhang': { name: 'Shiqi Zhang', role: 'Postdoctoral Researcher', research: 'Ecological rehabilitation of degraded soils and soil structure reconstruction.', origin: 'RCEES, CAS' },
   'postdoc-minghan-wang': { name: 'Minghan Wang', role: 'Postdoctoral Researcher', research: 'Coupled stabilization of heavy metals and carbon by soil amendments.', origin: 'Hunan Agricultural University' },
-  'postdoc-na-li': { name: 'Na Li', role: 'Postdoctoral Researcher', research: 'Microbial necromass carbon stabilization during mine tailing pedogenesis.', origin: 'Northwest A&F University' },
-  'postdoc-chenglong-lu': { name: 'Chenglong Lu', role: 'Postdoctoral Researcher', research: 'Turnover of amorphous minerals during mine tailing pedogenesis.', origin: 'The University of Queensland' },
+  'postdoc-na-li': {
+    name: 'Na Li',
+    role: 'Postdoctoral Researcher',
+    research: 'Soil microecology, microbial carbon fixation, organic matter stabilization, and microbial-derived carbon retention during tailing pedogenesis.',
+    period: '2025.06-present',
+    origin: 'PhD, Northwest A&F University, Shaoshan An group; formerly a jointly trained doctoral researcher in Germany',
+    bio: [
+      'Na Li is a postdoctoral researcher in the SOMER Group. She received her PhD from Northwest A&F University under the supervision of Prof. Shaoshan An and was previously a jointly trained doctoral researcher in Germany. Her research focuses on soil carbon-nitrogen coupling, microbial carbon fixation, microbial necromass accumulation, and the stability and resilience of soil organic carbon under precipitation variability.',
+      'Her previous work used long-term simulated precipitation experiments in semi-arid grasslands of the Loess Plateau to examine nonlinear responses of SOC, particulate organic matter, mineral-associated organic matter, and C/N stoichiometry to changes in precipitation amplitude and duration. These studies highlight the trade-off between long-term carbon storage and recovery capacity under wet and drought conditions.',
+      'She has also investigated cbbL- and cbbM-harboring carbon-fixing microbial communities, showing how precipitation shifts regulate microbial diversity, community structure, network interactions, and bacterial necromass accumulation through soil nitrate, SOC, dissolved organic nitrogen, plant biomass, and accessible carbon and nitrogen resources.',
+      'In SOMER, she focuses on micro-ecosystem processes, molecular transformation of organic matter, and microbial-derived carbon stabilization during tailing pedogenesis and degraded soil rehabilitation.',
+    ],
+  },
+  'postdoc-chenglong-lu': { name: 'Chenglong Lu', role: 'Postdoctoral Researcher', research: 'Turnover of amorphous minerals during mine tailing pedogenesis.', period: '2025.12-present', origin: 'The University of Queensland' },
   'master-chen-suixiaochen': { name: 'Suixiaochen Chen', role: 'PhD Student', research: 'Reactive iron minerals in soils.' },
   'phd-feng-qi': { name: 'Qi Feng', role: 'PhD Student', research: 'Weathering of sulfidic tailings.' },
   'phd-wu-yuqi': { name: 'Yuqi Wu', role: 'PhD Student', research: 'Adsorption and transformation of AMF exudates on minerals.' },
