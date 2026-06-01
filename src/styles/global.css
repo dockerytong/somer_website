@@ -393,6 +393,21 @@ p {
   max-width: 840px;
 }
 
+.profile-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 150px;
+  gap: 28px;
+  align-items: start;
+}
+
+.profile-photo {
+  width: 150px;
+  max-height: 190px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
 .compact-contact {
   max-width: 720px;
 }
@@ -416,6 +431,18 @@ p {
   max-height: 112px;
   margin: 8px 0 10px;
   border: 1px solid var(--line);
+}
+
+.facilities-page h2 {
+  margin-top: 1.8em;
+}
+
+.facilities-page ul {
+  margin-top: 10px;
+}
+
+.facilities-page li {
+  margin-bottom: 6px;
 }
 
 .image-grid {
@@ -732,5 +759,14 @@ code {
 
   .research-grid .research-block img {
     max-height: 260px;
+  }
+
+  .profile-header {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-photo {
+    width: 130px;
+    max-height: 170px;
   }
 }

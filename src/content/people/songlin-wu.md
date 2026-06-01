@@ -3,6 +3,7 @@ name: 伍松林
 role: 研究员 / 博士生导师
 group: staff
 email: slwu@rcees.ac.cn
+photo: /images/people/songlin-wu.png
 research: 土壤有机-矿物互作与生态修复、矿区固废成土和生态重建、元素生物地球化学循环。
 scholar: https://scholar.google.com/citations?user=8cLW_0cAAAAJ&hl=en&oi=ao
 period: 2025年至今

@@ -5,18 +5,28 @@ interface Props {
   title?: string;
   description?: string;
   lang?: 'zh' | 'en';
+  frontmatter?: {
+    title?: string;
+    description?: string;
+    lang?: 'zh' | 'en';
+  };
 }
 
 const {
-  title = 'SOMER研究小组',
-  description = '土壤有机-矿物互作与生态修复研究小组。',
-  lang = 'zh',
+  title,
+  description,
+  lang,
+  frontmatter,
 } = Astro.props;
-const isEn = lang === 'en';
+const pageTitle = title ?? frontmatter?.title ?? 'SOMER研究小组';
+const pageDescription = description ?? frontmatter?.description ?? '土壤有机-矿物互作与生态修复研究小组。';
+const pageLang = lang ?? frontmatter?.lang ?? 'zh';
+const isEn = pageLang === 'en';
 const navItems = isEn
   ? [
       { href: '/en/', label: 'Home' },
       { href: '/en/research/', label: 'Research' },
+      { href: '/en/facilities/', label: 'Facilities' },
       { href: '/en/people/', label: 'People' },
       { href: '/en/publications/', label: 'Publications' },
       { href: '/en/news/', label: 'News' },
@@ -25,6 +35,7 @@ const navItems = isEn
   : [
       { href: '/', label: '首页' },
       { href: '/research/', label: '研究方向' },
+      { href: '/facilities/', label: '平台方法' },
       { href: '/people/', label: '团队成员' },
       { href: '/publications/', label: '研究成果' },
       { href: '/news/', label: '组内动态' },
@@ -38,8 +49,8 @@ const languageHref = isEn ? currentPath.replace(/^\/en(?=\/|$)/, '') || '/' : `/
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content={description} />
-    <title>{title}</title>
+    <meta name="description" content={pageDescription} />
+    <title>{pageTitle}</title>
     <link rel="icon" href="/favicon.svg" />
   </head>
   <body>
