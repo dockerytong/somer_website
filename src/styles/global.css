@@ -433,16 +433,41 @@ p {
   border: 1px solid var(--line);
 }
 
-.facilities-page h2 {
-  margin-top: 1.8em;
+.facilities-page {
+  max-width: 980px;
 }
 
-.facilities-page ul {
-  margin-top: 10px;
+.facilities-intro {
+  margin: 0 0 26px;
+  color: var(--ink);
+  line-height: 1.8;
 }
 
-.facilities-page li {
-  margin-bottom: 6px;
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.facilities-card {
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+
+.facilities-card h2 {
+  margin-bottom: 10px;
+  font-size: 1.08rem;
+}
+
+.facilities-card ul {
+  margin: 0;
+  padding-left: 1.15em;
+}
+
+.facilities-card li {
+  margin-bottom: 7px;
+  color: var(--muted);
+  line-height: 1.55;
 }
 
 .image-grid {
@@ -768,5 +793,9 @@ code {
   .profile-photo {
     width: 130px;
     max-height: 170px;
+  }
+
+  .facilities-grid {
+    grid-template-columns: 1fr;
   }
 }

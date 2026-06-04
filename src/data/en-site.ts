@@ -1,5 +1,12 @@
 export const enNews = [
   {
+    slug: 'songlin-wu-est-microbial-processing-tailings',
+    title: 'Songlin Wu paper published in Environmental Science & Technology',
+    date: new Date('2026-01-28'),
+    summary:
+      'Songlin Wu and coauthors report how microbial processing and Fe/Al-rich minerals jointly stabilize organic matter during four years of eco-engineered pedogenesis in iron ore tailings.',
+  },
+  {
     slug: 'hui-wu-acs-earth-space-chemistry',
     title: 'Hui Wu paper accepted by ACS Earth and Space Chemistry',
     date: new Date('2026-05-29'),
@@ -176,31 +183,28 @@ export const enPeople: Record<string, { name: string; role: string; research?: s
     role: 'Professor / PhD Supervisor',
     research: 'Soil organo-mineral interactions, ecological rehabilitation of mine wastes, and biogeochemical element cycling.',
     period: '2025-present',
-    origin: 'Research Center for Eco-Environmental Sciences, CAS',
   },
   'wei-fu': {
     name: 'Wei Fu',
     role: 'Assistant Professor',
     research: 'Soil microecology, molecular transformation of organic matter, and soil ecological rehabilitation.',
     period: '2024-present',
-    origin: 'PhD, RCEES, CAS; visiting scholar in the Matthias Rillig group in Germany from late 2024 to early 2026',
   },
   'tong-liu': {
     name: 'Tong Liu',
     role: 'Assistant Professor',
     research: 'Mineral-microbe interfaces, interfacial electron transfer, Fe-C coupling, and pollution control.',
     period: '2025.10-present',
-    origin: 'Boya Postdoctoral Fellow, Peking University',
   },
-  'postdoc-hui-wu': { name: 'Hui Wu', role: 'Postdoctoral Researcher', research: 'Mine tailing pedogenesis and soil organic matter stabilization.', origin: 'RCEES, CAS' },
-  'postdoc-shiqi-zhang': { name: 'Shiqi Zhang', role: 'Postdoctoral Researcher', research: 'Ecological rehabilitation of degraded soils and soil structure reconstruction.', origin: 'RCEES, CAS' },
+  'postdoc-hui-wu': { name: 'Hui Wu', role: 'Postdoctoral Researcher', research: 'Mine tailing pedogenesis and soil organic matter stabilization.', origin: 'Research Center for Eco-Environmental Sciences, CAS' },
+  'postdoc-shiqi-zhang': { name: 'Shiqi Zhang', role: 'Postdoctoral Researcher', research: 'Ecological rehabilitation of degraded soils and soil structure reconstruction.', origin: 'Research Center for Eco-Environmental Sciences, CAS' },
   'postdoc-minghan-wang': { name: 'Minghan Wang', role: 'Postdoctoral Researcher', research: 'Coupled stabilization of heavy metals and carbon by soil amendments.', origin: 'Hunan Agricultural University' },
   'postdoc-na-li': {
     name: 'Na Li',
     role: 'Postdoctoral Researcher',
     research: 'Soil microecology, microbial carbon fixation, organic matter stabilization, and microbial-derived carbon retention during tailing pedogenesis.',
     period: '2025.06-present',
-    origin: 'PhD, Northwest A&F University, Shaoshan An group; formerly a jointly trained doctoral researcher in Germany',
+    origin: 'Northwest A&F University',
     bio: [
       'Na Li is a postdoctoral researcher in the SOMER Group. She received her PhD from Northwest A&F University under the supervision of Prof. Shaoshan An and was previously a jointly trained doctoral researcher in Germany. Her research focuses on soil carbon-nitrogen coupling, microbial carbon fixation, microbial necromass accumulation, and the stability and resilience of soil organic carbon under precipitation variability.',
       'Her previous work used long-term simulated precipitation experiments in semi-arid grasslands of the Loess Plateau to examine nonlinear responses of SOC, particulate organic matter, mineral-associated organic matter, and C/N stoichiometry to changes in precipitation amplitude and duration. These studies highlight the trade-off between long-term carbon storage and recovery capacity under wet and drought conditions.',

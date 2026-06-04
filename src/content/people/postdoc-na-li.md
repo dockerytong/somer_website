@@ -4,7 +4,7 @@ role: 博士后
 group: postdoc
 research: 土壤微生态、微生物固碳与有机质稳定，尾矿成土中的微生物源碳固持。
 period: 2025.06至今
-origin: 西北农林科技大学博士，安韶山课题组；曾在德国联合培养
+origin: 西北农林科技大学
 order: 4
 ---
 

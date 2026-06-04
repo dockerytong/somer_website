@@ -11,9 +11,11 @@ interface Props {
   destination?: string;
   href?: string;
   lang?: 'zh' | 'en';
+  group?: 'staff' | 'postdoc' | 'phd' | 'master' | 'alumni';
 }
-const { name, role, research, email, scholar, note, period, origin, destination, href, lang = 'zh' } = Astro.props;
+const { name, role, research, email, scholar, note, period, origin, destination, href, lang = 'zh', group } = Astro.props;
 const isEn = lang === 'en';
+const showOrigin = group !== 'staff' && Boolean(origin);
 ---
 <li class="member-item">
   <div>
@@ -21,10 +23,10 @@ const isEn = lang === 'en';
     <span class="member-role">{role}</span>
     {note && <span class="member-note">（{note}）</span>}
     {research && <p>{research}</p>}
-    {(period || origin || destination) && (
+    {(period || showOrigin || destination) && (
       <p class="member-meta">
         {period && <span>{isEn ? 'Period: ' : '在组时间：'}{period}</span>}
-        {origin && <span>{isEn ? 'From: ' : '来源：'}{origin}</span>}
+        {showOrigin && <span>{isEn ? 'From: ' : '来源：'}{origin}</span>}
         {destination && <span>{isEn ? 'Current: ' : '去向：'}{destination}</span>}
       </p>
     )}
