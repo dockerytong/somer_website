@@ -8,7 +8,7 @@ description: SOMER研究小组联系方式与招生合作信息。
 
 # 联系我们
 
-**土壤有机-矿物互作与生态修复研究分队**  
+**土壤有机-矿物互作与生态修复研究小组**  
 中国科学院生态环境研究中心  
 Research Center for Eco-Environmental Sciences, CAS
 

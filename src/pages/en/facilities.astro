@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const cards = [
+  {
+    title: 'Synchrotron and Advanced Spectroscopy',
+    items: [
+      'XAFS for resolving oxidation state, coordination environment, and mineral phase transformation of Fe, Al, Si, and related elements.',
+      'Synchrotron FTIR mapping for identifying organic functional group distributions and their spatial coupling with mineral phases.',
+      'STXM for micro- to nano-scale characterization of co-localization patterns between organic matter and minerals.',
+    ],
+  },
+  {
+    title: 'Nano- and Molecular-Scale Characterization',
+    items: [
+      'NanoSIMS for micro-scale elemental mapping and organo-mineral interface analysis.',
+      '12T FTICR-MS for molecular-level characterization of complex organic matter mixtures.',
+    ],
+  },
+  {
+    title: 'Controlled and Field Experimental Platforms',
+    items: [
+      'Indoor climate chambers for controlled studies of temperature, moisture, plants, and microbial processes.',
+      'Large automated greenhouse facilities for larger-scale tailing rehabilitation and soil process simulations.',
+      'Collaborations with ecological field stations for long-term monitoring and comparative field experiments.',
+    ],
+  },
+  {
+    title: 'Shared Analytical Resources',
+    items: [
+      'Bruker Vertex 80v vacuum FTIR spectrometer (30 - 30000 cm-1)',
+      'AFM (Bruker)',
+      'Confocal Raman microscopy (Renishaw)',
+      'Micro-FTIR (Bruker)',
+      'Elemental analyzer (LEEMAN)',
+      'TOC/TN analyzer (multiCN 2100s, Jena)',
+      'HPLC (Agilent 1260)',
+      'Gas chromatography systems (Shimadzu GC2014 with TCD/FID; Agilent with FID/ECD)',
+      'Picarro water isotope analyzer',
+    ],
+  },
+];
+---
+<BaseLayout lang="en" title="Facilities / Methods | SOMER Group" description="Core technical capabilities, methods, and shared facilities of the SOMER Group.">
+  <article class="facilities-page">
+    <p class="facilities-intro">
+      The SOMER Group works across tailing pedogenesis, degraded soil rehabilitation, organo-mineral interactions, and elemental biogeochemical processes through an integrated framework linking field experiments, controlled laboratory studies, and molecular- to nano-scale characterization. Our methodological strength relies on both in-house platforms and long-term collaborative access to large-scale facilities and analytical resources.
+    </p>
+
+    <div class="facilities-grid">
+      {cards.map((card) => (
+        <section class="facilities-card">
+          <h2>{card.title}</h2>
+          <ul>
+            {card.items.map((item) => <li>{item}</li>)}
+          </ul>
+        </section>
+      ))}
+    </div>
+  </article>
+</BaseLayout>
