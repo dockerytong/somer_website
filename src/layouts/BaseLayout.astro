@@ -26,7 +26,7 @@ const navItems = isEn
   ? [
       { href: '/en/', label: 'Home' },
       { href: '/en/research/', label: 'Research' },
-      { href: '/en/facilities/', label: 'Facilities' },
+      { href: '/en/facilities/', label: 'Methods' },
       { href: '/en/people/', label: 'People' },
       { href: '/en/publications/', label: 'Publications' },
       { href: '/en/news/', label: 'News' },
@@ -35,7 +35,7 @@ const navItems = isEn
   : [
       { href: '/', label: '首页' },
       { href: '/research/', label: '研究方向' },
-      { href: '/facilities/', label: '平台方法' },
+      { href: '/facilities/', label: '研究方法' },
       { href: '/people/', label: '团队成员' },
       { href: '/publications/', label: '研究成果' },
       { href: '/news/', label: '组内动态' },
@@ -65,7 +65,7 @@ const languageHref = isEn ? currentPath.replace(/^\/en(?=\/|$)/, '') || '/' : `/
         </a>
         <nav>
           {navItems.map((item) => <a href={item.href}>{item.label}</a>)}
-          <a class="language-switch" href={languageHref}>{isEn ? '中文' : 'EN'}</a>
+          <a class="language-switch" href={languageHref}>{isEn ? 'CN' : 'EN'}</a>
         </nav>
       </header>
       <main>

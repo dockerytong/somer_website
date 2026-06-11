@@ -3,7 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import NewsCard from '../../components/NewsCard.astro';
 import { enNews } from '../../data/en-site';
 
-const news = enNews.slice(0, 5);
+const news = [...enNews].sort((a, b) => b.date.valueOf() - a.date.valueOf()).slice(0, 5);
 ---
 <BaseLayout lang="en" title="SOMER Group | Soil Organo-Mineral Interactions and Ecological Rehabilitation">
   <section class="hero compact-hero">

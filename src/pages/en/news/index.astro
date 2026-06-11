@@ -2,9 +2,11 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import NewsCard from '../../../components/NewsCard.astro';
 import { enNews } from '../../../data/en-site';
+
+const news = [...enNews].sort((a, b) => b.date.valueOf() - a.date.valueOf());
 ---
 <BaseLayout lang="en" title="News | SOMER Group">
   <ul class="news-list-simple">
-    {enNews.map((item) => <NewsCard title={item.title} date={item.date} href={`/en/news/${item.slug}/`} locale="en" />)}
+    {news.map((item) => <NewsCard title={item.title} date={item.date} href={`/en/news/${item.slug}/`} locale="en" />)}
   </ul>
 </BaseLayout>

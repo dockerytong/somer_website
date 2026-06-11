@@ -88,7 +88,6 @@ name: 张三
 role: 博士生
 group: phd
 research: 尾矿成土与有机碳稳定。
-period: 2025年至今
 origin: 某某大学
 destination:
 note:
@@ -108,7 +107,6 @@ order: 1
 
 其他字段说明：
 
-- `period`：在组时间，例如 `2025年至今` 或 `2022-2025`
 - `origin`：从哪里来，例如本科学校、博士毕业单位、原工作单位
 - `destination`：毕业或离组后去向，主要用于 alumni
 - `note`：备注，例如 `客座`、`访问学者`

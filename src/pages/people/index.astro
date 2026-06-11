@@ -4,6 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import PersonCard from '../../components/PersonCard.astro';
 
 const people = (await getCollection('people')).sort((a, b) => a.data.order - b.data.order);
+const profileSlugs = ['postdoc-na-li', 'postdoc-chenglong-lu', 'postdoc-minghan-wang'];
 const groups = [
   ['staff', '职工'],
   ['postdoc', '博士后'],
@@ -21,7 +22,7 @@ const groups = [
         <div class="section-heading"><h2>{label}</h2></div>
         <ul class:list={['member-list', key === 'staff' ? 'member-list-staff' : 'member-list-two-column']}>
           {members.map((person) => (
-            <PersonCard {...person.data} href={key === 'staff' || person.slug === 'postdoc-na-li' ? `/people/${person.slug}/` : undefined} />
+            <PersonCard {...person.data} href={key === 'staff' || profileSlugs.includes(person.slug) ? `/people/${person.slug}/` : undefined} />
           ))}
         </ul>
       </section>

@@ -3,7 +3,6 @@ name: 田慧霞
 role: 访问学者
 group: alumni
 note: Alumni
-period: 待补充
 origin: 太原科技大学环境与资源学院
 destination: 太原科技大学环境与资源学院
 research: 森林生态、土壤磷循环与森林可持续发展。

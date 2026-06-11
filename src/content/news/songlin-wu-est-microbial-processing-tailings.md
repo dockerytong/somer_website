@@ -1,5 +1,5 @@
 ---
-title: 伍松林论文发表于 Environmental Science & Technology
+title: 伍松林论文被 Environmental Science & Technology 接收
 date: 2026-01-28
 summary: 伍松林等关于铁尾矿中微生物驱动有机质转化与矿物稳定化机制的研究发表于 Environmental Science & Technology。
 ---
