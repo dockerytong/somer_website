@@ -5,7 +5,6 @@ group: staff
 email: tongliu@rcees.ac.cn
 research: 矿物-微生物界面相互作用、矿物界面电子传递、Fe-C耦合转化与污染控制。
 scholar: https://scholar.google.com/citations?user=Fs0dsfMAAAAJ&hl=en
-period: 2025.10至今
 order: 3
 ---
 

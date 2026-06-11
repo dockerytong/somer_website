@@ -14,6 +14,9 @@ const formattedDate = new Intl.DateTimeFormat('en', { year: 'numeric', month: 'l
     <p class="meta">{formattedDate}</p>
     <h1>{item.title}</h1>
     <p>{item.summary}</p>
+    {item.authors && <p><strong>Authors:</strong> {item.authors}</p>}
+    {item.journal && <p><strong>Journal:</strong> <em>{item.journal}</em></p>}
+    {item.details?.map((paragraph) => <p>{paragraph}</p>)}
     {item.image && <img src={item.image} alt={item.title} />}
   </article>
 </BaseLayout>

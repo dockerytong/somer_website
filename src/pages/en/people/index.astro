@@ -5,6 +5,7 @@ import PersonCard from '../../../components/PersonCard.astro';
 import { enPeople } from '../../../data/en-site';
 
 const people = (await getCollection('people')).sort((a, b) => a.data.order - b.data.order);
+const profileSlugs = ['postdoc-na-li', 'postdoc-chenglong-lu', 'postdoc-minghan-wang'];
 const groups = [
   ['staff', 'Staff'],
   ['postdoc', 'Postdoctoral Researchers'],
@@ -13,7 +14,7 @@ const groups = [
   ['alumni', 'Alumni and Former Visitors'],
 ] as const;
 ---
-<BaseLayout lang="en" title="People | SOMER Group">
+<BaseLayout lang="en" title="People | SOMER Group" description="People of the SOMER Group.">
   {groups.map(([key, label]) => {
     const members = people.filter((person) => person.data.group === key);
     if (!members.length) return null;
@@ -25,10 +26,17 @@ const groups = [
             const translated = enPeople[person.slug] ?? {};
             return (
               <PersonCard
-                {...person.data}
-                {...translated}
+                name={translated.name ?? person.slug}
+                role={translated.role ?? person.data.group}
+                research={translated.research}
+                note={translated.note}
+                origin={translated.origin}
+                destination={translated.destination}
+                email={person.data.email}
+                scholar={person.data.scholar}
+                group={person.data.group}
                 lang="en"
-                href={key === 'staff' || person.slug === 'postdoc-na-li' ? `/en/people/${person.slug}/` : undefined}
+                href={key === 'staff' || profileSlugs.includes(person.slug) ? `/en/people/${person.slug}/` : undefined}
               />
             );
           })}

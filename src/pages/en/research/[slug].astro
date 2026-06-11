@@ -9,15 +9,20 @@ export function getStaticPaths() {
 const { entry } = Astro.props;
 ---
 <BaseLayout lang="en" title={`${entry.title} | Research`} description={entry.summary}>
-  <article class="content-card prose research-detail">
-    <h1>{entry.title}</h1>
-    <p>{entry.summary}</p>
-    {entry.details?.map((paragraph) => <p>{paragraph}</p>)}
-    {entry.figures?.map((figure) => (
-      <figure>
-        <img src={figure.src} alt={figure.alt} />
-        <figcaption>{figure.caption}</figcaption>
-      </figure>
-    ))}
+  <article class="research-detail">
+    <header class="research-detail-header">
+      <p class="eyebrow">Research</p>
+      <h1>{entry.title}</h1>
+      <p class="research-detail-summary">{entry.summary}</p>
+    </header>
+    <div class="prose research-detail-body">
+      {entry.details?.map((paragraph) => <p>{paragraph}</p>)}
+      {entry.figures?.map((figure) => (
+        <figure>
+          <img src={figure.src} alt={figure.alt} />
+          <figcaption>{figure.caption}</figcaption>
+        </figure>
+      ))}
+    </div>
   </article>
 </BaseLayout>

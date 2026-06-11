@@ -5,7 +5,6 @@ group: staff
 email: weifu@rcees.ac.cn
 research: 土壤微生态与有机质分子转化、土壤生态修复。
 scholar: https://scholar.google.com/citations?user=g8-JZvEAAAAJ&hl=en&oi=ao
-period: 2024至今
 order: 2
 ---
 

@@ -11,9 +11,14 @@ const { entry } = Astro.props;
 const { Content } = await render(entry);
 ---
 <BaseLayout title={`${entry.data.title} | 研究方向`} description={entry.data.summary}>
-  <article class="content-card prose research-detail">
-    <h1>{entry.data.title}</h1>
-    <p>{entry.data.summary}</p>
-    <Content />
+  <article class="research-detail">
+    <header class="research-detail-header">
+      <p class="eyebrow">研究方向</p>
+      <h1>{entry.data.title}</h1>
+      <p class="research-detail-summary">{entry.data.summary}</p>
+    </header>
+    <div class="prose research-detail-body">
+      <Content />
+    </div>
   </article>
 </BaseLayout>

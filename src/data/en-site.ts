@@ -1,10 +1,29 @@
-export const enNews = [
+type EnNewsItem = {
+  slug: string;
+  title: string;
+  date: Date;
+  summary: string;
+  authors?: string;
+  journal?: string;
+  image?: string;
+  details?: string[];
+};
+
+export const enNews: EnNewsItem[] = [
   {
     slug: 'songlin-wu-est-microbial-processing-tailings',
-    title: 'Songlin Wu paper published in Environmental Science & Technology',
+    title: 'Songlin Wu paper accepted by Environmental Science & Technology',
     date: new Date('2026-01-28'),
     summary:
       'Songlin Wu and coauthors report how microbial processing and Fe/Al-rich minerals jointly stabilize organic matter during four years of eco-engineered pedogenesis in iron ore tailings.',
+    authors:
+      'Songlin Wu, Zhen Li, Fang You, Wei Fu, Qi Feng, Guanghui Yu, Cheng-Wei Kao, Ting-Shan Chan, Baodong Chen, Gordon Southam, Longbin Huang',
+    journal: 'Environmental Science & Technology',
+    details: [
+      'This study examined microbial use, transformation, and stabilization of organic matter during eco-engineered soil formation in iron ore tailings through a four-year microcosm experiment. The work combined isotope labeling with 13C-glucose and 13C/15N-labeled spring wheat biomass, high-resolution Orbitrap mass spectrometry, and NanoSIMS to resolve long-term organic matter evolution at molecular and submicron scales.',
+      'The results show that both soluble organic inputs and plant biomass can form protein-, lipid-, and lignin-like molecules in tailings, with heterogeneous stabilization mainly mediated by Fe- and Al-rich minerals. In the 13C-glucose treatment, microbial 14N2 fixation generated microbial organic matter enriched in 13C and 14N.',
+      'In the 13C/15N-labeled biomass treatment, the study further revealed dynamic organic matter turnover: external 13C/15N signals gradually declined while new organic compounds derived from atmospheric 12C/14N emerged. The microbe- and mineral-mediated generation and stabilization of organic matter indicate the gradual development of in situ microbial C/N biogeochemical resilience in amended tailing systems.',
+    ],
   },
   {
     slug: 'hui-wu-acs-earth-space-chemistry',
@@ -12,6 +31,13 @@ export const enNews = [
     date: new Date('2026-05-29'),
     summary:
       'Hui Wu and coauthors report how decade-long soil cover promotes mineral weathering and organic matter accrual in iron ore tailings while deteriorating topsoil.',
+    authors: 'H Wu, W Fu, Z Yang, C Lu, S Chen, Y Wu, Y Liu, M Wang, CW Kao, TS Chan, B Chen, S Wu',
+    journal: 'ACS Earth and Space Chemistry, 2026',
+    details: [
+      'Soil cover is widely used to initiate ecological rehabilitation on tailing deposits, but its influence on geochemical processes and organic matter dynamics in underlying tailings remains poorly understood. This study investigated the physicochemical and mineralogical evolution of Fe ore tailings in Hebei Province after a decade of soil cover and revegetation.',
+      'The results show that soil cover and revegetation generally neutralized alkalinity, promoted microaggregate formation, and improved organic matter stabilization in the underlying tailings. Fe K-edge X-ray absorption spectroscopy identified the transformation of primary biotite-like minerals into Fe(III) oxyhydroxides, and NanoSIMS delineated submicrometer associations between secondary Fe- and Al-bearing minerals and organic matter.',
+      'Grass rehabilitation was more effective than cropland in driving these processes. At the same time, the underlying tailings deteriorated the soil cover by increasing alkalinity and metal(loid) concentrations while lowering total organic carbon, nitrogen, and aggregate stability relative to natural soils.',
+    ],
   },
   {
     slug: 'tong-liu-water-research-nitrate-vanadium',
@@ -19,12 +45,20 @@ export const enNews = [
     date: new Date('2026-05-16'),
     summary:
       'This study shows that carbon availability governs the stability of nitrate-vanadium co-remediation in stratified biofilters.',
+    authors: 'H Wang, N Chen, C Feng, D Mei, H Gao, T Liu',
+    journal: 'Water Research, 2026',
+    details: [
+      'Thermodynamic hierarchies constrain the bioremediation of groundwater co-contaminated with nitrate and V(V), because denitrification preferentially consumes electron donors that would otherwise support metal reduction. This study shows that spatial stratification of lignocellulosic residues can transiently alleviate competition between nitrate removal and vanadium reduction, while long-term performance remains governed by carbon availability and reaction kinetics.',
+      'Over 330 days of operation, the stratified biofilter showed a biphasic response. During the carbon-sufficient phase, synergistic co-removal increased nitrate and V(V) loading capacities by up to 6.3-fold and 4.0-fold relative to single-substrate controls. During the carbon-limited phase, denitrification persisted while V(V) reduction collapsed.',
+      'Spatially resolved metagenomics revealed a thermodynamic “metabolic triage”, in which microbial communities maintained denitrification pathways but selectively down-regulated V-reduction modules. The findings highlight the need for dynamic carbon management strategies in sustained metal co-remediation.',
+    ],
   },
   {
     slug: 'wenyu-river-park-group-photo',
     title: 'SOMER group outing at Wenyu River Park',
     date: new Date('2026-05-16'),
     summary: 'The SOMER group visited the Yunchang Terraces area of Beijing Wenyu River Park and took a group photo.',
+    details: ['On May 16, 2026, the SOMER group visited Beijing Wenyu River Park and took a group photo in the Yunchang Terraces area.'],
     image: '/images/news/wenyu-river-park-2026.jpg',
   },
   {
@@ -33,13 +67,28 @@ export const enNews = [
     date: new Date('2026-05-10'),
     summary:
       'Chenglong Lu and coauthors reveal how mineral phase transformation drives DOM molecular fractionation during organic acid-driven weathering of bauxite residue.',
+    authors: 'C Lu, S Wu, F You, D Yu, J Vongsvivut, A Klein, L Thomsen, D Parry, TS Chan, L Huang',
+    journal: 'Chemical Geology, 2026',
+    details: [
+      'Dissolved organic matter sequestration is critical to soil formation of bauxite residue, where mineral weathering and neutralization or acidification are driven by microbial- and plant root-derived organic acids. This study used mixed organic acids to simulate mineral weathering during ecological engineering and examined DOM molecular fractionation and adsorption in bauxite residue minerals.',
+      'Using high-resolution electrospray ionization Orbitrap mass spectrometry, the study characterized selective adsorption and molecular fractionation of DOM derived from microbial decomposition of plant mulch. Organic acid treatments progressively weathered sodalite-like alkaline minerals, formed amorphous Al/Si/Fe phases, lowered pH, and increased reactive surface sites.',
+      'Slightly and highly weathered bauxite residue minerals preferentially adsorbed high-molecular-weight organics rich in aromatic and/or polyphenolic domains. Synchrotron-based Al, Si, and Fe K-edge X-ray absorption spectroscopy and FTIR mapping further revealed strong associations between secondary Al/Si/Fe phases and protein-, carboxylic-, aromatic-, and oxygenated lipid-like compounds.',
+    ],
   },
   {
     slug: 'tong-liu-nature-communications-iron-cycle',
     title: 'Tong Liu paper accepted by Nature Communications',
     date: new Date('2026-05-09'),
     summary:
-      'This work identifies mineral photocatalysis as a pathway mediating Fe(II)/Fe(III) cycling in the euphotic zone.',
+      'This work identifies mineral photocatalysis as a pathway mediating Fe(II)/Fe(III) cycling in the euphotic zone and has been selected for the Nature Communications Earth science Editors’ Highlights.',
+    authors: 'Tong Liu, Hongrui Ding, Anhuai Lu, Lingzi Meng, Xiao Ge, Ying Liu, Fangchao Zhu, Shuo Yu, Qunjian Yin, Yan Li, Changqiu Wang, Juan Liu, Song Jin',
+    journal: 'Nature Communications, 2026',
+    details: [
+      'The Editors’ Highlights page is curated by the editors of Nature Communications to showcase 50 recent representative papers in Earth science. This article was selected for the collection by editor Joy Buongiorno.',
+      'The marine iron cycle is fast and dynamic, partly fueled by vast particulate iron inputs, but the mechanisms that activate this reservoir remain unresolved. This study shows that mineral photocatalysis provides an important abiotic pathway for Fe(II) production in sunlit waters.',
+      'Laboratory experiments using synthetic iron oxides and anatase in artificial seawater demonstrate that anatase (TiO2) drives rapid Fe(III)-to-Fe(II) cycling at rates up to fourfold higher than current model assumptions. The study proposes that mineral photocatalysis helps explain the persistence of Fe(II) in sunlit waters as a high-flux steady state of photochemical production coupled with biological uptake.',
+    ],
+    image: '/images/news/nature-communications-earth-science-editors-highlights.png',
   },
   {
     slug: 'tong-liu-cr-bioreduction-water-science-engineering',
@@ -47,12 +96,24 @@ export const enNews = [
     date: new Date('2026-02-28'),
     summary:
       'This study develops a microbial-mineral-biomass composite strategy to improve Cr(VI) bioreduction under continuous flow.',
+    authors: 'Tong Liu, Lin-lin Ma, Yu-tian Hu, Nan Chen, Chuan-ping Feng',
+    journal: 'Water Science and Engineering, 2026',
+    details: [
+      'Microbial Cr(VI) reduction is a cost-effective remediation approach, but its continuous-flow application is often limited by toxicity inhibition and unstable nutrient supply. This study developed an integrated microbial-phosphorus mineral-corncob composite that encapsulates Cr(VI)-reducing bacteria with slow-release nutrients in a hydrogel matrix.',
+      'The composite system sustained complete Cr(VI) removal at influent concentrations up to 160 mg/L in synthetic wastewater and 120 mg/L in actual groundwater. Reactive transport modeling showed that diffusion limitations create protective intraparticle concentration gradients, while density functional theory calculations confirmed strong Cr(III) sequestration and sustained phosphorus bioavailability.',
+      'The work demonstrates that engineering a protected and self-sufficient microbial microenvironment can improve the stability of Cr(VI) bioremediation under continuous-flow conditions.',
+    ],
   },
   {
     slug: 'somer-2025',
     title: 'SOMER 2025: A year in soil',
     date: new Date('2026-02-17'),
     summary: 'A brief annual note on SOMER group growth, research progress, publications, and field-oriented restoration work.',
+    details: [
+      '2025 was a year of rapid growth for the SOMER group. We continued to advance research on soil organo-mineral interactions and ecological rehabilitation, while beginning to translate laboratory findings toward mine-site applications.',
+      'The group published more than 20 papers during the year, including more than 10 first-author or corresponding-author papers in journals such as Environmental Science & Technology, Global Change Biology, Soil Biology and Biochemistry, and Chemical Geology. We also published a review in Science & Technology Review on the theory and technology of tailing pedogenesis ecological engineering.',
+      'Our work continued along three main lines: tailing pedogenesis mechanisms, mycorrhizal strategies for ecological rehabilitation, and interfacial processes controlling mineral weathering, metal cycling, and organic matter transformation. In 2026, we will keep asking how tailings can become soil more rapidly, how minerals, microorganisms, and organic matter co-evolve, and how laboratory findings can move into field rehabilitation.',
+    ],
   },
   {
     slug: 'wei-fu-gcb-drought-amf-diversity',
@@ -60,6 +121,13 @@ export const enNews = [
     date: new Date('2026-01-12'),
     summary:
       'Wei Fu and coauthors show that plant productivity responses to extreme drought are linked to arbuscular mycorrhizal fungal diversity.',
+    authors: 'Wei Fu, Qiang Yu, Haiyang Zhang, Chong Xu, Xingguo Han, Baodong Chen',
+    journal: 'Global Change Biology, 2026',
+    details: [
+      'Plant and arbuscular mycorrhizal fungal diversity are both positively linked to ecosystem productivity, but the persistence of these diversity-productivity relationships under climate extremes remains poorly understood. This study established a grassland experiment at two proximate sites with distinct natural plant and AM fungal communities, imposing intense and chronic extreme drought regimes that each exceeded a 20-year recurrence interval.',
+      'The results show that AM fungal diversity consistently outperformed plant diversity in predicting plant aboveground and net primary productivity, as well as compositional shifts in plant species productivity. Enhanced drought resistance in plant productivity was primarily associated with the stability of AM fungal richness rather than plant richness.',
+      'Structural equation modelling further confirmed that AM fungal richness buffered drought effects on productivity and plant richness, with stronger effects on productivity than those of plant richness and soil properties. These findings indicate that AM fungal diversity may play an important role in sustaining ecosystem functioning under rapid climate change.',
+    ],
   },
 ];
 
@@ -177,33 +245,40 @@ export const enResearch = [
   },
 ];
 
-export const enPeople: Record<string, { name: string; role: string; research?: string; note?: string; origin?: string; period?: string; destination?: string; bio?: string[] }> = {
+export const enPeople: Record<string, { name: string; role: string; research?: string; note?: string; origin?: string; destination?: string; bio?: string[] }> = {
   'songlin-wu': {
     name: 'Songlin Wu',
     role: 'Professor / PhD Supervisor',
     research: 'Soil organo-mineral interactions, ecological rehabilitation of mine wastes, and biogeochemical element cycling.',
-    period: '2025-present',
   },
   'wei-fu': {
     name: 'Wei Fu',
     role: 'Assistant Professor',
     research: 'Soil microecology, molecular transformation of organic matter, and soil ecological rehabilitation.',
-    period: '2024-present',
   },
   'tong-liu': {
     name: 'Tong Liu',
     role: 'Assistant Professor',
     research: 'Mineral-microbe interfaces, interfacial electron transfer, Fe-C coupling, and pollution control.',
-    period: '2025.10-present',
   },
   'postdoc-hui-wu': { name: 'Hui Wu', role: 'Postdoctoral Researcher', research: 'Mine tailing pedogenesis and soil organic matter stabilization.', origin: 'Research Center for Eco-Environmental Sciences, CAS' },
   'postdoc-shiqi-zhang': { name: 'Shiqi Zhang', role: 'Postdoctoral Researcher', research: 'Ecological rehabilitation of degraded soils and soil structure reconstruction.', origin: 'Research Center for Eco-Environmental Sciences, CAS' },
-  'postdoc-minghan-wang': { name: 'Minghan Wang', role: 'Postdoctoral Researcher', research: 'Coupled stabilization of heavy metals and carbon by soil amendments.', origin: 'Hunan Agricultural University' },
+  'postdoc-minghan-wang': {
+    name: 'Minghan Wang',
+    role: 'Postdoctoral Researcher',
+    research: 'AMF-mineral amendment strategies for heavy metal stabilization, soil carbon retention, and contaminated farmland remediation.',
+    origin: 'Hunan Agricultural University',
+    bio: [
+      'Minghan Wang is a postdoctoral researcher in the SOMER Group. She received her PhD from Hunan Agricultural University. Her previous work focused on contaminated soil remediation, fluoride control in tea gardens, heavy metal speciation, and soil ecological processes, with related publications in journals including Biochar, Ecotoxicology and Environmental Safety, and Chemosphere.',
+      'During her doctoral research, she worked on typical yellow soils in Hunan Province and high-fluoride tea gardens, examining how soil properties, microbial processes, and fertilizer or amendment regimes influence fluoride and heavy metal accumulation. These studies provided a basis for fluoride control and soil quality improvement in tea garden systems.',
+      'In SOMER, she focuses on coupled heavy metal stabilization and soil carbon retention in contaminated farmland. Her current work examines how arbuscular mycorrhizal fungi (AMF) and iron-modified organic amendments regulate metal availability, organo-mineral association, and microaggregate formation, with the goal of supporting integrated pollution control and carbon stabilization in mining-impacted agricultural soils.',
+      'Selected publications include studies on exogenous indole acetic acid alleviating Cd toxicity in tea (Ecotoxicology and Environmental Safety, 2020) and multi-omics research in albino tea plants (Scientia Horticulturae, 2020).',
+    ],
+  },
   'postdoc-na-li': {
     name: 'Na Li',
     role: 'Postdoctoral Researcher',
     research: 'Soil microecology, microbial carbon fixation, organic matter stabilization, and microbial-derived carbon retention during tailing pedogenesis.',
-    period: '2025.06-present',
     origin: 'Northwest A&F University',
     bio: [
       'Na Li is a postdoctoral researcher in the SOMER Group. She received her PhD from Northwest A&F University under the supervision of Prof. Shaoshan An and was previously a jointly trained doctoral researcher in Germany. Her research focuses on soil carbon-nitrogen coupling, microbial carbon fixation, microbial necromass accumulation, and the stability and resilience of soil organic carbon under precipitation variability.',
@@ -212,10 +287,22 @@ export const enPeople: Record<string, { name: string; role: string; research?: s
       'In SOMER, she focuses on micro-ecosystem processes, molecular transformation of organic matter, and microbial-derived carbon stabilization during tailing pedogenesis and degraded soil rehabilitation.',
     ],
   },
-  'postdoc-chenglong-lu': { name: 'Chenglong Lu', role: 'Postdoctoral Researcher', research: 'Turnover of amorphous minerals during mine tailing pedogenesis.', period: '2025.12-present', origin: 'The University of Queensland' },
+  'postdoc-chenglong-lu': {
+    name: 'Chenglong Lu',
+    role: 'Postdoctoral Researcher',
+    research: 'Bauxite residue bioweathering, amorphous mineral turnover, and mineral-organic interface processes.',
+    origin: 'The University of Queensland',
+    bio: [
+      'Chenglong Lu is a postdoctoral researcher in the SOMER Group. He received his master’s degree from Central South University and his PhD from The University of Queensland. His research background connects mineral processing, environmental materials, and tailing rehabilitation, with a focus on mineral phase transformation, interfacial reactions, and contaminant separation or immobilization in alkaline bauxite residue and strongly acidic metallurgical wastewater systems.',
+      'His doctoral research examined resource utilization and ecological rehabilitation of alkaline bauxite residue. He focused on alkaline mineral weathering, formation of secondary amorphous Al-Si-Fe phases, and organo-mineral association during bauxite residue transformation. This work combined rhizosphere-interface observation, XRD/Rietveld mineral quantification, TEM nanoscale characterization, Orbitrap-MS, and synchrotron-based spectroscopy.',
+      'His previous results indicate that pioneer plant rhizosphere processes can weaken the alkaline buffering capacity of bauxite residue, promote weathering of DSP-type alkaline minerals, and induce nanoscale amorphous Al-Si-Fe secondary phases. Organic inputs and low-molecular-weight organic acids further participate in mineral structural transformation and organo-mineral coupling, suggesting a pathway from alkaline mineral weathering to amorphous phase formation and organic matter stabilization.',
+      'In SOMER, he focuses on amorphous mineral turnover, mineral-organic interfaces, aggregate formation, organic carbon stabilization, and contaminant immobilization during tailing and bauxite residue pedogenesis.',
+      'Selected studies include work on organic acid-driven weathering of bauxite residue, haloalkalitolerant plant-driven dealkalization, long-term soil cover effects on Fe ore tailings, segmental defluorination from zinc sulfate electrowinning solution, phase-regulated colloidal FeS for copper-arsenic separation, AI-optimized slow-release iron sulfide for acidic wastewater treatment, and micro-electrolysis composite materials derived from alkaline bauxite residue.',
+    ],
+  },
   'master-chen-suixiaochen': { name: 'Suixiaochen Chen', role: 'PhD Student', research: 'Reactive iron minerals in soils.' },
   'phd-feng-qi': { name: 'Qi Feng', role: 'PhD Student', research: 'Weathering of sulfidic tailings.' },
-  'phd-wu-yuqi': { name: 'Yuqi Wu', role: 'PhD Student', research: 'Adsorption and transformation of AMF exudates on minerals.' },
+  'phd-wu-yuqi': { name: 'Yuqi Wu', role: 'PhD Student', research: 'Adsorption and transformation of AMF exudates on minerals.', origin: 'Tsinghua University' },
   'master-yang-shuang': { name: 'Shuang Yang', role: 'PhD Student', note: 'Visiting', research: 'Development of tailing soil structure.', origin: 'China Agricultural University' },
   'master-yang-zijie': { name: 'Zijie Yang', role: 'Master Student' },
   'master-wenqi-li': { name: 'Wenqi Li', role: 'Master Student', note: 'Visiting', origin: 'China University of Mining and Technology' },

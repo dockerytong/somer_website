@@ -4,7 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import scholarData from '../../data/scholar-publications.json';
 
 export async function getStaticPaths() {
-  const entries = (await getCollection('people')).filter((entry) => entry.data.group === 'staff' || entry.slug === 'postdoc-na-li');
+  const entries = (await getCollection('people')).filter((entry) => entry.data.group === 'staff' || ['postdoc-na-li', 'postdoc-chenglong-lu', 'postdoc-minghan-wang'].includes(entry.slug));
   return entries.map((entry) => ({ params: { slug: entry.slug }, props: { entry } }));
 }
 
@@ -27,10 +27,9 @@ const publications = scholarData.byPerson[entry.slug as keyof typeof scholarData
       {entry.data.email && entry.data.scholar && <span> · </span>}
       {entry.data.scholar && <a class="text-link" href={entry.data.scholar}>Google Scholar</a>}
     </p>
-    {(entry.data.period || entry.data.origin || entry.data.destination) && (
+    {(entry.data.origin || entry.data.destination) && (
       <p>
-        {entry.data.period && <span>在组时间：{entry.data.period}</span>}
-        {entry.data.origin && <span> · 来源：{entry.data.origin}</span>}
+        {entry.data.origin && <span>来源：{entry.data.origin}</span>}
         {entry.data.destination && <span> · 去向：{entry.data.destination}</span>}
       </p>
     )}

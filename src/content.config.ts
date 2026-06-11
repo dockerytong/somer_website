@@ -20,7 +20,6 @@ const people = defineCollection({
     research: z.string().optional(),
     scholar: z.string().url().optional(),
     note: z.string().optional(),
-    period: z.string().optional(),
     origin: z.string().optional(),
     destination: z.string().optional(),
     order: z.number().default(99),
