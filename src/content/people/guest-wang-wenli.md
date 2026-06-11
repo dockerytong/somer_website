@@ -1,8 +1,10 @@
 ---
 name: 王雯丽
-role: 硕士生
-group: master
-note: 客座
+role: 客座硕士生
+group: alumni
+note: 已离组
 origin: 福建师范大学
-order: 4
+destination: 福建师范大学
+research: 钼尾矿基土壤调理剂。
+order: 2
 ---
