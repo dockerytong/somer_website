@@ -11,6 +11,19 @@ type EnNewsItem = {
 
 export const enNews: EnNewsItem[] = [
   {
+    slug: 'somer-wcss-2026',
+    title: 'SOMER group attended the 23rd World Congress of Soil Science',
+    date: new Date('2026-06-12'),
+    summary:
+      'The SOMER group attended the 23rd World Congress of Soil Science in Nanjing and exchanged ideas with colleagues on tailing pedogenesis, soil ecological rehabilitation, and soil process research.',
+    details: [
+      'From June 7 to 12, 2026, the 23rd World Congress of Soil Science (WCSS) was held in Nanjing, China. Members of the SOMER group attended the congress and exchanged ideas with researchers from China and abroad on tailing pedogenesis, soil ecological rehabilitation, and soil process research.',
+      'The World Congress of Soil Science is an important international conference in soil science organized under the International Union of Soil Sciences (IUSS). The congress brought together soil scientists from different countries and regions to discuss soil resource protection, soil health, ecological restoration, carbon cycling, and sustainable development.',
+      'During the congress, Prof. Songlin Wu chaired a scientific session. Wei Fu delivered an oral presentation on the group’s recent progress in soil ecological processes and rehabilitation. Na Li and Minghan Wang presented their work in poster sessions. The meeting provided an opportunity for the group to discuss tailing pedogenesis, soil organo-mineral interactions, and ecological rehabilitation with the international soil science community.',
+    ],
+    image: '/images/news/somer-wcss-2026.jpg',
+  },
+  {
     slug: 'songlin-wu-est-microbial-processing-tailings',
     title: 'Songlin Wu paper accepted by Environmental Science & Technology',
     date: new Date('2026-01-28'),
