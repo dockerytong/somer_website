@@ -6,6 +6,7 @@ email: slwu@rcees.ac.cn
 photo: /images/people/songlin-wu.png
 research: 土壤有机-矿物互作与生态修复、矿区固废成土和生态重建、元素生物地球化学循环。
 scholar: https://scholar.google.com/citations?user=8cLW_0cAAAAJ&hl=en&oi=ao
+researchgate: https://www.researchgate.net/profile/Songlin-Wu-2
 order: 1
 ---
 

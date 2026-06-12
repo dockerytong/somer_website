@@ -2,27 +2,21 @@
   "byPerson": {
     "songlin-wu": [
       {
+        "title": "Mineral phase transformation drives molecular fractionation of dissolved organic matter during organic acid-driven weathering of bauxite residue",
+        "authors": "C Lu, S Wu, F You, D Yu, J Vongsvivut, A Klein, L Thomsen, D Parry, TS Chan, L Huang",
+        "journal": "Chemical Geology, 2026",
+        "year": 2026
+      },
+      {
         "title": "Multifunctional composite microbial inoculants in sustainable agriculture: Design, carriers and field application",
         "authors": "T Niu, H Wang, W Fu, Z Hao, S Wu, X Zhang, B Chen",
         "journal": "Soil Ecology Letters 8 (4), 260421, 2026",
         "year": 2026
       },
       {
-        "title": "Transforming iron ore tailings into technosols: Highly biodegradable plant mulch accelerates mineral weathering and organo-mineral association",
-        "authors": "LM Robertson, S Wu, F You, N Saha, G Southam, TS Chan, L Huang",
-        "journal": "Applied Soil Ecology 222, 107012, 2026",
-        "year": 2026
-      },
-      {
         "title": "Decade-Long Soil Cover Promotes Mineral Weathering and Organic Matter Accrual in Fe Ore Tailings But Deteriorates Topsoil",
         "authors": "H Wu, W Fu, Z Yang, C Lu, S Chen, Y Wu, Y Liu, M Wang, CW Kao, ...",
         "journal": "ACS Earth and Space Chemistry, 2026",
-        "year": 2026
-      },
-      {
-        "title": "Low-molecular-weight organic acids constraints on the divergent weathering and lead mobilization of sulfidic minerals",
-        "authors": "T Zhang, S Yang, J Lu, Y Cao, Y Huang, S Wu, Y Liu",
-        "journal": "Environmental Pollution, 128151, 2026",
         "year": 2026
       },
       {
@@ -38,33 +32,9 @@
         "year": 2026
       },
       {
-        "title": "Solid phase molecular diversity enhances soil organic matter persistence",
-        "authors": "T Sun, Z Yang, L Zhang, S Gao, S Wu, KQ Xiao, H Peng, H Dong, X Han, ...",
-        "journal": "",
-        "year": 2025
-      },
-      {
-        "title": "Plant colonization facilitates organic matter humification, iron mineral transformation, and microbial community restructuring in coal gangue remediation",
-        "authors": "J Guo, Z Li, Y Shi, T Zhang, Y Huang, J Shang, T Chan, S Wu, Y Liu",
-        "journal": "Environmental Research, 123370, 2025",
-        "year": 2025
-      },
-      {
-        "title": "Soil science research in Research Center for Eco-Environmental Sciences: Review and outlook",
-        "authors": "B Chen, Z Hao, L Luo, N Wu, W Liu, D Zhu, Y Ge, W Chen, W Jiao, ...",
-        "journal": "Journal of Environmental Sciences, 2025",
-        "year": 2025
-      },
-      {
         "title": "Harnessing arbuscular mycorrhizal fungal communities for ecological restoration: a conceptual framework",
         "authors": "W Fu, T Niu, S Wu, Z Hao, MC Rillig, B Chen",
         "journal": "Soil Biology and Biochemistry 209, 109902, 2025",
-        "year": 2025
-      },
-      {
-        "title": "Bidirectional interference between nanoplastics and arsenic in arbuscular mycorrhizal symbiosis: Reciprocal modulation of uptake, transformation and translocation",
-        "authors": "X Jing, X Zhang, X Wang, H Chen, S Xing, Z Jin, D Yang, J Li, S Wu, ...",
-        "journal": "Journal of Hazardous Materials, 139983, 2025",
         "year": 2025
       },
       {
@@ -89,12 +59,6 @@
         "title": "硫氧化菌在碱性尾矿中的适应机制与生态修复作用研究进展",
         "authors": "冯琪， 易卿， 刘允佳， 李贞， 陈保冬， 伍松林",
         "journal": "岩矿测试, 2025",
-        "year": 2025
-      },
-      {
-        "title": "Advances in Understanding the Adaptation Mechanisms and Ecological Functions of Sulfur-Oxidizing Bacteria in Alkaline Tailings",
-        "authors": "F Qi, YI Qing, LIU Yunjia, LI Zhen, C Baodong, WU Songlin",
-        "journal": "Rock and Mineral Analysis, 2025",
         "year": 2025
       },
       {
@@ -658,12 +622,6 @@
         "year": 2026
       },
       {
-        "title": "Seedling mycorrhization increases maize yield without altering soil properties: A field study",
-        "authors": "R Yin, Z Hao, Y Ma, W Fu, H Wu, F Xue, M Sun, W Wang, X Zhang, ...",
-        "journal": "Applied Soil Ecology 218, 106701, 2026",
-        "year": 2026
-      },
-      {
         "title": "Physicochemical and mineralogical constraints on the ecological rehabilitation of coal mine waste",
         "authors": "H Wu, S Wu, C Wang, Y Zhang, S Chen, W Fu, TS Chan, DV Gamage, ...",
         "journal": "Plant and Soil 519 (1), 595-613, 2026",
@@ -676,39 +634,15 @@
         "year": 2026
       },
       {
-        "title": "Constraining the effect of global change on antifungal resistance",
-        "authors": "MC Rillig, G Xu, W Fu, C Li",
-        "journal": "Nature Reviews Earth & Environment, 1-3, 2026",
-        "year": 2026
-      },
-      {
         "title": "Beyond Plant Diversity: Plant Productivity Responses to Extreme Drought Are Linked to Arbuscular Mycorrhizal Fungal Diversity",
         "authors": "W Fu, Q Yu, H Zhang, C Xu, X Han, B Chen",
         "journal": "Global Change Biology 32 (1), e70697, 2026",
         "year": 2026
       },
       {
-        "title": "Arbuscular mycorrhizal fungi and Trichoderma harzianum alter salicylic acid–jasmonic acid balance to suppress Fusarium wilt in tomato",
-        "authors": "K Zhang, H Wang, W Xie, T Niu, W Fu, X Zhang, Z Hao, B Chen",
-        "journal": "Frontiers in Plant Science 16, 1714648, 2025",
-        "year": 2025
-      },
-      {
-        "title": "Arbuscular mycorrhizal fungi as core engineers in synthetic microbial communities: Boosting plant growth and soil health for sustainable agriculture",
-        "authors": "Y Zeng, Y Wang, X Wang, X Jing, X Shu, P Ren, W Liu, Q Ye, W Fu, Z Hao, ...",
-        "journal": "Journal of Fungi 11 (11), 769, 2025",
-        "year": 2025
-      },
-      {
         "title": "Effect of Inoculation with Arbuscular Mycorrhizal Fungi (Rhizophagus irregularis BGC AH01) on the Soil Bacterial Community Assembly",
         "authors": "X Wang, X Jing, Y Wang, Y Ma, X Shu, W Fu, S Xing, W Liu, Q Ye, Y Zhu, ...",
         "journal": "Journal of Fungi 11 (10), 739, 2025",
-        "year": 2025
-      },
-      {
-        "title": "Soil science research in Research Center for Eco-Environmental Sciences: Review and outlook",
-        "authors": "B Chen, Z Hao, L Luo, N Wu, W Liu, D Zhu, Y Ge, W Chen, W Jiao, ...",
-        "journal": "Journal of Environmental Sciences, 2025",
         "year": 2025
       },
       {
@@ -718,33 +652,9 @@
         "year": 2025
       },
       {
-        "title": "Aggregate size mediates the stability and temperature sensitivity of soil organic carbon in response to decadal biochar and straw amendments",
-        "authors": "Y Chen, Y Kuzyakov, Q Ma, Z Du, K Sun, K Xiao, X Liang, Y Li, Y Zhang, ...",
-        "journal": "Soil Biology and Biochemistry, 109969, 2025",
-        "year": 2025
-      },
-      {
-        "title": "Distribution patterns and driving forces of soil fungal communities along elevational gradients on two snow mountains in the Hengduan Mountain Range",
-        "authors": "S Zhang, Z Cao, W Fu, C Shen, Z Hao, G Sun, Y Ge, L Zhang, X Zhang, ...",
-        "journal": "Soil Ecology Letters 7 (3), 250323, 2025",
-        "year": 2025
-      },
-      {
-        "title": "Arbuscular mycorrhizal fungi enhance glyphosate resistance in an invasive weed: Implications for eco-environmental risks",
-        "authors": "S Qi, D Chen, M Yan, Z Huang, H Yu, G Ren, H Xiong, W Fu, B Zhao, ...",
-        "journal": "Applied Soil Ecology 212, 106203, 2025",
-        "year": 2025
-      },
-      {
         "title": "Niche constraints shape the responses of arbuscular mycorrhizal fungal community to sulfur-induced soil acidification in a meadow steppe",
         "authors": "X Ma, M Zhou, Y Liu, S Li, Q Li, X Feng, B Chen, OJ Sun, X Han, Y Jiang, ...",
         "journal": "Plant and Soil, 1-17, 2025",
-        "year": 2025
-      },
-      {
-        "title": "Synergistic Effects of Rhizophagus irregularis and Trichoderma harzianum Co-Inoculation on Enhancing Drought Tolerance and Secondary Metabolite Production in Licorice …",
-        "authors": "K Zhang, M Sun, H Feng, X Wei, W Xie, W Fu, L Guo, X Zhang, Z Hao, ...",
-        "journal": "Journal of Fungi 11 (7), 488, 2025",
         "year": 2025
       },
       {
@@ -972,15 +882,15 @@
     ],
     "tong-liu": [
       {
-        "title": "Carbon availability dictates the stability of nitrate-vanadium co-remediation in stratified biofilters",
-        "authors": "H Wang, N Chen, C Feng, D Mei, H Gao, T Liu",
-        "journal": "Water Research, 126137, 2026",
+        "title": "Cycling of Fe(II)/Fe(III) in the euphotic zone mediated by mineral photocatalysis",
+        "authors": "T Liu, H Ding, A Lu, L Meng, X Ge, Y Liu, F Zhu, S Yu, Q Yin, Y Li, C Wang, J Liu, S Jin",
+        "journal": "Nature Communications, 2026",
         "year": 2026
       },
       {
-        "title": "Charge allocation and mass transfer efficiency during hydrogen evolution reaction in high salinity neutral electrolyte",
-        "authors": "T Chen, N An, D Gupta, N Chen, M Li, T Liu, B Zhang, W Hu, C Feng",
-        "journal": "Water Research, 125849, 2026",
+        "title": "Carbon availability dictates the stability of nitrate-vanadium co-remediation in stratified biofilters",
+        "authors": "H Wang, N Chen, C Feng, D Mei, H Gao, T Liu",
+        "journal": "Water Research, 126137, 2026",
         "year": 2026
       },
       {
@@ -988,30 +898,6 @@
         "authors": "T Liu, L Ma, Y Hu, N Chen, C Feng",
         "journal": "Water Science and Engineering, 2026",
         "year": 2026
-      },
-      {
-        "title": "Tailings Rapid Soil Formation Engineering Based on Mineral-Microbial Synergistic Transformation (in Chinese)",
-        "authors": "T Liu",
-        "journal": "Conference on Disposal, Utilization of Nonferrous Metal Tailings and …, 2026",
-        "year": 2026
-      },
-      {
-        "title": "Iron-carbon micro-electrolysis enhances microbial sulfate reduction and sulfur recovery",
-        "authors": "C Zhao, Q Guo, Y Chen, N Chen, T Liu, Z Liu, C Feng",
-        "journal": "Journal of Environmental Management 397, 128343, 2026",
-        "year": 2026
-      },
-      {
-        "title": "Microbial Community Structure and Community Assembly Mechanisms in Chromium-Ccontaminated Sites",
-        "authors": "Y Ye, R Hao, B Shan, T Liu, L Meng, A Lu",
-        "journal": "Water, Air, & Soil Pollution 236 (14), 906, 2025",
-        "year": 2025
-      },
-      {
-        "title": "Photoreduction-Driven Iron Cycling: Indirect Regulation of Euphotic Zone Microbial Communities via Hematite Semiconductors",
-        "authors": "X Ge, Y Du, J Liu, T Liu, H Ding, A Lu",
-        "journal": "Geomicrobiology Journal 42 (9), 753-765, 2025",
-        "year": 2025
       },
       {
         "title": "Adsorption-induced lattice weakening: understanding the mechanism of cysteine-accelerated pyrite oxidation",
@@ -1029,18 +915,6 @@
         "title": "Vertical heterogeneity of dissolved ferrous and iron speciation in tropical seagrass beds",
         "authors": "S Yu, Y Huang, F Zhu, T Liu, Z Zheng, Y Huang, A Lu",
         "journal": "Marine Pollution Bulletin 218, 118205, 2025",
-        "year": 2025
-      },
-      {
-        "title": "Dynamic Co (II)/Co (III) cycle driven by outer-and inner-sphere electron transfer for sustained peroxymonosulfate activation",
-        "authors": "N An, N Chen, C Feng, S Zhang, Z Li, T Liu, Y Liu, W Lu, Z Feng, H Gao, ...",
-        "journal": "Environmental Science & Technology 59 (36), 19570-19581, 2025",
-        "year": 2025
-      },
-      {
-        "title": "Visible Light Activation of Anatase TiO2 Achieved by beta-Carotene Sensitization on Earth’s Surface",
-        "authors": "X Ge, H Ding, T Liu, Y Du, A Lu",
-        "journal": "Catalysts 15 (8), 739, 2025",
         "year": 2025
       },
       {
@@ -1271,36 +1145,17 @@
         "journal": "Available at SSRN 3967291, 0",
         "year": null
       }
+    ],
+    "postdoc-chenglong-lu": [
+      {
+        "title": "Mineral phase transformation drives molecular fractionation of dissolved organic matter during organic acid-driven weathering of bauxite residue",
+        "authors": "C Lu, S Wu, F You, D Yu, J Vongsvivut, A Klein, L Thomsen, D Parry, TS Chan, L Huang",
+        "journal": "Chemical Geology, 2026",
+        "year": 2026
+      }
     ]
   },
   "combined": [
-    {
-      "title": "Transforming iron ore tailings into technosols: Highly biodegradable plant mulch accelerates mineral weathering and organo-mineral association",
-      "authors": "LM Robertson, S Wu, F You, N Saha, G Southam, TS Chan, L Huang",
-      "journal": "Applied Soil Ecology 222, 107012, 2026",
-      "year": 2026,
-      "owners": [
-        "songlin-wu"
-      ]
-    },
-    {
-      "title": "Tailings Rapid Soil Formation Engineering Based on Mineral-Microbial Synergistic Transformation (in Chinese)",
-      "authors": "T Liu",
-      "journal": "Conference on Disposal, Utilization of Nonferrous Metal Tailings and …, 2026",
-      "year": 2026,
-      "owners": [
-        "tong-liu"
-      ]
-    },
-    {
-      "title": "Seedling mycorrhization increases maize yield without altering soil properties: A field study",
-      "authors": "R Yin, Z Hao, Y Ma, W Fu, H Wu, F Xue, M Sun, W Wang, X Zhang, ...",
-      "journal": "Applied Soil Ecology 218, 106701, 2026",
-      "year": 2026,
-      "owners": [
-        "wei-fu"
-      ]
-    },
     {
       "title": "Physicochemical and mineralogical constraints on the ecological rehabilitation of coal mine waste",
       "authors": "H Wu, S Wu, C Wang, Y Zhang, S Chen, W Fu, TS Chan, DV Gamage, ...",
@@ -1332,24 +1187,6 @@
       ]
     },
     {
-      "title": "Low-molecular-weight organic acids constraints on the divergent weathering and lead mobilization of sulfidic minerals",
-      "authors": "T Zhang, S Yang, J Lu, Y Cao, Y Huang, S Wu, Y Liu",
-      "journal": "Environmental Pollution, 128151, 2026",
-      "year": 2026,
-      "owners": [
-        "songlin-wu"
-      ]
-    },
-    {
-      "title": "Iron-carbon micro-electrolysis enhances microbial sulfate reduction and sulfur recovery",
-      "authors": "C Zhao, Q Guo, Y Chen, N Chen, T Liu, Z Liu, C Feng",
-      "journal": "Journal of Environmental Management 397, 128343, 2026",
-      "year": 2026,
-      "owners": [
-        "tong-liu"
-      ]
-    },
-    {
       "title": "Decade-Long Soil Cover Promotes Mineral Weathering and Organic Matter Accrual in Fe Ore Tailings But Deteriorates Topsoil",
       "authors": "H Wu, W Fu, Z Yang, C Lu, S Chen, Y Wu, Y Liu, M Wang, CW Kao, ...",
       "journal": "ACS Earth and Space Chemistry, 2026",
@@ -1357,24 +1194,6 @@
       "owners": [
         "songlin-wu",
         "wei-fu"
-      ]
-    },
-    {
-      "title": "Constraining the effect of global change on antifungal resistance",
-      "authors": "MC Rillig, G Xu, W Fu, C Li",
-      "journal": "Nature Reviews Earth & Environment, 1-3, 2026",
-      "year": 2026,
-      "owners": [
-        "wei-fu"
-      ]
-    },
-    {
-      "title": "Charge allocation and mass transfer efficiency during hydrogen evolution reaction in high salinity neutral electrolyte",
-      "authors": "T Chen, N An, D Gupta, N Chen, M Li, T Liu, B Zhang, W Hu, C Feng",
-      "journal": "Water Research, 125849, 2026",
-      "year": 2026,
-      "owners": [
-        "tong-liu"
       ]
     },
     {
@@ -1405,6 +1224,25 @@
       ]
     },
     {
+      "title": "Cycling of Fe(II)/Fe(III) in the euphotic zone mediated by mineral photocatalysis",
+      "authors": "T Liu, H Ding, A Lu, L Meng, X Ge, Y Liu, F Zhu, S Yu, Q Yin, Y Li, C Wang, J Liu, S Jin",
+      "journal": "Nature Communications, 2026",
+      "year": 2026,
+      "owners": [
+        "tong-liu"
+      ]
+    },
+    {
+      "title": "Mineral phase transformation drives molecular fractionation of dissolved organic matter during organic acid-driven weathering of bauxite residue",
+      "authors": "C Lu, S Wu, F You, D Yu, J Vongsvivut, A Klein, L Thomsen, D Parry, TS Chan, L Huang",
+      "journal": "Chemical Geology, 2026",
+      "year": 2026,
+      "owners": [
+        "postdoc-chenglong-lu",
+        "songlin-wu"
+      ]
+    },
+    {
       "title": "硫氧化菌在碱性尾矿中的适应机制与生态修复作用研究进展",
       "authors": "冯琪， 易卿， 刘允佳， 李贞， 陈保冬， 伍松林",
       "journal": "岩矿测试, 2025",
@@ -1423,15 +1261,6 @@
       ]
     },
     {
-      "title": "Visible Light Activation of Anatase TiO2 Achieved by beta-Carotene Sensitization on Earth’s Surface",
-      "authors": "X Ge, H Ding, T Liu, Y Du, A Lu",
-      "journal": "Catalysts 15 (8), 739, 2025",
-      "year": 2025,
-      "owners": [
-        "tong-liu"
-      ]
-    },
-    {
       "title": "Vertical heterogeneity of dissolved ferrous and iron speciation in tropical seagrass beds",
       "authors": "S Yu, Y Huang, F Zhu, T Liu, Z Zheng, Y Huang, A Lu",
       "journal": "Marine Pollution Bulletin 218, 118205, 2025",
@@ -1441,58 +1270,12 @@
       ]
     },
     {
-      "title": "Synergistic Effects of Rhizophagus irregularis and Trichoderma harzianum Co-Inoculation on Enhancing Drought Tolerance and Secondary Metabolite Production in Licorice …",
-      "authors": "K Zhang, M Sun, H Feng, X Wei, W Xie, W Fu, L Guo, X Zhang, Z Hao, ...",
-      "journal": "Journal of Fungi 11 (7), 488, 2025",
-      "year": 2025,
-      "owners": [
-        "wei-fu"
-      ]
-    },
-    {
-      "title": "Solid phase molecular diversity enhances soil organic matter persistence",
-      "authors": "T Sun, Z Yang, L Zhang, S Gao, S Wu, KQ Xiao, H Peng, H Dong, X Han, ...",
-      "journal": "",
-      "year": 2025,
-      "owners": [
-        "songlin-wu"
-      ]
-    },
-    {
-      "title": "Soil science research in Research Center for Eco-Environmental Sciences: Review and outlook",
-      "authors": "B Chen, Z Hao, L Luo, N Wu, W Liu, D Zhu, Y Ge, W Chen, W Jiao, ...",
-      "journal": "Journal of Environmental Sciences, 2025",
-      "year": 2025,
-      "owners": [
-        "songlin-wu",
-        "wei-fu"
-      ]
-    },
-    {
-      "title": "Plant colonization facilitates organic matter humification, iron mineral transformation, and microbial community restructuring in coal gangue remediation",
-      "authors": "J Guo, Z Li, Y Shi, T Zhang, Y Huang, J Shang, T Chan, S Wu, Y Liu",
-      "journal": "Environmental Research, 123370, 2025",
-      "year": 2025,
-      "owners": [
-        "songlin-wu"
-      ]
-    },
-    {
       "title": "Pioneer plant facilitates microbial community assembly by improving physicochemical and mineralogical properties of iron ore tailings",
       "authors": "X Wu, H Wu, W Fu, Q Wang, Y Liu, Y Wu, S Chen, B Chen, S Wu",
       "journal": "Journal of Environmental Sciences, 2025",
       "year": 2025,
       "owners": [
         "songlin-wu"
-      ]
-    },
-    {
-      "title": "Photoreduction-Driven Iron Cycling: Indirect Regulation of Euphotic Zone Microbial Communities via Hematite Semiconductors",
-      "authors": "X Ge, Y Du, J Liu, T Liu, H Ding, A Lu",
-      "journal": "Geomicrobiology Journal 42 (9), 753-765, 2025",
-      "year": 2025,
-      "owners": [
-        "tong-liu"
       ]
     },
     {
@@ -1520,15 +1303,6 @@
       "year": 2025,
       "owners": [
         "wei-fu"
-      ]
-    },
-    {
-      "title": "Microbial Community Structure and Community Assembly Mechanisms in Chromium-Ccontaminated Sites",
-      "authors": "Y Ye, R Hao, B Shan, T Liu, L Meng, A Lu",
-      "journal": "Water, Air, & Soil Pollution 236 (14), 906, 2025",
-      "year": 2025,
-      "owners": [
-        "tong-liu"
       ]
     },
     {
@@ -1588,81 +1362,9 @@
       ]
     },
     {
-      "title": "Dynamic Co (II)/Co (III) cycle driven by outer-and inner-sphere electron transfer for sustained peroxymonosulfate activation",
-      "authors": "N An, N Chen, C Feng, S Zhang, Z Li, T Liu, Y Liu, W Lu, Z Feng, H Gao, ...",
-      "journal": "Environmental Science & Technology 59 (36), 19570-19581, 2025",
-      "year": 2025,
-      "owners": [
-        "tong-liu"
-      ]
-    },
-    {
-      "title": "Distribution patterns and driving forces of soil fungal communities along elevational gradients on two snow mountains in the Hengduan Mountain Range",
-      "authors": "S Zhang, Z Cao, W Fu, C Shen, Z Hao, G Sun, Y Ge, L Zhang, X Zhang, ...",
-      "journal": "Soil Ecology Letters 7 (3), 250323, 2025",
-      "year": 2025,
-      "owners": [
-        "wei-fu"
-      ]
-    },
-    {
-      "title": "Bidirectional interference between nanoplastics and arsenic in arbuscular mycorrhizal symbiosis: Reciprocal modulation of uptake, transformation and translocation",
-      "authors": "X Jing, X Zhang, X Wang, H Chen, S Xing, Z Jin, D Yang, J Li, S Wu, ...",
-      "journal": "Journal of Hazardous Materials, 139983, 2025",
-      "year": 2025,
-      "owners": [
-        "songlin-wu"
-      ]
-    },
-    {
       "title": "Attenuation of pollution risks in sulfidic lead‑zinc tailings through accelerating weathering of sulfides by indigenous Acidithiobacillus consortia",
       "authors": "Y Liu, S Wu, F You, N Saha, TS Chan, L Huang",
       "journal": "Chemical Geology 683, 122765, 2025",
-      "year": 2025,
-      "owners": [
-        "songlin-wu"
-      ]
-    },
-    {
-      "title": "Arbuscular mycorrhizal fungi enhance glyphosate resistance in an invasive weed: Implications for eco-environmental risks",
-      "authors": "S Qi, D Chen, M Yan, Z Huang, H Yu, G Ren, H Xiong, W Fu, B Zhao, ...",
-      "journal": "Applied Soil Ecology 212, 106203, 2025",
-      "year": 2025,
-      "owners": [
-        "wei-fu"
-      ]
-    },
-    {
-      "title": "Arbuscular mycorrhizal fungi as core engineers in synthetic microbial communities: Boosting plant growth and soil health for sustainable agriculture",
-      "authors": "Y Zeng, Y Wang, X Wang, X Jing, X Shu, P Ren, W Liu, Q Ye, W Fu, Z Hao, ...",
-      "journal": "Journal of Fungi 11 (11), 769, 2025",
-      "year": 2025,
-      "owners": [
-        "wei-fu"
-      ]
-    },
-    {
-      "title": "Arbuscular mycorrhizal fungi and Trichoderma harzianum alter salicylic acid–jasmonic acid balance to suppress Fusarium wilt in tomato",
-      "authors": "K Zhang, H Wang, W Xie, T Niu, W Fu, X Zhang, Z Hao, B Chen",
-      "journal": "Frontiers in Plant Science 16, 1714648, 2025",
-      "year": 2025,
-      "owners": [
-        "wei-fu"
-      ]
-    },
-    {
-      "title": "Aggregate size mediates the stability and temperature sensitivity of soil organic carbon in response to decadal biochar and straw amendments",
-      "authors": "Y Chen, Y Kuzyakov, Q Ma, Z Du, K Sun, K Xiao, X Liang, Y Li, Y Zhang, ...",
-      "journal": "Soil Biology and Biochemistry, 109969, 2025",
-      "year": 2025,
-      "owners": [
-        "wei-fu"
-      ]
-    },
-    {
-      "title": "Advances in Understanding the Adaptation Mechanisms and Ecological Functions of Sulfur-Oxidizing Bacteria in Alkaline Tailings",
-      "authors": "F Qi, YI Qing, LIU Yunjia, LI Zhen, C Baodong, WU Songlin",
-      "journal": "Rock and Mineral Analysis, 2025",
       "year": 2025,
       "owners": [
         "songlin-wu"

@@ -5,6 +5,7 @@ interface Props {
   research?: string;
   email?: string;
   scholar?: string;
+  researchgate?: string;
   note?: string;
   origin?: string;
   destination?: string;
@@ -12,7 +13,7 @@ interface Props {
   lang?: 'zh' | 'en';
   group?: 'staff' | 'postdoc' | 'phd' | 'master' | 'alumni';
 }
-const { name, role, research, email, scholar, note, origin, destination, href, lang = 'zh', group } = Astro.props;
+const { name, role, research, email, scholar, researchgate, note, origin, destination, href, lang = 'zh', group } = Astro.props;
 const isEn = lang === 'en';
 const showOrigin = group !== 'staff' && Boolean(origin);
 const showResearch = group !== 'master' && Boolean(research);
@@ -32,6 +33,7 @@ const showResearch = group !== 'master' && Boolean(research);
   </div>
   <div class="member-links">
     {scholar && <a class="text-link" href={scholar}>Google Scholar</a>}
+    {researchgate && <a class="text-link" href={researchgate}>ResearchGate</a>}
     {email && <a class="text-link" href={`mailto:${email}`}>{isEn ? 'Email' : '邮箱'}</a>}
   </div>
 </li>
