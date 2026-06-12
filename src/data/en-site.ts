@@ -218,8 +218,8 @@ export const enResearch = [
       'We characterize electron transfer, mineral dissolution and precipitation, metal transformation, and molecular fractionation of organic matter at mineral-water-organic matter-microbe interfaces.',
     cover: '/images/research/mineral-weathering-spectroscopy.png',
     details: [
-      'Organo-mineral interface reactions control element mobility, contaminant speciation, and organic carbon stabilization in tailings and degraded soils. This direction focuses on mineral weathering, sulfur and iron redox processes, metal retention, dissolved organic matter molecular fractionation, and microbially mediated interfacial transformations.',
-      'Using synchrotron-based XAFS/STXM, NanoSIMS, FTICR-MS, Orbitrap-MS, and related techniques, we resolve the binding forms, spatial distribution, and reaction pathways of organic matter associated with Fe, Al, and Si mineral phases from molecular to nano- and micrometer scales.',
+      'Organo-mineral interface reactions control element mobility, contaminant speciation, and organic carbon stabilization in tailings and degraded soils. This direction focuses on mineral weathering, sulfur and iron redox processes, metal retention, dissolved organic matter molecular fractionation, and microbially or electrochemically mediated interfacial transformations.',
+      'Using synchrotron-based XAFS/STXM, NanoSIMS, FTICR-MS, Orbitrap-MS, in situ spectroelectrochemistry, DFT calculations, and reactive transport modeling, we resolve the binding forms, spatial distribution, interfacial charge transfer, and reaction pathways of organic matter and reactive mineral phases from molecular to nano- and micrometer scales.',
     ],
     figures: [
       {
@@ -234,6 +234,12 @@ export const enResearch = [
         alt: 'Multi-scale morphology, elemental distribution, and spectroscopy of organo-mineral complexes',
         caption:
           'Microscopic imaging, elemental mapping, X-ray diffraction/absorption spectroscopy, and NanoSIMS are used to resolve spatial coupling among Fe-Si secondary minerals, organic carbon, and aggregate microstructures.',
+      },
+      {
+        src: '/images/research/iron-mineral-electrochemical-interface.png',
+        alt: 'In situ characterization and mechanistic analysis of electrochemical reactions at iron mineral interfaces',
+        caption:
+          'In situ characterization and mechanistic analysis of electrochemical reactions at iron mineral interfaces, including dynamic electrochemical impedance, DFT calculations of interfacial charge transfer, in situ spectroelectrochemical platforms, Raman monitoring of pyrite oxidation and reduction, and infrared monitoring of goethite surface transformation.',
       },
         ],
   },
