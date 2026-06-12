@@ -256,6 +256,25 @@ export const enResearch = [
       },
     ],
   },
+  {
+    slug: 'ai-tailings-multiscale-modeling',
+    title: 'AI-driven multiscale modeling and intelligent prediction of tailing pedogenesis',
+    summary:
+      'We integrate artificial intelligence, multiscale modeling, and tailing pedogenesis research to understand coupled mineral interface reactions, element transport, organic carbon stabilization, and ecological function recovery.',
+    cover: '/images/research/ai-tailings-multiscale-research.png',
+    details: [
+      'Tailing pedogenesis involves multiscale processes such as mineral weathering, secondary mineral formation, organic matter input, microbial activity, water movement, and potential metal release. Ecological function recovery is jointly controlled by mineral interface reactions, carbon and nitrogen accumulation, aggregate development, and pollution risk control. This direction develops AI-driven multiscale modeling approaches for process identification, mechanism integration, and long-term stability prediction during tailing ecological reconstruction.',
+      'We focus on how AI can connect interface reactions, reactive transport, carbon transformation, and ecological function recovery across scales. By integrating field plots, controlled experiments, mineralogical characterization, and multi-source environmental data, we aim to build intelligent evaluation and prediction frameworks for tailing pedogenesis. These models will support assessment of pedogenesis rates, optimization of rehabilitation measures, early warning of pollution risks, and evaluation of long-term ecological stability.',
+    ],
+    figures: [
+      {
+        src: '/images/research/ai-tailings-multiscale-research.png',
+        alt: 'AI-driven multiscale modeling for tailing pedogenesis and ecological recovery',
+        caption:
+          'Artificial intelligence and multiscale models can help connect mineral interface reactions, element transport, organic carbon stabilization, and ecological function recovery during tailing pedogenesis.',
+      },
+    ],
+  },
 ];
 
 export const enPeople: Record<string, { name: string; role: string; research?: string; note?: string; origin?: string; destination?: string; bio?: string[] }> = {
