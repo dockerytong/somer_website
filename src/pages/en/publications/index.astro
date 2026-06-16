@@ -12,14 +12,14 @@ const years = [...new Set(publications.map((paper) => paper.year))];
     <section class="pub-year-section">
       <h2>{year}</h2>
       <ol class="bib-list">
-        {publications.filter((paper) => paper.year === year).map((paper) => <PublicationCard authors={paper.authors.split(', ').filter(Boolean)} journal={paper.journal} year={paper.year!} title={paper.title} />)}
+        {publications.filter((paper) => paper.year === year).map((paper) => <PublicationCard authors={paper.authorsEn ?? paper.authors} journal={paper.journalEn ?? paper.journal} year={paper.year!} title={paper.titleEn ?? paper.title} doi={paper.doi} linkLabel="View paper" />)}
       </ol>
     </section>
   ))}
   <section class="pub-year-section">
     <h2>Publications in 2022 and earlier</h2>
-    <ol class="bib-list" start="22">
-      {earlyPublications.map((paper) => <li class="bib-item">{paper}</li>)}
+    <ol class="bib-list">
+      {earlyPublications.map((paper) => <PublicationCard {...paper} linkLabel="View paper" />)}
     </ol>
   </section>
 </BaseLayout>
