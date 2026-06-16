@@ -11,6 +11,19 @@ type EnNewsItem = {
 
 export const enNews: EnNewsItem[] = [
   {
+    slug: 'wang-jing-rock-and-mineral-analysis-pgpr',
+    title: 'Jing Wang paper accepted by Rock and Mineral Analysis',
+    date: new Date('2026-06-16'),
+    summary:
+      'Jing Wang and coauthors report a review on how plant growth-promoting rhizobacteria contribute to soil organic matter formation and stabilization in mined land.',
+    authors: 'Jing Wang, Rui Xu, Qiong Wang, Bing Zhou, Baodong Chen, Songlin Wu',
+    journal: 'Rock and Mineral Analysis, 2026',
+    details: [
+      'This review summarizes the roles of plant growth-promoting rhizobacteria (PGPR) in soil organic matter formation and stabilization in mined land, with an emphasis on plant carbon inputs, microbial metabolism, microbial residue accumulation, and organo-mineral associations.',
+      'The article also discusses application prospects for PGPR-based ecological rehabilitation in mined areas, including single-strain development, synthetic consortia construction, and combined applications with organic and inorganic amendments.',
+    ],
+  },
+  {
     slug: 'somer-wcss-2026',
     title: 'SOMER group attended the 23rd World Congress of Soil Science',
     date: new Date('2026-06-12'),

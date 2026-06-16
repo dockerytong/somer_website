@@ -2,6 +2,16 @@
   "byPerson": {
     "songlin-wu": [
       {
+        "title": "根际促生菌对矿区土壤有机质形成与稳定的作用及应用研究进展",
+        "authors": "王静, 徐锐, 王琼, 周炳, 陈保冬, 伍松林",
+        "journal": "岩矿测试",
+        "year": 2026,
+        "titleEn": "Research Progress on the Role and Application of Plant Growth-Promoting Rhizobacteria in the Formation and Stabilization of Soil Organic Matter in Mined Land",
+        "journalEn": "Rock and Mineral Analysis",
+        "authorsEn": "Jing Wang, Rui Xu, Qiong Wang, Bing Zhou, Baodong Chen, Songlin Wu",
+        "doi": "10.15898/j.ykcs.202603120064"
+      },
+      {
         "title": "Mineral phase transformation drives molecular fractionation of dissolved organic matter during organic acid-driven weathering of bauxite residue",
         "authors": "Chenglong Lu, Songlin Wu, Fang You, Dingyi Yu, Jitraporn Vongsvivut, Annaleise Klein, Lars Thomsen, David Parry, Ting-Shan Chan, Longbin Huang",
         "journal": "Chemical Geology 719, 123527",
@@ -1023,6 +1033,19 @@
     ]
   },
   "combined": [
+    {
+      "title": "根际促生菌对矿区土壤有机质形成与稳定的作用及应用研究进展",
+      "authors": "王静, 徐锐, 王琼, 周炳, 陈保冬, 伍松林",
+      "journal": "岩矿测试",
+      "year": 2026,
+      "owners": [
+        "songlin-wu"
+      ],
+      "titleEn": "Research Progress on the Role and Application of Plant Growth-Promoting Rhizobacteria in the Formation and Stabilization of Soil Organic Matter in Mined Land",
+      "journalEn": "Rock and Mineral Analysis",
+      "authorsEn": "Jing Wang, Rui Xu, Qiong Wang, Bing Zhou, Baodong Chen, Songlin Wu",
+      "doi": "10.15898/j.ykcs.202603120064"
+    },
     {
       "title": "Physicochemical and mineralogical constraints on the ecological rehabilitation of coal mine waste",
       "authors": "Hui Wu, Songlin Wu, Chenxing Wang, Yige Zhang, Suixiaochen Chen, Wei Fu, Ting-Shan Chan, Duminda Vidana Gamage, Baodong Chen",
