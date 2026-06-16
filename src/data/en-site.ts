@@ -19,8 +19,9 @@ export const enNews: EnNewsItem[] = [
     authors: 'Jing Wang, Rui Xu, Qiong Wang, Bing Zhou, Baodong Chen, Songlin Wu',
     journal: 'Rock and Mineral Analysis, 2026',
     details: [
-      'This review summarizes the roles of plant growth-promoting rhizobacteria (PGPR) in soil organic matter formation and stabilization in mined land, with an emphasis on plant carbon inputs, microbial metabolism, microbial residue accumulation, and organo-mineral associations.',
-      'The article also discusses application prospects for PGPR-based ecological rehabilitation in mined areas, including single-strain development, synthetic consortia construction, and combined applications with organic and inorganic amendments.',
+      'Abstract: Mining activities often cause severe degradation of soils in mined areas, including organic matter depletion, structural damage, and heavy metal contamination. A central challenge for ecological rehabilitation is the limited supply of organic matter and the still unclear mechanisms controlling its stabilization, especially the microbially mediated processes of carbon transformation and retention.',
+      'Plant growth-promoting rhizobacteria (PGPR) are functional microorganisms with strong potential to promote plant growth, increase soil organic matter accumulation, and support ecological restoration in mined land. This review summarizes the functional types of PGPR and the main factors that affect their survival and activity in mine soils.',
+      'The review focuses on mechanisms by which PGPR regulate soil organic matter formation and stabilization, including increased plant-derived carbon input, regulation of microbial metabolism, accumulation of microbial residue carbon, and formation of organo-mineral associations and aggregate structures. It also discusses future applications such as single-strain inoculants, synthetic microbial consortia, combined use with organic and inorganic amendments, and artificial intelligence-assisted strain screening.',
     ],
   },
   {
