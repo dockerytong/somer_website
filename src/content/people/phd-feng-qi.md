@@ -4,5 +4,5 @@ role: 博士生
 group: phd
 research: 硫化尾矿风化。
 origin: 待补充
-order: 2
+order: 4
 ---

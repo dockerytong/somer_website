@@ -4,5 +4,5 @@ role: 硕士生
 group: master
 note: 客座
 origin: 中国矿业大学
-order: 2
+order: 1
 ---
