@@ -1,0 +1,25 @@
+---
+interface Props {
+  lang?: 'zh' | 'en';
+  active: 'current' | 'alumni';
+}
+
+const { lang = 'zh', active } = Astro.props;
+const isEn = lang === 'en';
+const tabs = isEn
+  ? [
+      { key: 'current', label: 'Current Members', href: '/en/people/' },
+      { key: 'alumni', label: 'Alumni', href: '/en/people/alumni/' },
+    ]
+  : [
+      { key: 'current', label: '当前成员', href: '/people/' },
+      { key: 'alumni', label: 'Alumni', href: '/people/alumni/' },
+    ];
+---
+<nav class="people-tabs" aria-label={isEn ? 'People pages' : '成员页面'}>
+  {tabs.map((tab) => (
+    <a class:list={{ active: tab.key === active }} href={tab.href} aria-current={tab.key === active ? 'page' : undefined}>
+      {tab.label}
+    </a>
+  ))}
+</nav>

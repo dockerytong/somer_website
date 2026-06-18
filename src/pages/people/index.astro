@@ -2,18 +2,21 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PersonCard from '../../components/PersonCard.astro';
+import PeopleTabs from '../../components/PeopleTabs.astro';
 
-const people = (await getCollection('people')).sort((a, b) => a.data.order - b.data.order);
+const people = (await getCollection('people'))
+  .filter((person) => !person.data.hidden && person.data.group !== 'alumni')
+  .sort((a, b) => a.data.order - b.data.order);
 const profileSlugs = ['postdoc-na-li', 'postdoc-chenglong-lu', 'postdoc-minghan-wang'];
 const groups = [
   ['staff', '职工'],
   ['postdoc', '博士后'],
   ['phd', '博士生'],
   ['master', '硕士生'],
-  ['alumni', 'Alumni'],
 ] as const;
 ---
 <BaseLayout title="团队成员 | SOMER研究小组">
+  <PeopleTabs active="current" />
   {groups.map(([key, label]) => {
     const members = people.filter((person) => person.data.group === key);
     if (!members.length) return null;

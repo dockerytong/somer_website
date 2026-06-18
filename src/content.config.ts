@@ -23,6 +23,13 @@ const people = defineCollection({
     note: z.string().optional(),
     origin: z.string().optional(),
     destination: z.string().optional(),
+    hidden: z.boolean().default(false),
+    alumniType: z.enum(['researcher', 'student']).optional(),
+    assistedStudents: z.array(z.object({
+      name: z.string(),
+      role: z.string(),
+      institution: z.string(),
+    })).optional(),
     order: z.number().default(99),
   }),
 });

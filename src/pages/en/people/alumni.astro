@@ -6,41 +6,33 @@ import PeopleTabs from '../../../components/PeopleTabs.astro';
 import { enPeople } from '../../../data/en-site';
 
 const people = (await getCollection('people'))
-  .filter((person) => !person.data.hidden && person.data.group !== 'alumni')
+  .filter((person) => !person.data.hidden && person.data.group === 'alumni')
   .sort((a, b) => a.data.order - b.data.order);
-const profileSlugs = ['postdoc-na-li', 'postdoc-chenglong-lu', 'postdoc-minghan-wang'];
 const groups = [
-  ['staff', 'Staff'],
-  ['postdoc', 'Postdoctoral Researchers'],
-  ['phd', 'PhD Students'],
-  ['master', 'Master Students'],
+  ['researcher', 'Former Postdoctoral Researchers and Visiting Scholars'],
+  ['student', 'Former Students'],
 ] as const;
 ---
-<BaseLayout lang="en" title="People | SOMER Group" description="People of the SOMER Group.">
-  <PeopleTabs lang="en" active="current" />
+<BaseLayout lang="en" title="Alumni | SOMER Group" description="Alumni and former visitors of the SOMER Group.">
+  <PeopleTabs lang="en" active="alumni" />
   {groups.map(([key, label]) => {
-    const members = people.filter((person) => person.data.group === key);
+    const members = people.filter((person) => person.data.alumniType === key);
     if (!members.length) return null;
     return (
       <section class="member-section">
         <div class="section-heading"><h2>{label}</h2></div>
-        <ul class:list={['member-list', key === 'staff' ? 'member-list-staff' : 'member-list-two-column']}>
+        <ul class="member-list member-list-two-column">
           {members.map((person) => {
             const translated = enPeople[person.slug] ?? {};
             return (
               <PersonCard
                 name={translated.name ?? person.slug}
-                role={translated.role ?? person.data.group}
+                role={translated.role ?? 'Alumni'}
                 research={translated.research}
-                note={translated.note}
                 origin={translated.origin}
                 destination={translated.destination}
-                email={person.data.email}
-                scholar={person.data.scholar}
-                researchgate={person.data.researchgate}
-                group={person.data.group}
+                group="alumni"
                 lang="en"
-                href={key === 'staff' || profileSlugs.includes(person.slug) ? `/en/people/${person.slug}/` : undefined}
               />
             );
           })}

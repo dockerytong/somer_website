@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PersonCard from '../../components/PersonCard.astro';
+import PeopleTabs from '../../components/PeopleTabs.astro';
+
+const people = (await getCollection('people'))
+  .filter((person) => !person.data.hidden && person.data.group === 'alumni')
+  .sort((a, b) => a.data.order - b.data.order);
+const groups = [
+  ['researcher', '博士后与访问学者'],
+  ['student', '学生'],
+] as const;
+---
+<BaseLayout title="Alumni | SOMER研究小组">
+  <PeopleTabs active="alumni" />
+  {groups.map(([key, label]) => {
+    const members = people.filter((person) => person.data.alumniType === key);
+    if (!members.length) return null;
+    return (
+      <section class="member-section">
+        <div class="section-heading"><h2>{label}</h2></div>
+        <ul class="member-list member-list-two-column">
+          {members.map((person) => <PersonCard {...person.data} />)}
+        </ul>
+      </section>
+    );
+  })}
+</BaseLayout>

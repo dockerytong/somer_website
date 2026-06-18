@@ -34,5 +34,18 @@ const { Content } = await render(entry);
       </p>
     )}
     <Content />
+    {entry.data.assistedStudents?.length && (
+      <section class="assisted-students">
+        <h2>协助指导学生</h2>
+        <ul>
+          {entry.data.assistedStudents.map((student) => (
+            <li>
+              <strong>{student.name}</strong>
+              <span>{student.role} · {student.institution}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
   </article>
 </BaseLayout>

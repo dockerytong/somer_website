@@ -24,6 +24,7 @@
 - Chinese titles follow the researcher-track wording used by RCEES/CAS. English public-facing titles may use the professor-track wording when appropriate.
 - The current PhD students are Yang Shuang, Chen Suixiaochen, Feng Qi, and Wu Yuqi. Other student entries are master students unless the user says otherwise.
 - Alumni or former-member entries should not add extra labels such as `已离组` or `(Alumni)` inside the person card; the section grouping already makes that status clear.
+- Shiqi Zhang is currently hidden from the public people pages. Keep the backend record for now; its longer-term data handling is still to be decided.
 
 ## Site Assets
 

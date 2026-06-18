@@ -35,5 +35,18 @@ const person = enPeople[entry.slug] ?? entry.data;
       </p>
     )}
     {person.bio?.map((paragraph) => <p>{paragraph}</p>)}
+    {person.assistedStudents?.length && (
+      <section class="assisted-students">
+        <h2>Students Co-supervised</h2>
+        <ul>
+          {person.assistedStudents.map((student) => (
+            <li>
+              <strong>{student.name}</strong>
+              <span>{student.role} · {student.institution}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
   </article>
 </BaseLayout>

@@ -297,7 +297,16 @@ export const enResearch = [
   },
 ];
 
-export const enPeople: Record<string, { name: string; role: string; research?: string; note?: string; origin?: string; destination?: string; bio?: string[] }> = {
+export const enPeople: Record<string, {
+  name: string;
+  role: string;
+  research?: string;
+  note?: string;
+  origin?: string;
+  destination?: string;
+  bio?: string[];
+  assistedStudents?: { name: string; role: string; institution: string }[];
+}> = {
   'songlin-wu': {
     name: 'Songlin Wu',
     role: 'Professor / PhD Supervisor',
@@ -330,8 +339,13 @@ export const enPeople: Record<string, { name: string; role: string; research?: s
       'He received his bachelor’s degree in Environmental Engineering from China University of Geosciences (Beijing) in 2017 and his PhD in Environmental Science and Engineering from the same university in 2023, under the supervision of Prof. Chuanping Feng. From 2023 to 2025, he was a Boya postdoctoral fellow in mineralogy at Peking University, working with Prof. Anhuai Lu. He joined the Research Center for Eco-Environmental Sciences as an assistant professor in 2025.',
       'He has led projects supported by the National Natural Science Foundation of China and the China Postdoctoral Science Foundation, focusing on mineral photocatalysis, iron mineral dissolution, and microbial responses in sunlit marine and groundwater environments.',
     ],
+    assistedStudents: [
+      { name: 'Shuang Yang', role: 'PhD Student', institution: 'China Agricultural University' },
+      { name: 'Linxuan Sheng', role: 'Master Student', institution: 'China University of Geosciences (Beijing)' },
+      { name: 'Yifan Wang', role: 'Master Student', institution: 'China University of Geosciences (Beijing)' },
+    ],
   },
-  'postdoc-hui-wu': { name: 'Hui Wu', role: 'Postdoctoral Researcher', research: 'Mine tailing pedogenesis and soil organic matter stabilization.', origin: 'Research Center for Eco-Environmental Sciences, CAS' },
+  'postdoc-hui-wu': { name: 'Hui Wu', role: 'Postdoctoral Researcher', research: 'Mine tailing pedogenesis and soil organic matter stabilization.', origin: 'Research Center for Eco-Environmental Sciences, CAS', destination: 'To be determined' },
   'postdoc-shiqi-zhang': { name: 'Shiqi Zhang', role: 'Postdoctoral Researcher', research: 'Ecological rehabilitation of degraded soils and soil structure reconstruction.', origin: 'Research Center for Eco-Environmental Sciences, CAS' },
   'postdoc-minghan-wang': {
     name: 'Minghan Wang',
@@ -377,7 +391,7 @@ export const enPeople: Record<string, { name: string; role: string; research?: s
   'master-yang-shuang': { name: 'Shuang Yang', role: 'PhD Student', note: 'Visiting', research: 'Development of tailing soil structure.', origin: 'China Agricultural University' },
   'master-yang-zijie': { name: 'Zijie Yang', role: 'Master Student', origin: 'University of Chinese Academy of Sciences' },
   'master-wenqi-li': { name: 'Wenqi Li', role: 'Master Student', note: 'Visiting', origin: 'China University of Mining and Technology' },
-  'master-wang-jing': { name: 'Jing Wang', role: 'Master Student' },
+  'master-wang-jing': { name: 'Jing Wang', role: 'Master Student', origin: 'Zhengzhou University' },
   'guest-wang-wenli': {
     name: 'Wenli Wang',
     role: 'Former Visiting Master Student',
