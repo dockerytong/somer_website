@@ -162,15 +162,15 @@ src/pages/contact.md
 
 ### 研究成果
 
-目前研究成果页主要读取：
+研究成果页只读取：
 
 ```text
 src/data/scholar-publications.json
 ```
 
-这个文件是从三位职工的 Google Scholar 页面抓取后合并生成的本地数据。网站构建时直接读取这个 JSON。
+这个文件包含从三位职工 Google Scholar 页面合并的近期成果（`combined`）及人工维护的历史代表作（`historical`）。网站构建时直接读取这个 JSON。
 
-如果只是手动改某一条成果，可以直接编辑这个 JSON，但要注意 JSON 格式不能写错。
+如果只是手动改某一条成果，可以直接编辑这个 JSON，但要注意 JSON 格式不能写错；不要再新增 Markdown 或 TypeScript 格式的成果清单。
 
 如果以后要重新抓取 Google Scholar，需要重新运行抓取脚本或让 Codex 更新这个文件。
 

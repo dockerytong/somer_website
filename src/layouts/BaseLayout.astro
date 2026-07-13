@@ -18,10 +18,12 @@ const {
   lang,
   frontmatter,
 } = Astro.props;
-const pageTitle = title ?? frontmatter?.title ?? 'SOMER研究小组';
-const pageDescription = description ?? frontmatter?.description ?? '土壤有机-矿物互作与生态修复研究小组。';
 const pageLang = lang ?? frontmatter?.lang ?? 'zh';
 const isEn = pageLang === 'en';
+const pageTitle = title ?? frontmatter?.title ?? 'SOMER研究小组';
+const pageDescription = description ?? frontmatter?.description ?? (isEn
+  ? 'The SOMER Group studies soil organo-mineral interactions and ecological rehabilitation.'
+  : '土壤有机-矿物互作与生态修复研究小组。');
 const navItems = isEn
   ? [
       { href: '/en/', label: 'Home' },
@@ -73,9 +75,10 @@ const languageHref = isEn ? currentPath.replace(/^\/en(?=\/|$)/, '') || '/' : `/
         <slot />
       </main>
       <footer class="site-footer">
-        <div>
+        <div class="footer-identity">
           <strong>{isEn ? 'SOMER Group' : 'SOMER研究小组'}</strong>
-          <p>Soil Organo-Mineral Interactions and Ecological Rehabilitation</p>
+          <p>{isEn ? 'Soil Organo-Mineral Interactions and Ecological Rehabilitation' : '土壤有机-矿物互作与生态修复'}</p>
+          <p class="footer-affiliation">中国科学院生态环境研究中心<br />Research Center for Eco-Environmental Sciences, CAS</p>
         </div>
         <a href={isEn ? '/en/contact/' : '/contact/'}>{isEn ? 'Contact' : '联系我们'}</a>
       </footer>

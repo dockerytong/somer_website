@@ -340,7 +340,6 @@ export const enPeople: Record<string, {
       'He has led projects supported by the National Natural Science Foundation of China and the China Postdoctoral Science Foundation, focusing on mineral photocatalysis, iron mineral dissolution, and microbial responses in sunlit marine and groundwater environments.',
     ],
     assistedStudents: [
-      { name: 'Shuang Yang', role: 'PhD Student', institution: 'China Agricultural University' },
       { name: 'Linxuan Sheng', role: 'Master Student', institution: 'China University of Geosciences (Beijing)' },
       { name: 'Yifan Wang', role: 'Master Student', institution: 'China University of Geosciences (Beijing)' },
     ],

@@ -34,20 +34,6 @@ const people = defineCollection({
   }),
 });
 
-const publications = defineCollection({
-  type: 'content',
-  schema: z.object({
-    title: z.string(),
-    authors: z.array(z.string()),
-    journal: z.string(),
-    year: z.number(),
-    volume: z.string().optional(),
-    pages: z.string().optional(),
-    doi: z.string().optional(),
-    featured: z.boolean().default(false),
-  }),
-});
-
 const research = defineCollection({
   type: 'content',
   schema: z.object({
@@ -58,4 +44,4 @@ const research = defineCollection({
   }),
 });
 
-export const collections = { news, people, publications, research };
+export const collections = { news, people, research };

@@ -7,9 +7,6 @@ research: 矿物-微生物界面相互作用、矿物界面电子传递、Fe-C�
 scholar: https://scholar.google.com/citations?user=Fs0dsfMAAAAJ&hl=en
 researchgate: https://www.researchgate.net/profile/Tong-Liu-25
 assistedStudents:
-  - name: 杨爽
-    role: 博士生
-    institution: 中国农业大学
   - name: 盛林煊
     role: 硕士生
     institution: 中国地质大学（北京）
