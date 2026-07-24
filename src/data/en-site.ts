@@ -6,10 +6,27 @@ type EnNewsItem = {
   authors?: string;
   journal?: string;
   image?: string;
+  images?: string[];
   details?: string[];
 };
 
 export const enNews: EnNewsItem[] = [
+  {
+    slug: 'somer-icom-australia-2026',
+    title: 'SOMER group attended ICOM in Australia; Wei Fu received the Early Career Researcher Presenting Award',
+    date: new Date('2026-07-24'),
+    summary:
+      'SOMER members attended the International Conference on Mycorrhiza in Australia. Wei Fu delivered an invited presentation and received the Early Career Researcher Presenting Award, while Songlin Wu also attended the meeting and visited Professor Longbin Huang at The University of Queensland.',
+    details: [
+      'In July 2026, members of the SOMER group attended the International Conference on Mycorrhiza (ICOM) in Australia. ICOM is an important international meeting in mycorrhiza research, bringing together researchers to discuss mycorrhizal symbiosis, plant-microbe interactions, and their consequences for plant growth, soil processes, and ecosystem functioning.',
+      'Wei Fu delivered an invited presentation on climate extremes and ecosystem responses, introducing the group’s recent research progress. He received the Early Career Researcher Presenting Award for his presentation. The meeting provided an opportunity to share SOMER’s work on arbuscular mycorrhizal fungal diversity, plant productivity, and ecosystem resistance to environmental stress.',
+      'Songlin Wu also attended the meeting. During his visit to Australia, he visited Professor Longbin Huang at The University of Queensland, where they exchanged ideas on related research topics.',
+    ],
+    images: [
+      '/images/news/wei-fu-icom-2026.jpg',
+      '/images/news/songlin-wu-longbin-huang-uq-2026.jpg',
+    ],
+  },
   {
     slug: 'wang-jing-rock-and-mineral-analysis-pgpr',
     title: 'Jing Wang paper accepted by Rock and Mineral Analysis',

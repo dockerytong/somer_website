@@ -17,6 +17,7 @@ const formattedDate = new Intl.DateTimeFormat('en', { year: 'numeric', month: 'l
     {item.authors && <p><strong>Authors:</strong> {item.authors}</p>}
     {item.journal && <p><strong>Journal:</strong> <em>{item.journal}</em></p>}
     {item.details?.map((paragraph) => <p>{paragraph}</p>)}
-    {item.image && <img src={item.image} alt={item.title} />}
+    {item.images?.map((image) => <img src={image} alt={item.title} />)}
+    {!item.images && item.image && <img src={item.image} alt={item.title} />}
   </article>
 </BaseLayout>
