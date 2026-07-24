@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { resourceCategories } from '../../data/resources';
+---
+<BaseLayout title="科研资源 | SOMER研究小组" description="SOMER研究小组整理的公开科研资助、同步辐射、数据和软件资源。">
+  <article class="resources-page">
+    <section class="resource-board" aria-label="科研资源分类">
+      {resourceCategories.zh.map((category) => (
+        <a class="resource-board-item" href={`/resources/${category.slug}/`}>
+          <div>
+            <p class="resource-kicker">{category.label}</p>
+            <h2>{category.title}</h2>
+            <p>{category.summary}</p>
+          </div>
+          <span class="resource-arrow" aria-hidden="true">→</span>
+        </a>
+      ))}
+    </section>
+  </article>
+</BaseLayout>

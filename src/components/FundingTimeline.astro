@@ -1,0 +1,68 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ResourceTabs from './ResourceTabs.astro';
+import type { ResourcePageData } from '../data/resources';
+
+interface Props {
+  page: ResourcePageData;
+}
+
+const { page } = Astro.props;
+const isEn = page.lang === 'en';
+const months = isEn
+  ? ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+  : ['1 月', '2 月', '3 月', '4 月', '5 月', '6 月', '7 月', '8 月', '9 月', '10 月', '11 月', '12 月'];
+---
+<BaseLayout
+  lang={page.lang}
+  title={`${page.title} | ${isEn ? 'SOMER Research Resources' : 'SOMER科研资源'}`}
+  description={page.intro}
+>
+  <article class="resources-page funding-timeline">
+    <ResourceTabs lang={page.lang} active="funding" />
+    {page.timeline && (
+      <section class="funding-overview" aria-label={isEn ? 'Annual application timeline' : '年度申报时间轴'}>
+        <div class="funding-axis-scroll">
+          <div class="funding-axis">
+            <div class="funding-axis-line" aria-hidden="true"></div>
+            {page.timeline.map((node) => (
+              <a
+                class="funding-axis-node"
+                href={`#${node.detailId}`}
+                style={`--start: ${node.startMonth}; --span: ${node.span}; --lane: ${node.lane};`}
+              >
+                <span class="funding-axis-date">{node.date}</span>
+                <strong>{node.label}</strong>
+                <span class="funding-axis-detail">{node.detail}</span>
+                <span class="funding-axis-connector" aria-hidden="true"></span>
+              </a>
+            ))}
+            <div class="funding-axis-months" aria-hidden="true">
+              {months.map((month) => <span>{month}</span>)}
+            </div>
+          </div>
+        </div>
+      </section>
+    )}
+    <section class="funding-details" aria-label={isEn ? 'Funding details' : '项目说明'}>
+      {page.entries.map((entry) => (
+        <article class="funding-item" id={entry.id}>
+          <div class="funding-item-heading">
+            <h2>{entry.name}</h2>
+            <span>{entry.scope}</span>
+          </div>
+          <p class="funding-item-timing">{entry.timing}</p>
+          <p>{entry.publicInfo}</p>
+          <a
+            class="text-link"
+            href={entry.href}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {entry.linkLabel} <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+      ))}
+    </section>
+  </article>
+</BaseLayout>

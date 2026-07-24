@@ -1,0 +1,96 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ResourceTabs from './ResourceTabs.astro';
+import type { BeamlinePageData } from '../data/resources';
+
+interface Props {
+  page: BeamlinePageData;
+}
+
+const { page } = Astro.props;
+const isEn = page.lang === 'en';
+const months = isEn
+  ? ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+  : ['1 月', '2 月', '3 月', '4 月', '5 月', '6 月', '7 月', '8 月', '9 月', '10 月', '11 月', '12 月'];
+---
+<BaseLayout
+  lang={page.lang}
+  title={`${page.title} | ${isEn ? 'SOMER Research Resources' : 'SOMER科研资源'}`}
+  description={page.intro}
+>
+  <article class="resources-page beamline-page">
+    <ResourceTabs lang={page.lang} active="beamlines" />
+    <section class="beamtime-calendar" aria-label={isEn ? 'Annual beamtime application cycles' : '年度机时申请节奏'}>
+      <div class="beamtime-calendar-scroll">
+        <div class="beamtime-calendar-grid">
+          <div class="beamtime-calendar-header" aria-hidden="true">
+            <span></span>
+            <div class="beamtime-calendar-months">
+              {months.map((month) => <span>{month}</span>)}
+            </div>
+          </div>
+          {page.entries.map((entry) => (
+            <button class="beamtime-calendar-row" type="button" data-beamline-target={entry.id} aria-controls={entry.id}>
+              <span class="beamtime-calendar-label">
+                <strong>{entry.name}</strong>
+                <span>{entry.scope}</span>
+              </span>
+              <span class="beamtime-track">
+                <span class="beamtime-track-line" aria-hidden="true"></span>
+                {entry.markers?.map((marker) => (
+                  <span class="beamtime-marker" style={`--month: ${marker.month};`}>
+                    <span>{marker.label}</span>
+                  </span>
+                ))}
+                {entry.scheduleNote && <span class="beamtime-schedule-note">{entry.scheduleNote}</span>}
+              </span>
+            </button>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="beamline-details" aria-label={isEn ? 'Facility details' : '平台说明'}>
+      {page.entries.map((entry) => (
+        <details class="beamline-item" id={entry.id}>
+          <summary>
+            <span class="beamline-item-aside">
+              <span>{entry.scope}</span>
+              <strong>{entry.timing}</strong>
+            </span>
+            <span class="beamline-item-heading">
+              <span>{entry.name}</span>
+            </span>
+          </summary>
+          <div class="beamline-item-content">
+            <div class="beamline-item-aside">
+              <span>{isEn ? 'Experimental strengths' : '实验方向'}</span>
+            </div>
+            <div class="beamline-item-body">
+              <p>{entry.publicInfo}</p>
+              <p class="beamline-application">{entry.application}</p>
+              <ul class="beamline-methods">
+                {entry.methods.map((method) => <li>{method}</li>)}
+              </ul>
+              <a class="text-link" href={entry.href} target="_blank" rel="noreferrer">
+                {entry.linkLabel} <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </details>
+      ))}
+    </section>
+  </article>
+</BaseLayout>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-beamline-target]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const target = document.getElementById(button.dataset.beamlineTarget || '');
+      if (target instanceof HTMLDetailsElement) {
+        target.open = true;
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>

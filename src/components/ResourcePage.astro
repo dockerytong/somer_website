@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import type { ResourcePageData } from '../data/resources';
+
+interface Props {
+  page: ResourcePageData;
+}
+
+const { page } = Astro.props;
+const isEn = page.lang === 'en';
+---
+<BaseLayout
+  lang={page.lang}
+  title={`${page.title} | ${isEn ? 'SOMER Research Resources' : 'SOMER科研资源'}`}
+  description={page.intro}
+>
+  <article class="resources-page">
+    <section class="resource-entries" aria-label={page.title}>
+      {page.entries.map((entry) => (
+        <article class="resource-entry">
+          <div class="resource-entry-aside">
+            <span>{entry.scope}</span>
+            <strong>{entry.timing}</strong>
+          </div>
+          <div class="resource-entry-body">
+            <h2>{entry.name}</h2>
+            <p>{entry.publicInfo}</p>
+            <a
+              class="text-link"
+              href={entry.href}
+              target={entry.href.startsWith('/') ? undefined : '_blank'}
+              rel={entry.href.startsWith('/') ? undefined : 'noreferrer'}
+            >
+              {entry.linkLabel} <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+      ))}
+    </section>
+  </article>
+</BaseLayout>

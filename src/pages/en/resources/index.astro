@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { resourceCategories } from '../../../data/resources';
+---
+<BaseLayout lang="en" title="Research Resources | SOMER Group" description="Public research funding, synchrotron, data, and software resources curated by the SOMER Group.">
+  <article class="resources-page">
+    <section class="resource-board" aria-label="Research resource categories">
+      {resourceCategories.en.map((category) => (
+        <a class="resource-board-item" href={`/en/resources/${category.slug}/`}>
+          <div>
+            <p class="resource-kicker">{category.label}</p>
+            <h2>{category.title}</h2>
+            <p>{category.summary}</p>
+          </div>
+          <span class="resource-arrow" aria-hidden="true">→</span>
+        </a>
+      ))}
+    </section>
+  </article>
+</BaseLayout>

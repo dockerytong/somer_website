@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ResourceTabs from './ResourceTabs.astro';
+import type { DataToolsPageData } from '../data/resources';
+
+interface Props {
+  page: DataToolsPageData;
+}
+
+const { page } = Astro.props;
+const isEn = page.lang === 'en';
+---
+<BaseLayout
+  lang={page.lang}
+  title={`${page.title} | ${isEn ? 'SOMER Research Resources' : 'SOMER科研资源'}`}
+  description={page.intro}
+>
+  <article class="resources-page data-tools-page">
+    <ResourceTabs lang={page.lang} active="data-tools" />
+    <section class="data-tools-groups" aria-label={page.title}>
+      {page.groups.map((group) => (
+        <section class="data-tool-group">
+          <h2>{group.title}</h2>
+          <p>{group.description}</p>
+          <ul>
+            {group.entries.map((entry) => (
+              <li>
+                <a href={entry.href} target="_blank" rel="noreferrer">{entry.name} <span aria-hidden="true">↗</span></a>
+                <span>{entry.description}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+    </section>
+    <section class="data-standards" aria-label={isEn ? 'Minimum data practices' : '最低数据规范'}>
+      <h2>{page.standardsTitle}</h2>
+      <ul>
+        {page.standards.map((standard) => <li>{standard}</li>)}
+      </ul>
+    </section>
+  </article>
+</BaseLayout>

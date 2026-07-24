@@ -1,0 +1,29 @@
+---
+interface Props {
+  lang: 'zh' | 'en';
+  active: 'funding' | 'beamlines' | 'data-tools';
+}
+
+const { lang, active } = Astro.props;
+const isEn = lang === 'en';
+const prefix = isEn ? '/en/resources' : '/resources';
+const items = isEn
+  ? [
+      { slug: 'funding', label: 'Funding' },
+      { slug: 'beamlines', label: 'Synchrotron and STXM' },
+      { slug: 'data-tools', label: 'Data, Software, and Standards' },
+    ]
+  : [
+      { slug: 'funding', label: '项目与资助' },
+      { slug: 'beamlines', label: '同步辐射与 STXM' },
+      { slug: 'data-tools', label: '数据、软件与科研规范' },
+    ];
+---
+
+<nav class="resource-tabs" aria-label={isEn ? 'Research resource sections' : '科研资源栏目'}>
+  {items.map((item) => (
+    <a class:list={[{ active: active === item.slug }]} href={`${prefix}/${item.slug}/`} aria-current={active === item.slug ? 'page' : undefined}>
+      {item.label}
+    </a>
+  ))}
+</nav>
