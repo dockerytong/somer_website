@@ -24,7 +24,6 @@ export const enNews: EnNewsItem[] = [
     ],
     images: [
       '/images/news/wei-fu-icom-2026.jpg',
-      '/images/news/songlin-wu-longbin-huang-uq-2026.jpg',
     ],
   },
   {

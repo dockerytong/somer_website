@@ -11,5 +11,3 @@ summary: SOMER团队成员参加在澳大利亚举行的国际菌根会议（ICO
 SOMER团队负责人伍松林也参加了本次会议。在澳大利亚期间，伍松林顺访澳大利亚昆士兰大学黄隆斌教授，双方围绕相关研究工作开展学术交流。
 
 ![付伟在国际菌根会议上作受邀报告](/images/news/wei-fu-icom-2026.jpg)
-
-![伍松林访问澳大利亚昆士兰大学黄隆斌教授](/images/news/songlin-wu-longbin-huang-uq-2026.jpg)
