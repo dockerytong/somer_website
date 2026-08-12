@@ -2,6 +2,13 @@
   "byPerson": {
     "songlin-wu": [
       {
+        "title": "Submicron-scale mineral weathering and organo-mineral association in the rhizosphere of iron ore tailings",
+        "authors": "Zhen Li, Songlin Wu, Ting-Shan Chan, Cheng-Wei Kao, Jian Wang, Gordon Southam, Longbin Huang",
+        "journal": "Geochimica et Cosmochimica Acta",
+        "year": 2026,
+        "doi": "10.1016/j.gca.2026.08.003"
+      },
+      {
         "title": "根际促生菌对矿区土壤有机质形成与稳定的作用及应用研究进展",
         "authors": "王静, 徐锐, 王琼, 周炳, 陈保冬, 伍松林",
         "journal": "岩矿测试",
@@ -1033,6 +1040,16 @@
     ]
   },
   "combined": [
+    {
+      "title": "Submicron-scale mineral weathering and organo-mineral association in the rhizosphere of iron ore tailings",
+      "authors": "Zhen Li, Songlin Wu, Ting-Shan Chan, Cheng-Wei Kao, Jian Wang, Gordon Southam, Longbin Huang",
+      "journal": "Geochimica et Cosmochimica Acta",
+      "year": 2026,
+      "owners": [
+        "songlin-wu"
+      ],
+      "doi": "10.1016/j.gca.2026.08.003"
+    },
     {
       "title": "根际促生菌对矿区土壤有机质形成与稳定的作用及应用研究进展",
       "authors": "王静, 徐锐, 王琼, 周炳, 陈保冬, 伍松林",

@@ -12,6 +12,20 @@ type EnNewsItem = {
 
 export const enNews: EnNewsItem[] = [
   {
+    slug: 'zhen-li-gca-rhizosphere-tailings',
+    title: 'Zhen Li paper published in Geochimica et Cosmochimica Acta',
+    date: new Date('2026-08-03'),
+    summary:
+      'Zhen Li and coauthors report submicron-scale evidence for root-driven mineral weathering and organo-mineral association in iron ore tailings. Songlin Wu is the corresponding author.',
+    authors: 'Zhen Li, Songlin Wu, Ting-Shan Chan, Cheng-Wei Kao, Jian Wang, Gordon Southam, Longbin Huang',
+    journal: 'Geochimica et Cosmochimica Acta',
+    details: [
+      'Zhen Li of South China Normal University is the first author of this study, with Songlin Wu as the corresponding author. Root colonization acidified iron ore tailings and accelerated weathering of Fe-K-rich mica (biotite), coupled with formation of reactive vermiculite, short-range-ordered Fe-Si phases, and goethite.',
+      'Particle size governed these transformations: coarse fractions favored vermiculite neoformation, whereas fine fractions favored Fe oxyhydroxide formation. STXM-NEXAFS further resolved heterogeneous associations between root-derived organic compounds and Fe-bearing minerals at the submicron scale.',
+      'In original tailings, aromatic-, carboxyl-, and phenolic-rich organics were associated with mixed-valence Fe-bearing minerals. In aged tailings, aromatic-, carboxyl-, and aliphatic-rich organics were predominantly stabilized on Fe(III)-bearing minerals. The work links root-induced primary-mineral weathering, concurrent reactive secondary-mineral formation, and stabilization of root-derived organic matter in situ.',
+    ],
+  },
+  {
     slug: 'somer-icom-australia-2026',
     title: 'SOMER group attended ICOM in Australia; Wei Fu received the Early Career Researcher Presenting Award',
     date: new Date('2026-07-24'),
