@@ -12,6 +12,28 @@ type EnNewsItem = {
 
 export const enNews: EnNewsItem[] = [
   {
+    slug: 'somer-nsfc-funding-2026',
+    title: 'SOMER members receive 2026 NSFC funding',
+    date: new Date('2026-08-26'),
+    summary:
+      'Congratulations to Wei Fu on receiving an NSFC General Program grant, and to Hui Wu and Chenglong Lu on receiving NSFC Young Scientists Fund Category C grants.',
+    details: [
+      'The results of the 2026 National Natural Science Foundation of China (NSFC) funding review have been announced. Congratulations to Wei Fu on receiving funding through the NSFC General Program, and to Hui Wu and Chenglong Lu on receiving funding through the Young Scientists Fund Category C.',
+      'Hui Wu and Chenglong Lu are currently postdoctoral researchers. We congratulate all three researchers and look forward to the progress of their projects.',
+    ],
+  },
+  {
+    slug: 'somer-taizhou-mine-environment-conference-2026',
+    title: 'SOMER members attended the 5th Symposium on Mine Environmental Pollution and Remediation',
+    date: new Date('2026-08-05'),
+    summary:
+      'The 5th Symposium on Mine Environmental Pollution and Remediation was held in Taizhou, Zhejiang. Songlin Wu and Chenglong Lu delivered presentations on coal gangue ecological remediation and root-promoted tailings weathering.',
+    details: [
+      'From August 2 to 5, 2026, the 5th Symposium on Mine Environmental Pollution and Remediation was held in Taizhou, Zhejiang. The symposium was jointly organized by South China University of Technology, Zhejiang University of Technology, China University of Geosciences (Beijing), and Taizhou University, and focused on research progress in mine environmental pollution prevention and ecological remediation.',
+      'Songlin Wu delivered a presentation on the ecological remediation of coal gangue, while Chenglong Lu presented work on root-promoted tailings weathering. Their presentations introduced the group’s research on the ecological remediation of mine solid wastes, mineral weathering, and tailings pedogenesis.',
+    ],
+  },
+  {
     slug: 'zhen-li-gca-rhizosphere-tailings',
     title: 'Zhen Li paper published in Geochimica et Cosmochimica Acta',
     date: new Date('2026-08-03'),
