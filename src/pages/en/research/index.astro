@@ -12,11 +12,22 @@ import { enResearch } from '../../../data/en-site';
 
     <div class="research-grid">
       {enResearch.map((item, index) => (
-        <section class="research-block">
-          <h2>{index + 1}. {item.title}</h2>
-          <p>{item.summary}</p>
-          {item.cover && <img src={item.cover} alt={item.title} />}
-          <p><a class="text-link" href={`/en/research/${item.slug}/`}>Details</a></p>
+        <section class="research-card">
+          {item.cover && (
+            <div class="research-card-cover">
+              <img src={item.cover} alt={item.title} loading="lazy" />
+            </div>
+          )}
+          <div class="research-card-content">
+            <h2>
+              <span class="research-num">{String(index + 1).padStart(2, '0')}</span>
+              {item.title}
+            </h2>
+            <p class="research-card-summary">{item.summary}</p>
+            <div class="research-card-footer">
+              <a class="text-link" href={`/en/research/${item.slug}/`}>Details →</a>
+            </div>
+          </div>
         </section>
       ))}
     </div>

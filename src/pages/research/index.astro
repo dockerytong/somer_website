@@ -12,11 +12,22 @@ const research = (await getCollection('research')).sort((a, b) => a.data.order -
 
     <div class="research-grid">
       {research.map((item, index) => (
-        <section class="research-block">
-          <h2>{index + 1}. {item.data.title}</h2>
-          <p>{item.data.summary}</p>
-          {item.data.cover && <img src={item.data.cover} alt={item.data.title} />}
-          <p><a class="text-link" href={`/research/${item.slug}/`}>详细内容</a></p>
+        <section class="research-card">
+          {item.data.cover && (
+            <div class="research-card-cover">
+              <img src={item.data.cover} alt={item.data.title} loading="lazy" />
+            </div>
+          )}
+          <div class="research-card-content">
+            <h2>
+              <span class="research-num">{String(index + 1).padStart(2, '0')}</span>
+              {item.data.title}
+            </h2>
+            <p class="research-card-summary">{item.data.summary}</p>
+            <div class="research-card-footer">
+              <a class="text-link" href={`/research/${item.slug}/`}>详细内容 →</a>
+            </div>
+          </div>
         </section>
       ))}
     </div>
