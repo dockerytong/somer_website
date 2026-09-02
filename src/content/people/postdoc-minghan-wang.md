@@ -15,5 +15,6 @@ order: 3
 
 ## 代表性研究
 
-1. Zhang, C., He, Q., Wang, M. et al. Exogenous indole acetic acid alleviates Cd toxicity in tea (*Camellia sinensis*). *Ecotoxicology and Environmental Safety*, 2020.
-2. Zhang, C., Wang, M. et al. Multi-omics research in albino tea plants: Past, present, and future. *Scientia Horticulturae*, 2020.
+1. Xiong, G., Wang, M., Yue, H., Wang, W., Tan, X., Kayoumu, M., Cui, X., Liu, Y., Duan, G., Chen, B., Liu, W., Wu, S. Waste-rock mineralogy directs biochar-mediated heavy metal stabilization through geochemical and microbial pathways in contaminated soil. *Chemical Engineering Journal*, 2026, 180984.
+2. Zhang, C., He, Q., Wang, M. et al. Exogenous indole acetic acid alleviates Cd toxicity in tea (*Camellia sinensis*). *Ecotoxicology and Environmental Safety*, 2020.
+3. Zhang, C., Wang, M. et al. Multi-omics research in albino tea plants: Past, present, and future. *Scientia Horticulturae*, 2020.

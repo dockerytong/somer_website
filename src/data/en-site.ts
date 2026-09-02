@@ -12,6 +12,21 @@ type EnNewsItem = {
 
 export const enNews: EnNewsItem[] = [
   {
+    slug: "minghan-wang-cej-waste-rock-biochar",
+    title: "Minghan Wang paper published in Chemical Engineering Journal",
+    date: new Date("2026-08-26"),
+    summary:
+      "Minghan Wang and coauthors demonstrate how waste-rock mineralogy directs biochar-mediated heavy metal stabilization through geochemical and microbial pathways in contaminated soil. Songlin Wu is the corresponding author.",
+    authors: "Guohuan Xiong, Minghan Wang, Haoyu Yue, Wenli Wang, Xiao Tan, Mirezhatijiang Kayoumu, Xuedan Cui, Yanqing Liu, Guilan Duan, Baodong Chen, Weiwei Liu, Songlin Wu",
+    journal: "Chemical Engineering Journal",
+    details: [
+      "Minghan Wang (co-first author) and Songlin Wu (corresponding author) published a new study in Chemical Engineering Journal on mineral-based biochar remediation of heavy metal-contaminated soil.",
+      "Mineral-based biochar prepared from mining waste-rock minerals offers a locally available amendment strategy. Using a microcosm study, this work investigated how waste-rock mineral types (carbonate-dominated, clay aluminosilicate, and Fe-bearing silicate) modified biochar performance for heavy metal stabilization in a Pb-Zn-contaminated soil.",
+      "Results showed that the 5% (w/w) clay aluminosilicate treatment produced the clearest short-term Zn/Cd stabilization response, reducing porewater Zn by 57.0%, maintaining the lowest porewater Cd, and decreasing the acid-soluble Cd proportion to 41.8% on day 56 while increasing acid ammonium oxalate (AAO)-extractable Zn, Pb, and Cd. In contrast, Fe-bearing silicate treatment increased porewater Cd.",
+      "Mineral-based biochar also shaped bacterial community structure under amendment-induced geochemical conditions, with genera such as Bacillus, Sphingomonas, and Nocardioides positively correlated with AAO-extractable metal pools. These findings highlight that waste-rock mineral composition governs heavy metal partitioning through linked mineral-specific geochemical processes and microbial responses.",
+    ],
+  },
+  {
     slug: 'somer-nsfc-funding-2026',
     title: 'SOMER members receive 2026 NSFC funding',
     date: new Date('2026-08-26'),
@@ -407,7 +422,7 @@ export const enPeople: Record<string, {
       'Minghan Wang is a postdoctoral researcher in the SOMER Group. She received her PhD from Hunan Agricultural University. Her previous work focused on contaminated soil remediation, fluoride control in tea gardens, heavy metal speciation, and soil ecosystem processes, with related publications in journals including Biochar, Ecotoxicology and Environmental Safety, and Chemosphere. She has also contributed to an authorized national invention patent related to soil remediation.',
       'During her doctoral research, she worked on typical yellow soils in Hunan Province and high-fluoride tea gardens, examining how soil physicochemical properties, microbial processes, fertilizer regimes, and amendments influence fluoride and heavy metal accumulation. These studies helped identify strategies for reducing fluoride availability in tea garden soils while supporting tea quality and soil health.',
       'In SOMER, she focuses on coupled heavy metal stabilization and soil carbon retention in contaminated farmland. Her current work examines how arbuscular mycorrhizal fungi (AMF) and iron-modified organic amendments regulate metal availability, organo-mineral association, and microaggregate formation, with the goal of supporting integrated pollution control and carbon stabilization in mining-impacted agricultural soils.',
-      'Selected publications include studies on exogenous indole acetic acid alleviating Cd toxicity in tea (Ecotoxicology and Environmental Safety, 2020) and multi-omics research in albino tea plants (Scientia Horticulturae, 2020).',
+      'Selected publications include studies on waste-rock mineralogy directing biochar-mediated heavy metal stabilization in contaminated soil (Chemical Engineering Journal, 2026), exogenous indole acetic acid alleviating Cd toxicity in tea (Ecotoxicology and Environmental Safety, 2020), and multi-omics research in albino tea plants (Scientia Horticulturae, 2020).',
     ],
   },
   'postdoc-na-li': {
