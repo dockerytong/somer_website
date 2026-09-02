@@ -441,7 +441,12 @@ export const enPeople: Record<string, {
   'phd-wu-yuqi': { name: 'Yuqi Wu', role: 'PhD Student', research: 'Adsorption and transformation of AMF exudates on minerals.', origin: 'Tsinghua University' },
   'master-yang-shuang': { name: 'Shuang Yang', role: 'PhD Student', note: 'Visiting', research: 'Development of tailing soil structure.', origin: 'China Agricultural University' },
   'master-yang-zijie': { name: 'Zijie Yang', role: 'Master Student', origin: 'University of Chinese Academy of Sciences' },
-  'master-wenqi-li': { name: 'Wenqi Li', role: 'Master Student', note: 'Visiting', origin: 'China University of Mining and Technology' },
+  'master-wenqi-li': {
+    name: 'Wenqi Li',
+    role: 'Former Visiting Master Student',
+    origin: 'China University of Mining and Technology (Beijing)',
+    destination: 'China University of Mining and Technology (Beijing)',
+  },
   'master-wang-jing': { name: 'Jing Wang', role: 'Master Student', origin: 'Zhengzhou University' },
   'guest-wang-wenli': {
     name: 'Wenli Wang',
