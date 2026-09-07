@@ -1,5 +1,6 @@
 ---
 title: 王铭涵论文发表于 Chemical Engineering Journal
+category: publication
 date: 2026-08-26
 summary: 王铭涵等关于废石矿物类型调控生物炭固化重金属地球化学与微生物机制的研究发表于 Chemical Engineering Journal。
 ---

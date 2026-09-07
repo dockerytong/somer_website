@@ -42,7 +42,7 @@ const person = enPeople[entry.slug] ?? entry.data;
           {person.assistedStudents.map((student) => (
             <li>
               <strong>{student.name}</strong>
-              <span>{student.role} · {student.institution}</span>
+              <span>{student.role}{student.institution && ` · ${student.institution}`}</span>
             </li>
           ))}
         </ul>

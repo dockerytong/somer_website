@@ -4,11 +4,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const research = (await getCollection('research')).sort((a, b) => a.data.order - b.data.order);
 ---
-<BaseLayout title="研究方向 | SOMER研究小组">
+<BaseLayout title="研究方向 | SOMER团队">
   <article class="research-page">
-    <p class="research-intro">
-      本研究小组从土壤发生学角度出发，深入探究矿区尾矿及退化土壤结构与生态功能构建及稳定性维持的机理过程和调控因素，并发展尾矿成土成套技术和退化土壤降污提质增碳技术体系，为我国生态环境保护和实现“双碳目标”提供科技支撑。
-    </p>
+    <h1 class="sr-only">研究方向</h1>
 
     <div class="research-grid">
       {research.map((item, index) => (

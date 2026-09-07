@@ -1,5 +1,6 @@
 ---
 title: 武慧论文被 ACS Earth and Space Chemistry 接收
+category: publication
 date: 2026-05-29
 summary: 武慧等关于长期覆土对铁尾矿矿物风化、有机质累积及覆土质量影响的研究被 ACS Earth and Space Chemistry 接收。
 ---

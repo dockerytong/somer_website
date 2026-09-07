@@ -1,5 +1,6 @@
 ---
 title: 付伟论文被 Global Change Biology 接收
+category: publication
 date: 2026-01-12
 summary: 付伟等关于极端干旱下植物生产力响应与丛枝菌根真菌多样性关系的研究被 Global Change Biology 接收。
 ---

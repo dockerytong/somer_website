@@ -20,7 +20,7 @@ const {
 } = Astro.props;
 const pageLang = lang ?? frontmatter?.lang ?? 'zh';
 const isEn = pageLang === 'en';
-const pageTitle = title ?? frontmatter?.title ?? 'SOMER研究小组';
+const pageTitle = title ?? frontmatter?.title ?? 'SOMER团队';
 const pageDescription = description ?? frontmatter?.description ?? (isEn
   ? 'The SOMER Group studies soil organo-mineral interactions and ecological rehabilitation.'
   : '土壤有机-矿物互作与生态修复研究小组。');
@@ -40,10 +40,11 @@ const navItems = isEn
       { href: '/facilities/', label: '研究方法' },
       { href: '/people/', label: '团队成员' },
       { href: '/publications/', label: '研究成果' },
-      { href: '/news/', label: '组内动态' },
+      { href: '/news/', label: '团队动态' },
       { href: '/contact/', label: '联系我们' },
     ];
 const currentPath = Astro.url.pathname;
+const isCurrent = (href: string) => href === '/' || href === '/en/' ? currentPath === href : currentPath.startsWith(href);
 const languageHref = isEn ? currentPath.replace(/^\/en(?=\/|$)/, '') || '/' : `/en${currentPath === '/' ? '/' : currentPath}`;
 ---
 <!doctype html>
@@ -52,36 +53,58 @@ const languageHref = isEn ? currentPath.replace(/^\/en(?=\/|$)/, '') || '/' : `/
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={pageDescription} />
+    <meta name="theme-color" content="#fdfefd" />
+    <meta name="color-scheme" content="light" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
     <title>{pageTitle}</title>
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/favicon.png" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">{isEn ? 'Skip to content' : '跳到正文'}</a>
     <div class="site-shell">
       <header class="site-header" aria-label={isEn ? 'Main navigation' : '主导航'}>
-        <a class="brand" href={isEn ? '/en/' : '/'} aria-label={isEn ? 'SOMER Group home' : 'SOMER研究小组首页'}>
-          <img class="brand-logo" src="/images/docx/image1.png" alt="SOMER logo" />
+        <a class="brand" href={isEn ? '/en/' : '/'} aria-label={isEn ? 'SOMER Group home' : 'SOMER团队首页'}>
+          <img class="brand-logo" src="/images/docx/image1.png" alt="SOMER logo" width="54" height="54" />
           <span>
-            <strong>{isEn ? 'SOMER Group' : 'SOMER研究小组'}</strong>
+            <strong>{isEn ? 'SOMER Group' : 'SOMER团队'}</strong>
             <small>Soil Organo-Mineral Interactions and Ecological Rehabilitation</small>
           </span>
         </a>
-        <nav>
-          {navItems.map((item) => <a href={item.href}>{item.label}</a>)}
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label={isEn ? 'Open navigation' : '打开导航菜单'}>
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="site-navigation" class="site-nav">
+          {navItems.map((item) => <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>{item.label}</a>)}
           <a class="language-switch" href={languageHref}>{isEn ? 'CN' : 'EN'}</a>
         </nav>
       </header>
-      <main>
+      <main id="main-content">
         <slot />
       </main>
       <footer class="site-footer">
         <div class="footer-identity">
-          <strong>{isEn ? 'SOMER Group' : 'SOMER研究小组'}</strong>
+          <strong>{isEn ? 'SOMER Group' : 'SOMER团队'}</strong>
           <p>{isEn ? 'Soil Organo-Mineral Interactions and Ecological Rehabilitation' : '土壤有机-矿物互作与生态修复'}</p>
           <p class="footer-affiliation">中国科学院生态环境研究中心<br />Research Center for Eco-Environmental Sciences, CAS</p>
         </div>
         <a href={isEn ? '/en/contact/' : '/contact/'}>{isEn ? 'Contact' : '联系我们'}</a>
       </footer>
     </div>
+    <script is:inline>
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('#site-navigation');
+      const setMenu = (open) => {
+        toggle?.setAttribute('aria-expanded', String(open));
+        nav?.classList.toggle('is-open', open);
+      };
+      toggle?.addEventListener('click', () => setMenu(toggle.getAttribute('aria-expanded') !== 'true'));
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') setMenu(false);
+      });
+      nav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => setMenu(false)));
+    </script>
   </body>
 </html>

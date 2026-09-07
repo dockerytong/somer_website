@@ -10,7 +10,7 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 ---
-<BaseLayout title={`${entry.data.name} | SOMER研究小组`} description={entry.data.research}>
+<BaseLayout title={`${entry.data.name} | SOMER团队`} description={entry.data.research}>
   <article class="content-card prose profile-page">
     <div class="profile-header">
       <div>
@@ -41,7 +41,7 @@ const { Content } = await render(entry);
           {entry.data.assistedStudents.map((student) => (
             <li>
               <strong>{student.name}</strong>
-              <span>{student.role} · {student.institution}</span>
+              <span>{student.role}{student.institution && ` · ${student.institution}`}</span>
             </li>
           ))}
         </ul>

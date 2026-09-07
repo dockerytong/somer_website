@@ -14,6 +14,7 @@ const groups = [
 ] as const;
 ---
 <BaseLayout lang="en" title="Alumni | SOMER Group" description="Alumni and former visitors of the SOMER Group.">
+  <h1 class="sr-only">Alumni</h1>
   <PeopleTabs lang="en" active="alumni" />
   {groups.map(([key, label]) => {
     const members = people.filter((person) => person.data.alumniType === key);

@@ -4,11 +4,20 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import NewsCard from '../../components/NewsCard.astro';
 
 const news = (await getCollection('news')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const years = [...new Set(news.map((item) => item.data.date.getFullYear()))];
 ---
-<BaseLayout title="组内动态 | SOMER研究小组">
-  <ul class="news-list-simple">
-    {news.map((item) => (
-      <NewsCard title={item.data.title} date={item.data.date} href={`/news/${item.slug}/`} />
+<BaseLayout title="团队动态 | SOMER团队">
+  <h1 class="sr-only">团队动态</h1>
+  <div class="news-archive">
+    {years.map((year) => (
+      <section class="news-year-section">
+        <h2>{year}</h2>
+        <ul class="news-list-simple">
+          {news.filter((item) => item.data.date.getFullYear() === year).map((item) => (
+            <NewsCard title={item.data.title} category={item.data.category} date={item.data.date} href={`/news/${item.slug}/`} />
+          ))}
+        </ul>
+      </section>
     ))}
-  </ul>
+  </div>
 </BaseLayout>

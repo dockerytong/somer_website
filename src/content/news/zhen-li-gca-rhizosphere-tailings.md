@@ -1,5 +1,6 @@
 ---
 title: 李贞论文发表于 Geochimica et Cosmochimica Acta
+category: publication
 date: 2026-08-03
 summary: 李贞等关于铁尾矿根际亚微米尺度矿物风化与有机-矿物关联的研究发表于 Geochimica et Cosmochimica Acta，伍松林为通讯作者。
 ---

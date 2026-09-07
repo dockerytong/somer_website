@@ -1,5 +1,6 @@
 ---
 title: 刘通论文被 Water Research 接收
+category: publication
 date: 2026-05-16
 summary: 刘通通讯的硝酸盐-钒复合污染地下水分层生物滤池协同修复研究被 Water Research 接收。
 ---

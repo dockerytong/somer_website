@@ -1,5 +1,6 @@
 ---
 title: 刘通论文被 Water Science and Engineering 接收
+category: publication
 date: 2026-02-28
 summary: 刘通等关于微生物-矿物-生物质复合体系增强 Cr(VI) 连续流生物还原稳定性和效率的研究被 Water Science and Engineering 接收。
 ---

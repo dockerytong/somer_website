@@ -1,58 +1,104 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
+const workflow = [
+  { step: '01', title: 'Identify in the field', text: 'Use mine sites, soil profiles, and long-term observations to define environmental questions and controlling factors.' },
+  { step: '02', title: 'Isolate experimentally', text: 'Separate the effects of moisture, plants, microorganisms, and minerals in climate-chamber and greenhouse experiments.' },
+  { step: '03', title: 'Characterize across scales', text: 'Connect molecular composition and interfacial structure with microscale distributions and three-dimensional pore architecture.' },
+  { step: '04', title: 'Validate mechanisms', text: 'Return experimental insights to the field and test their explanatory power for pedogenesis, carbon stabilization, and rehabilitation.' },
+];
+
 const cards = [
   {
-    title: 'Synchrotron and Advanced Spectroscopy',
+    number: '01', title: 'Synchrotron and Advanced Spectroscopy',
+    summary: 'Resolving elemental speciation, coordination environments, and spatial coupling between organic matter and mineral phases.',
     items: [
-      'XAFS for resolving oxidation state, coordination environment, and mineral phase transformation of Fe, Al, Si, and related elements.',
-      'Synchrotron FTIR mapping for identifying organic functional group distributions and their spatial coupling with mineral phases.',
-      'STXM for micro- to nano-scale characterization of co-localization patterns between organic matter and minerals.',
+      ['XAFS', 'Oxidation states, coordination environments, and phase transformations of Fe, Al, Si, and related elements.'],
+      ['Synchrotron FTIR mapping', 'Distributions of organic functional groups and their spatial relationships with mineral phases.'],
+      ['STXM', 'Micro- to nano-scale co-localization and interfacial structures of organic and mineral components.'],
     ],
   },
   {
-    title: 'Nano- and Molecular-Scale Characterization',
+    number: '02', title: 'Molecular, Microscale, and 3D Structure',
+    summary: 'Linking organic-matter composition with microscale elemental distributions, aggregates, and pore architecture.',
     items: [
-      'NanoSIMS for micro-scale elemental mapping and organo-mineral interface analysis.',
-      'FTICR-MS / Orbitrap-MS for molecular-level characterization of complex organic matter mixtures and transformation pathways.',
-      'Micro-CT for three-dimensional reconstruction of aggregates and soil pore structures.',
+      ['NanoSIMS', 'Microscale elemental mapping and spatial analysis of organo-mineral interfaces.'],
+      ['FTICR-MS / Orbitrap-MS', 'Molecular composition and transformation of complex environmental organic matter.'],
+      ['Micro-CT', 'Three-dimensional reconstruction of aggregates and soil pore structures.'],
     ],
   },
   {
-    title: 'Controlled and Field Experimental Platforms',
+    number: '03', title: 'Controlled Experiments and Field Validation',
+    summary: 'Testing process mechanisms across laboratory, greenhouse, and mine-site scales.',
     items: [
-      'Indoor climate chambers for controlled studies of temperature, moisture, plants, and microbial processes.',
-      'Large automated greenhouse facilities for mesocosm-scale tailing pedogenesis, plant establishment, and soil process simulations.',
-      'Mine-site field experiments at thousand-square-meter scale for testing tailing rehabilitation and pedogenesis processes under real field conditions.',
-      'Collaborations with ecological field stations for long-term monitoring, cross-site comparisons, and field process validation.',
+      ['Climate chambers', 'Controlled studies of temperature, moisture, plants, and microbial processes.'],
+      ['Automated greenhouses', 'Mesocosm-scale simulations of tailing pedogenesis, plant establishment, and soil processes.'],
+      ['Mine-site experiments', 'Thousand-square-meter field tests of tailing rehabilitation and pedogenesis.'],
+      ['Field-station collaboration', 'Long-term observations, cross-site comparisons, and field validation.'],
     ],
   },
   {
-    title: 'Shared Analytical Resources',
+    number: '04', title: 'Routine Analysis and Collaborative Resources',
+    summary: 'Combining team facilities and long-term shared resources for basic properties, reaction products, and interfacial features.',
     items: [
-      'Infrared and micro-FTIR spectroscopy for characterizing minerals, organic functional groups, and their spatial distributions.',
-      'Atomic force microscopy and confocal Raman microscopy for mineral surface morphology, interfacial structure, and micro-scale compositional analysis.',
-      'Elemental analysis, TOC/TN measurement, and stable isotope analysis for quantifying carbon, nitrogen, water sources, and transformation processes.',
-      'Liquid and gas chromatography for small organic molecules, metabolites, and reaction products.',
+      ['Infrared and micro-FTIR', 'Mineral phases, organic functional groups, and their spatial distributions.'],
+      ['AFM and confocal Raman microscopy', 'Mineral surface morphology, interfacial structures, and microscale composition.'],
+      ['Elemental, TOC/TN, and stable-isotope analysis', 'Carbon and nitrogen inventories, water sources, and transformation processes.'],
+      ['Liquid and gas chromatography', 'Small organic molecules, metabolites, and reaction products.'],
     ],
   },
 ];
 ---
-<BaseLayout lang="en" title="Methods | SOMER Group" description="Core research methods, experimental systems, and shared analytical resources of the SOMER Group.">
+<BaseLayout lang="en" title="Methods | SOMER Group" description="Research logic, experimental systems, and multi-scale characterization methods of the SOMER Group.">
   <article class="facilities-page">
-    <p class="facilities-intro">
-      The SOMER Group works across tailing pedogenesis, degraded soil rehabilitation, organo-mineral interactions, and elemental biogeochemical processes through an integrated framework linking controlled laboratory studies, mesocosm-scale greenhouse experiments, mine-site field validation, and molecular-, nano-, and 3D structural characterization. Our methodological strength relies on in-house platforms as well as long-term collaborations with large-scale facilities, analytical centers, commercial testing platforms, ecological field stations, and mine-site partners.
-    </p>
+    <h1 class="sr-only">Research Methods</h1>
 
-    <div class="facilities-grid">
-      {cards.map((card) => (
-        <section class="facilities-card">
-          <h2>{card.title}</h2>
-          <ul>
-            {card.items.map((item) => <li>{item}</li>)}
-          </ul>
-        </section>
-      ))}
-    </div>
+    <section class="method-workflow" aria-labelledby="workflow-title">
+      <div class="method-section-heading">
+        <p class="eyebrow">Research workflow</p>
+        <h2 id="workflow-title">From environmental questions to mechanism validation</h2>
+      </div>
+      <div class="method-workflow-grid">
+        {workflow.map((item) => (
+          <div class="method-step">
+            <span>{item.step}</span>
+            <h3>{item.title}</h3>
+            <p>{item.text}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="method-capabilities" aria-labelledby="capabilities-title">
+      <div class="method-section-heading">
+        <p class="eyebrow">Capabilities</p>
+        <h2 id="capabilities-title">Experimental and analytical capabilities</h2>
+      </div>
+      <div class="facilities-grid">
+        {cards.map((card) => (
+          <section class="facilities-card">
+            <span class="facilities-number">{card.number}</span>
+            <h3>{card.title}</h3>
+            <p class="facilities-summary">{card.summary}</p>
+            <ul>
+              {card.items.map(([name, detail]) => <li><strong>{name}</strong><span>{detail}</span></li>)}
+            </ul>
+          </section>
+        ))}
+      </div>
+    </section>
+
+    <section class="method-collaboration">
+      <div>
+        <p class="eyebrow">Academic collaboration</p>
+        <h2>Questions and mechanisms</h2>
+        <p>Joint experiments, multi-platform characterization, and cross-site comparisons addressing mineral interfaces, elemental cycling, soil formation, and microbial processes.</p>
+      </div>
+      <div>
+        <p class="eyebrow">Industry collaboration</p>
+        <h2>Field challenges and validation</h2>
+        <p>Mine-site investigation, process diagnosis, technology validation, long-term monitoring, and rehabilitation demonstrations connecting mechanisms with practice.</p>
+      </div>
+    </section>
   </article>
 </BaseLayout>

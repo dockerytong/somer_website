@@ -5,11 +5,18 @@ interface Props {
   date: Date;
   href: string;
   locale?: string;
+  category?: 'publication' | 'conference' | 'project' | 'team';
 }
-const { title, date, href, locale = 'zh-CN' } = Astro.props;
+const { title, date, href, locale = 'zh-CN', category } = Astro.props;
 const formattedDate = new Intl.DateTimeFormat(locale, { year: 'numeric', month: 'long', day: 'numeric' }).format(date);
+const labels = locale.startsWith('en')
+  ? { publication: 'Paper', conference: 'Conference', project: 'Project', team: 'Team' }
+  : { publication: '论文', conference: '会议', project: '项目', team: '团队' };
 ---
 <li class="news-row">
   <time datetime={date.toISOString()}>{formattedDate}</time>
-  <a href={href}>{title}</a>
+  <div class="news-entry">
+    {category && <span class={`news-category news-category-${category}`}>{labels[category]}</span>}
+    <a href={href}>{title}</a>
+  </div>
 </li>

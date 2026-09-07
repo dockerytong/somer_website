@@ -1,5 +1,6 @@
 ---
 title: 卢承龙论文被 Chemical Geology 接收
+category: publication
 date: 2026-05-10
 summary: 卢承龙等关于铝土矿赤泥风化过程中矿物相转化驱动溶解性有机质分子分馏的研究被 Chemical Geology 接收。
 ---

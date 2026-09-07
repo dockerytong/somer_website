@@ -9,11 +9,13 @@ description: Contact information for the SOMER Group.
 
 # Contact
 
-<p class="contact-lead">Prospective students, postdoctoral researchers, and collaborators are welcome to contact the group by email.</p>
+<p class="contact-lead">Prospective students, postdoctoral researchers, academic collaborators, and industry partners are welcome to contact us by email.</p>
 
 ## Get in Touch
 
-Songlin Wu: `slwu@rcees.ac.cn`
+Songlin Wu: [slwu@rcees.ac.cn](mailto:slwu@rcees.ac.cn)
+
+Tong Liu: [tongliu@rcees.ac.cn](mailto:tongliu@rcees.ac.cn)
 
 ## Join Us
 
@@ -23,7 +25,7 @@ The group also welcomes applications or inquiries from outstanding postdoctoral 
 
 ## Collaborate
 
-We are open to collaborations with academic partners, industry, and restoration practitioners to connect mechanistic research on tailing pedogenesis and degraded soil rehabilitation with field-scale applications.
+We pursue scientifically rigorous fundamental research while engaging with practical challenges in mine-site management and ecological rehabilitation. We welcome collaborations with universities and research institutes, mining and environmental companies, engineering teams, and restoration practitioners across mechanistic studies, technology validation, long-term monitoring, and field demonstration.
 
 ## WeChat Account
 

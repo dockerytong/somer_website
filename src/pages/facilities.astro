@@ -1,58 +1,108 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
+const workflow = [
+  { step: '01', title: '现场识别', text: '从矿区样地、土壤剖面和长期观测中识别真实环境问题与关键控制因子。' },
+  { step: '02', title: '控制实验', text: '通过人工气候室和温室试验分离水分、植物、微生物及矿物过程的作用。' },
+  { step: '03', title: '跨尺度表征', text: '连接分子组成、界面结构、微区分布与团聚体和孔隙的三维特征。' },
+  { step: '04', title: '机制验证', text: '将实验认识返回野外，检验其对成土、碳稳定和生态修复的解释力。' },
+];
+
 const cards = [
   {
+    number: '01',
     title: '同步辐射与先进谱学',
+    summary: '解析元素价态、配位环境以及有机质与矿物相的空间耦合。',
     items: [
-      'XAFS：解析 Fe、Al、Si 等元素的价态、配位环境与矿物相转化。',
-      '同步辐射 FTIR mapping：识别有机质官能团分布及其与矿物相的空间耦合关系。',
-      'STXM：在微纳尺度解析有机质与矿物组分的共定位和界面结构。',
+      ['XAFS', '解析 Fe、Al、Si 等元素的价态、配位环境与矿物相转化。'],
+      ['同步辐射 FTIR mapping', '识别有机质官能团分布及其与矿物相的空间关系。'],
+      ['STXM', '在微纳尺度解析有机质与矿物组分的共定位和界面结构。'],
     ],
   },
   {
-    title: '纳米与分子尺度表征',
+    number: '02',
+    title: '分子、微区与三维结构',
+    summary: '从有机质分子组成延伸到元素微区分布、团聚体和孔隙结构。',
     items: [
-      'NanoSIMS：追踪微区元素分布和有机-矿物界面的空间关联。',
-      'FTICR-MS / Orbitrap-MS：解析复杂环境样品中有机质的分子组成与分子转化特征。',
-      '微米 CT：重建团聚体和土壤孔隙的三维结构。',
+      ['NanoSIMS', '追踪微区元素分布和有机-矿物界面的空间关联。'],
+      ['FTICR-MS / Orbitrap-MS', '解析复杂环境样品中有机质的分子组成与转化特征。'],
+      ['微米 CT', '重建团聚体和土壤孔隙的三维结构。'],
     ],
   },
   {
-    title: '室内外实验平台',
+    number: '03',
+    title: '控制实验与野外验证',
+    summary: '以室内、温室和矿区现场的尺度递进检验过程机制。',
     items: [
-      '室内人工气候室：开展温度、水分、植物和微生物控制实验。',
-      '大型自动化温室：开展中尺度尾矿成土、植物建植和土壤过程模拟试验。',
-      '矿区野外试验：在矿区开展千平米尺度的尾矿生态修复和成土过程验证。',
-      '生态定位实验站合作：支持长期定位观测、跨区域样地比较和野外过程验证。',
+      ['人工气候室', '开展温度、水分、植物和微生物控制实验。'],
+      ['大型自动化温室', '开展中尺度尾矿成土、植物建植和土壤过程模拟试验。'],
+      ['矿区野外试验', '开展千平米尺度的尾矿生态修复和成土过程验证。'],
+      ['生态定位站合作', '支持长期观测、跨区域样地比较和野外过程验证。'],
     ],
   },
   {
-    title: '合作共享分析资源',
+    number: '04',
+    title: '常规分析与合作资源',
+    summary: '依托团队实验条件及长期合作资源，完成基础性质、反应组分与界面特征分析。',
     items: [
-      '红外与显微红外光谱：表征矿物、有机质官能团及其空间分布。',
-      '原子力显微镜与共聚焦拉曼：分析矿物表面形貌、界面结构和微区组分。',
-      '元素分析、TOC/TN 与稳定同位素分析：定量土壤和尾矿中碳、氮、水分来源及转化过程。',
-      '液相和气相色谱：分析小分子有机物、代谢产物及相关反应组分。',
+      ['红外与显微红外光谱', '表征矿物、有机质官能团及其空间分布。'],
+      ['原子力显微镜与共聚焦拉曼', '分析矿物表面形貌、界面结构和微区组分。'],
+      ['元素、TOC/TN 与稳定同位素分析', '定量碳、氮及水分来源与转化过程。'],
+      ['液相与气相色谱', '分析小分子有机物、代谢产物及相关反应组分。'],
     ],
   },
 ];
 ---
-<BaseLayout title="研究方法 | SOMER研究小组" description="SOMER研究小组的核心研究方法、实验体系与合作表征资源。">
+<BaseLayout title="研究方法 | SOMER团队" description="SOMER团队的研究逻辑、实验体系与多尺度表征方法。">
   <article class="facilities-page">
-    <p class="facilities-intro">
-      SOMER研究小组围绕尾矿成土、退化土壤修复、有机-矿物互作和元素生物地球化学过程，建立了从室内控制实验、中尺度温室试验到矿区野外验证，再到分子、纳米和三维结构表征的一体化研究框架。团队平台能力既依托现有实验条件，也建立在与大型装置、分析测试中心、商业测试平台、生态定位站和矿区现场的长期合作基础上。
-    </p>
+    <h1 class="sr-only">研究方法</h1>
 
-    <div class="facilities-grid">
-      {cards.map((card) => (
-        <section class="facilities-card">
-          <h2>{card.title}</h2>
-          <ul>
-            {card.items.map((item) => <li>{item}</li>)}
-          </ul>
-        </section>
-      ))}
-    </div>
+    <section class="method-workflow" aria-labelledby="workflow-title">
+      <div class="method-section-heading">
+        <p class="eyebrow">Research workflow</p>
+        <h2 id="workflow-title">从环境问题到机制验证</h2>
+      </div>
+      <div class="method-workflow-grid">
+        {workflow.map((item) => (
+          <div class="method-step">
+            <span>{item.step}</span>
+            <h3>{item.title}</h3>
+            <p>{item.text}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="method-capabilities" aria-labelledby="capabilities-title">
+      <div class="method-section-heading">
+        <p class="eyebrow">Capabilities</p>
+        <h2 id="capabilities-title">实验与表征能力</h2>
+      </div>
+      <div class="facilities-grid">
+        {cards.map((card) => (
+          <section class="facilities-card">
+            <span class="facilities-number">{card.number}</span>
+            <h3>{card.title}</h3>
+            <p class="facilities-summary">{card.summary}</p>
+            <ul>
+              {card.items.map(([name, detail]) => <li><strong>{name}</strong><span>{detail}</span></li>)}
+            </ul>
+          </section>
+        ))}
+      </div>
+    </section>
+
+    <section class="method-collaboration">
+      <div>
+        <p class="eyebrow">Academic collaboration</p>
+        <h2>面向科学问题</h2>
+        <p>围绕矿物界面、元素循环、土壤形成和微生物过程，开展联合实验、多平台表征与跨区域比较。</p>
+      </div>
+      <div>
+        <p class="eyebrow">Industry collaboration</p>
+        <h2>面向现场问题</h2>
+        <p>围绕矿区调查、过程诊断、技术验证、长期监测和生态修复示范，连接机制认识与工程实践。</p>
+      </div>
+    </section>
   </article>
 </BaseLayout>

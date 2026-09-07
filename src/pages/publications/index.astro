@@ -7,7 +7,8 @@ const publications = scholarData.combined.filter((paper) => paper.year && paper.
 const years = [...new Set(publications.map((paper) => paper.year))];
 const historicalPublications = scholarData.historical;
 ---
-<BaseLayout title="研究成果 | SOMER研究小组">
+<BaseLayout title="研究成果 | SOMER团队">
+  <h1 class="sr-only">研究成果</h1>
   {years.map((year) => (
     <section class="pub-year-section">
       <h2>{year}</h2>

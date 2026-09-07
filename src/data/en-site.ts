@@ -1,6 +1,7 @@
 type EnNewsItem = {
   slug: string;
   title: string;
+  category: 'publication' | 'conference' | 'project' | 'team';
   date: Date;
   summary: string;
   authors?: string;
@@ -13,6 +14,7 @@ type EnNewsItem = {
 export const enNews: EnNewsItem[] = [
   {
     slug: "minghan-wang-cej-waste-rock-biochar",
+    category: 'publication',
     title: "Minghan Wang paper published in Chemical Engineering Journal",
     date: new Date("2026-08-26"),
     summary:
@@ -28,6 +30,7 @@ export const enNews: EnNewsItem[] = [
   },
   {
     slug: 'somer-nsfc-funding-2026',
+    category: 'project',
     title: 'SOMER members receive 2026 NSFC funding',
     date: new Date('2026-08-26'),
     summary:
@@ -39,6 +42,7 @@ export const enNews: EnNewsItem[] = [
   },
   {
     slug: 'somer-taizhou-mine-environment-conference-2026',
+    category: 'conference',
     title: 'SOMER members attended the 5th Symposium on Mine Environmental Pollution and Remediation',
     date: new Date('2026-08-05'),
     summary:
@@ -50,6 +54,7 @@ export const enNews: EnNewsItem[] = [
   },
   {
     slug: 'zhen-li-gca-rhizosphere-tailings',
+    category: 'publication',
     title: 'Zhen Li paper published in Geochimica et Cosmochimica Acta',
     date: new Date('2026-08-03'),
     summary:
@@ -64,7 +69,8 @@ export const enNews: EnNewsItem[] = [
   },
   {
     slug: 'somer-icom-australia-2026',
-    title: 'SOMER group attended ICOM in Australia; Wei Fu received the Early Career Researcher Presenting Award',
+    category: 'conference',
+    title: 'Wei Fu receives an Early Career Researcher Presenting Award at ICOM',
     date: new Date('2026-07-24'),
     summary:
       'SOMER members attended the International Conference on Mycorrhiza in Australia. Wei Fu delivered an invited presentation and received the Early Career Researcher Presenting Award, while Songlin Wu also attended the meeting and visited Professor Longbin Huang at The University of Queensland.',
@@ -74,11 +80,12 @@ export const enNews: EnNewsItem[] = [
       'Songlin Wu also attended the meeting. During his visit to Australia, he visited Professor Longbin Huang at The University of Queensland, where they exchanged ideas on related research topics.',
     ],
     images: [
-      '/images/news/wei-fu-icom-2026.jpg',
+      '/images/news/wei-fu-icom-2026.webp',
     ],
   },
   {
     slug: 'wang-jing-rock-and-mineral-analysis-pgpr',
+    category: 'publication',
     title: 'Jing Wang paper accepted by Rock and Mineral Analysis',
     date: new Date('2026-06-16'),
     summary:
@@ -93,6 +100,7 @@ export const enNews: EnNewsItem[] = [
   },
   {
     slug: 'somer-wcss-2026',
+    category: 'conference',
     title: 'SOMER group attended the 23rd World Congress of Soil Science',
     date: new Date('2026-06-12'),
     summary:
@@ -102,10 +110,11 @@ export const enNews: EnNewsItem[] = [
       'The World Congress of Soil Science is an important international conference in soil science organized under the International Union of Soil Sciences (IUSS). The congress brought together soil scientists from different countries and regions to discuss soil resource protection, soil health, ecological restoration, carbon cycling, and sustainable development.',
       'During the congress, Prof. Songlin Wu chaired a scientific session. Wei Fu delivered an oral presentation on the group’s recent progress in soil ecological processes and rehabilitation. Na Li and Minghan Wang presented their work in poster sessions. The meeting provided an opportunity for the group to discuss tailing pedogenesis, soil organo-mineral interactions, and ecological rehabilitation with the international soil science community.',
     ],
-    image: '/images/news/somer-wcss-2026.jpg',
+    image: '/images/news/somer-wcss-2026.webp',
   },
   {
     slug: 'songlin-wu-est-microbial-processing-tailings',
+    category: 'publication',
     title: 'Songlin Wu paper accepted by Environmental Science & Technology',
     date: new Date('2026-01-28'),
     summary:
@@ -121,6 +130,7 @@ export const enNews: EnNewsItem[] = [
   },
   {
     slug: 'hui-wu-acs-earth-space-chemistry',
+    category: 'publication',
     title: 'Hui Wu paper accepted by ACS Earth and Space Chemistry',
     date: new Date('2026-05-29'),
     summary:
@@ -135,6 +145,7 @@ export const enNews: EnNewsItem[] = [
   },
   {
     slug: 'tong-liu-water-research-nitrate-vanadium',
+    category: 'publication',
     title: 'Tong Liu paper accepted by Water Research',
     date: new Date('2026-05-16'),
     summary:
@@ -149,14 +160,16 @@ export const enNews: EnNewsItem[] = [
   },
   {
     slug: 'wenyu-river-park-group-photo',
-    title: 'SOMER group outing at Wenyu River Park',
+    category: 'team',
+    title: 'SOMER team activity at Wenyu River Park',
     date: new Date('2026-05-16'),
     summary: 'The SOMER group visited the Yunchang Terraces area of Beijing Wenyu River Park and took a group photo.',
     details: ['On May 16, 2026, the SOMER group visited Beijing Wenyu River Park and took a group photo in the Yunchang Terraces area.'],
-    image: '/images/news/wenyu-river-park-2026.jpg',
+    image: '/images/news/wenyu-river-park-2026.webp',
   },
   {
     slug: 'chenglong-lu-chemical-geology',
+    category: 'publication',
     title: 'Chenglong Lu paper accepted by Chemical Geology',
     date: new Date('2026-05-10'),
     summary:
@@ -171,6 +184,7 @@ export const enNews: EnNewsItem[] = [
   },
   {
     slug: 'tong-liu-nature-communications-iron-cycle',
+    category: 'publication',
     title: 'Tong Liu paper accepted by Nature Communications',
     date: new Date('2026-05-09'),
     summary:
@@ -182,10 +196,11 @@ export const enNews: EnNewsItem[] = [
       'The marine iron cycle is fast and dynamic, partly fueled by vast particulate iron inputs, but the mechanisms that activate this reservoir remain unresolved. This study shows that mineral photocatalysis provides an important abiotic pathway for Fe(II) production in sunlit waters.',
       'Laboratory experiments using synthetic iron oxides and anatase in artificial seawater demonstrate that anatase (TiO2) drives rapid Fe(III)-to-Fe(II) cycling at rates up to fourfold higher than current model assumptions. The study proposes that mineral photocatalysis helps explain the persistence of Fe(II) in sunlit waters as a high-flux steady state of photochemical production coupled with biological uptake.',
     ],
-    image: '/images/news/nature-communications-earth-science-editors-highlights.png',
+    image: '/images/news/nature-communications-earth-science-editors-highlights.webp',
   },
   {
     slug: 'tong-liu-cr-bioreduction-water-science-engineering',
+    category: 'publication',
     title: 'Tong Liu paper accepted by Water Science and Engineering',
     date: new Date('2026-02-28'),
     summary:
@@ -200,7 +215,8 @@ export const enNews: EnNewsItem[] = [
   },
   {
     slug: 'somer-2025',
-    title: 'SOMER 2025: A year in soil',
+    category: 'team',
+    title: 'SOMER 2025: Annual review',
     date: new Date('2026-02-17'),
     summary: 'A brief annual note on SOMER group growth, research progress, publications, and field-oriented restoration work.',
     details: [
@@ -211,6 +227,7 @@ export const enNews: EnNewsItem[] = [
   },
   {
     slug: 'wei-fu-gcb-drought-amf-diversity',
+    category: 'publication',
     title: 'Wei Fu paper accepted by Global Change Biology',
     date: new Date('2026-01-12'),
     summary:
@@ -231,21 +248,21 @@ export const enResearch = [
     title: 'Tailing pedogenesis and ecological reconstruction',
     summary:
       'We investigate mineral weathering, secondary mineral formation, organic carbon stabilization, and structural development during the transformation of mine tailings into soil-like substrates.',
-    cover: '/images/research/tailing-rehabilitation-contrast.png',
+    cover: '/images/research/tailing-rehabilitation-contrast.webp',
     details: [
       'Mine tailings commonly have narrow particle-size distribution, limited aggregate structure, low organic matter and nutrient contents, abnormal pH or salinity, and potential metal mobility. These constraints limit plant establishment and ecological function recovery. This direction studies mineral weathering, element release, and secondary mineral formation during tailing pedogenesis driven by organic inputs, plant roots, and microbial activity.',
       'We focus on the coupling between Fe, Si, and Al mineral transformation and organic matter stabilization, and examine how rhizosphere processes, microbial succession, and organo-mineral complexation regulate aggregate development, carbon and nitrogen accumulation, and contaminant retention. These results provide mechanistic support for optimizing tailing pedogenesis technologies and evaluating long-term ecological stability.',
     ],
     figures: [
       {
-        src: '/images/research/tailing-rehabilitation-contrast.png',
+        src: '/images/research/tailing-rehabilitation-contrast.webp',
         alt: 'Contrasts among tailing landforms, vegetation recovery, and soil profiles',
         caption:
           'Comparisons among rehabilitation stages and tailing types help identify key environmental factors that limit tailing pedogenesis rates and ecological function recovery.',
       },
 
       {
-        src: '/images/research/tailing-pedogenesis-organic-carbon-framework.jpg',
+        src: '/images/research/tailing-pedogenesis-organic-carbon-framework.webp',
         alt: 'Conceptual framework of mineral weathering and organic carbon stabilization during tailing pedogenesis',
         caption:
           'During the transformation from initial tailings to soil-like substrates, plant residues, rhizodeposits, and microbial organic matter are continuously supplied; secondary clay minerals and Fe/Al oxides formed by mineral weathering increase organic carbon adsorption and stabilization.',
@@ -259,7 +276,7 @@ export const enResearch = [
       },
 
       {
-        src: '/images/research/field-rehabilitation-plots.jpg',
+        src: '/images/research/field-rehabilitation-plots.webp',
         alt: 'Field plots for tailing ecological reconstruction',
         caption:
           'Long-term field plots and controlled experiments are used to evaluate how different rehabilitation measures affect tailing physicochemical properties, plant growth, aggregate formation, and carbon and nitrogen accumulation.',
@@ -271,21 +288,21 @@ export const enResearch = [
     title: 'Soil structure and ecological function reconstruction',
     summary:
       'We examine how plant roots, rhizosphere microorganisms, and arbuscular mycorrhizal fungi regulate aggregate formation, organic matter accumulation, nutrient cycling, and plant stress resistance.',
-    cover: '/images/research/root-mineral-aggregate-formation.jpg',
+    cover: '/images/research/root-mineral-aggregate-formation.webp',
     details: [
       'Degraded soils and early-stage tailing substrates often have insufficient structural stability, low nutrient cycling efficiency, and slow recovery of ecological functions. This direction examines how plant-microbe interactions shape soil structure and functional recovery, with particular attention to arbuscular mycorrhizal fungi (AMF) in rhizosphere carbon input, mineral surface reactions, aggregate stability, and plant stress resistance.',
       'By combining field surveys, controlled experiments, and multi-scale characterization, we evaluate how AMF diversity, hyphal networks, and mycorrhiza-derived organic matter influence the spatial coupling of organic carbon, nitrogen, and mineral components. The goal is to develop plant-microbe regulation strategies that can be used in ecological rehabilitation practice.',
     ],
     figures: [
       {
-        src: '/images/research/root-mineral-aggregate-formation.jpg',
+        src: '/images/research/root-mineral-aggregate-formation.webp',
         alt: 'Root-mineral interactions and water-stable aggregate formation',
         caption:
           'Plant roots and microbial activity promote mineral weathering, organic matter accumulation, and organo-mineral complex formation in Fe ore tailings, thereby enhancing aggregate stability.',
       },
 
       {
-        src: '/images/research/cropland-tailings-rehabilitation.png',
+        src: '/images/research/cropland-tailings-rehabilitation.webp',
         alt: 'Tailing rehabilitation under soil cover and crop cultivation',
         caption:
           'Soil cover, crop cultivation, and root inputs jointly influence nutrient accumulation, metal mobility, and topsoil quality in tailing profiles, providing an important scenario for evaluating agriculture-oriented rehabilitation.',
@@ -297,27 +314,27 @@ export const enResearch = [
     title: 'Organo-mineral interface processes and element cycling',
     summary:
       'We characterize electron transfer, mineral dissolution and precipitation, metal transformation, and molecular fractionation of organic matter at mineral-water-organic matter-microbe interfaces.',
-    cover: '/images/research/mineral-weathering-spectroscopy.png',
+    cover: '/images/research/mineral-weathering-spectroscopy.webp',
     details: [
       'Organo-mineral interface reactions control element mobility, contaminant speciation, and organic carbon stabilization in tailings and degraded soils. This direction focuses on mineral weathering, sulfur and iron redox processes, metal retention, dissolved organic matter molecular fractionation, and microbially or electrochemically mediated interfacial transformations.',
       'Using synchrotron-based XAFS/STXM, NanoSIMS, FTICR-MS, Orbitrap-MS, in situ spectroelectrochemistry, DFT calculations, and reactive transport modeling, we resolve the binding forms, spatial distribution, interfacial charge transfer, and reaction pathways of organic matter and reactive mineral phases from molecular to nano- and micrometer scales.',
     ],
     figures: [
       {
-        src: '/images/research/mineral-weathering-spectroscopy.png',
+        src: '/images/research/mineral-weathering-spectroscopy.webp',
         alt: 'Microscopic and spectroscopic evidence for mineral weathering and interfacial reactions',
         caption:
           'Micro-scale morphology, elemental occurrence, and synchrotron spectroscopic information help identify primary mineral weathering, secondary mineral formation, and changes in metal speciation.',
       },
 
       {
-        src: '/images/research/multiscale-organo-mineral-characterization.png',
+        src: '/images/research/multiscale-organo-mineral-characterization.webp',
         alt: 'Multi-scale morphology, elemental distribution, and spectroscopy of organo-mineral complexes',
         caption:
           'Microscopic imaging, elemental mapping, X-ray diffraction/absorption spectroscopy, and NanoSIMS are used to resolve spatial coupling among Fe-Si secondary minerals, organic carbon, and aggregate microstructures.',
       },
       {
-        src: '/images/research/iron-mineral-electrochemical-interface.png',
+        src: '/images/research/iron-mineral-electrochemical-interface.webp',
         alt: 'In situ characterization and mechanistic analysis of electrochemical reactions at iron mineral interfaces',
         caption:
           'In situ characterization and mechanistic analysis of electrochemical reactions at iron mineral interfaces, including dynamic electrochemical impedance, DFT calculations of interfacial charge transfer, in situ spectroelectrochemical platforms, Raman monitoring of pyrite oxidation and reduction, and infrared monitoring of goethite surface transformation.',
@@ -329,14 +346,14 @@ export const enResearch = [
     title: 'Soil microecology and molecular transformation of organic matter',
     summary:
       'We elucidate how biological systems, including plants, soil animals, and microorganisms, drive the formation, transformation, and stabilization of soil organic matter in tailings and degraded soils.',
-    cover: '/images/research/organic-matter-molecular-stabilization.jpg',
+    cover: '/images/research/organic-matter-molecular-stabilization.webp',
     details: [
       'This direction aims to elucidate the biological-system-driven formation, transformation, and stabilization mechanisms of soil organic matter, with a focus on plants, soil animals, and microorganisms. By combining high-resolution mass spectrometry for molecular characterization of organic matter with microbial ecological principles and techniques, we investigate how micro-ecosystems in complex environments such as mine tailings and degraded soils drive molecular-level dynamics and stabilization of organic matter.',
       'Research topics include molecular transformation of plant residues and rhizodeposits, selective association between microbial organic matter and mineral surfaces, regulation of organic matter decomposition and re-synthesis by soil animals and microbial communities, and the effects of reactive Fe/Al/Si mineral phases on the stability of different molecular components.',
     ],
     figures: [
       {
-        src: '/images/research/organic-matter-molecular-stabilization.jpg',
+        src: '/images/research/organic-matter-molecular-stabilization.webp',
         alt: 'Biological inputs, microbial communities, and Fe-Si secondary minerals regulate organic matter stabilization',
         caption:
           'Plant inputs, microbial communities, and mineral weathering jointly modify organic matter molecular composition; carboxyl-rich, aromatic, or polyphenolic components can selectively associate with Fe-Si secondary minerals and promote organic matter stabilization.',
@@ -348,14 +365,14 @@ export const enResearch = [
     title: 'AI-driven multiscale modeling and intelligent prediction of tailing pedogenesis',
     summary:
       'We integrate artificial intelligence, multiscale modeling, and tailing pedogenesis research to understand coupled mineral interface reactions, element transport, organic carbon stabilization, and ecological function recovery.',
-    cover: '/images/research/ai-tailings-multiscale-research.png',
+    cover: '/images/research/ai-tailings-multiscale-research.webp',
     details: [
       'Tailing pedogenesis involves multiscale processes such as mineral weathering, secondary mineral formation, organic matter input, microbial activity, water movement, and potential metal release. Ecological function recovery is jointly controlled by mineral interface reactions, carbon and nitrogen accumulation, aggregate development, and pollution risk control. This direction develops AI-driven multiscale modeling approaches for process identification, mechanism integration, and long-term stability prediction during tailing ecological reconstruction.',
       'We focus on how AI can connect interface reactions, reactive transport, carbon transformation, and ecological function recovery across scales. By integrating field plots, controlled experiments, mineralogical characterization, and multi-source environmental data, we aim to build intelligent evaluation and prediction frameworks for tailing pedogenesis. These models will support assessment of pedogenesis rates, optimization of rehabilitation measures, early warning of pollution risks, and evaluation of long-term ecological stability.',
     ],
     figures: [
       {
-        src: '/images/research/ai-tailings-multiscale-research.png',
+        src: '/images/research/ai-tailings-multiscale-research.webp',
         alt: 'AI-driven multiscale modeling for tailing pedogenesis and ecological recovery',
         caption:
           'Artificial intelligence and multiscale models can help connect mineral interface reactions, element transport, organic carbon stabilization, and ecological function recovery during tailing pedogenesis.',
@@ -401,17 +418,21 @@ export const enPeople: Record<string, {
     role: 'Assistant Professor',
     research: 'Mineral-microbe interfaces, interfacial electron transfer, Fe-C coupling, and pollution control.',
     bio: [
-      'Tong Liu is an assistant professor at the Research Center for Eco-Environmental Sciences, Chinese Academy of Sciences. His research focuses on mineral-microbe interface interactions and pollution control, with particular interest in interfacial electron transfer, coupled Fe-C transformation, and their roles in contaminant migration, transformation, and organic carbon stabilization.',
-      'His recent work examines photochemical cycling of iron minerals, microbially mediated redox processes, heavy metal stabilization, and remediation of contaminated groundwater and soils. Related studies have been published in journals including Nature Communications and Water Research.',
-      'He received his bachelor’s degree in Environmental Engineering from China University of Geosciences (Beijing) in 2017 and his PhD in Environmental Science and Engineering from the same university in 2023, under the supervision of Prof. Chuanping Feng. From 2023 to 2025, he was a Boya postdoctoral fellow in mineralogy at Peking University, working with Prof. Anhuai Lu. He joined the Research Center for Eco-Environmental Sciences as an assistant professor in 2025.',
-      'He has led projects supported by the National Natural Science Foundation of China and the China Postdoctoral Science Foundation, focusing on mineral photocatalysis, iron mineral dissolution, and microbial responses in sunlit marine and groundwater environments.',
+      'Tong Liu is an assistant professor at the Research Center for Eco-Environmental Sciences, Chinese Academy of Sciences. He studies how reactive mineral interfaces form and transform, with particular attention to interfacial electron transfer, coupled Fe-C transformations, and their effects on contaminant mobility, organic carbon stabilization, and microbial activity.',
+      'His recent work examines photochemical cycling of iron minerals, microbially mediated redox processes, heavy metal stabilization, and pollution control in soils and groundwater. Related studies have been published in journals including Nature Communications and Water Research.',
+      'He received his bachelor’s degree in Environmental Engineering from China University of Geosciences (Beijing) in 2017 and his PhD in Environmental Science and Engineering from the same university in 2023 under the supervision of Prof. Chuanping Feng. From 2023 to 2025, he conducted postdoctoral research at Peking University with Prof. Anhuai Lu, and joined the Research Center for Eco-Environmental Sciences in 2025.',
+      'He maintains long-term collaborations with Prof. Chuanping Feng’s group at China University of Geosciences (Beijing) and Prof. Anhuai Lu’s group at Peking University on mineral-microbe interfaces, mineral photoelectrochemistry, environmental pollution control, and joint student training.',
     ],
     assistedStudents: [
-      { name: 'Linxuan Sheng', role: 'Master Student', institution: 'China University of Geosciences (Beijing)' },
-      { name: 'Yifan Wang', role: 'Master Student', institution: 'China University of Geosciences (Beijing)' },
+      { name: 'Linxuan Sheng', role: "Master's Student, Class of 2025", institution: 'China University of Geosciences (Beijing)' },
+      { name: 'Yifan Wang', role: "Master's Student, Class of 2025", institution: 'China University of Geosciences (Beijing)' },
+      { name: 'Hao Wang', role: "Master's Student, Class of 2026", institution: 'China University of Geosciences (Beijing)' },
+      { name: 'Jiyuan Dai', role: "Master's Student, Class of 2026", institution: 'China University of Geosciences (Beijing)' },
+      { name: 'Bowei Wu', role: "Master's Student, Class of 2026", institution: 'China University of Geosciences (Beijing)' },
+      { name: 'Le Shen', role: "Master's Student, Class of 2026", institution: 'China University of Geosciences (Beijing)' },
     ],
   },
-  'postdoc-hui-wu': { name: 'Hui Wu', role: 'Postdoctoral Researcher', research: 'Mine tailing pedogenesis and soil organic matter stabilization.', origin: 'Research Center for Eco-Environmental Sciences, CAS', destination: 'To be determined' },
+  'postdoc-hui-wu': { name: 'Hui Wu', role: 'Postdoctoral Researcher', research: 'Mine tailing pedogenesis and soil organic matter stabilization.', origin: 'Research Center for Eco-Environmental Sciences, CAS' },
   'postdoc-shiqi-zhang': { name: 'Shiqi Zhang', role: 'Postdoctoral Researcher', research: 'Ecological rehabilitation of degraded soils and soil structure reconstruction.', origin: 'Research Center for Eco-Environmental Sciences, CAS' },
   'postdoc-minghan-wang': {
     name: 'Minghan Wang',

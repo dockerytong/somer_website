@@ -8,6 +8,7 @@ const years = [...new Set(publications.map((paper) => paper.year))];
 const historicalPublications = scholarData.historical;
 ---
 <BaseLayout lang="en" title="Publications | SOMER Group">
+  <h1 class="sr-only">Publications</h1>
   {years.map((year) => (
     <section class="pub-year-section">
       <h2>{year}</h2>

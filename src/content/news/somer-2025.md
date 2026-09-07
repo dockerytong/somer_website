@@ -1,5 +1,6 @@
 ---
-title: SOMER 2025 | 土壤里的一年
+title: SOMER 2025：年度回顾
+category: team
 date: 2026-02-17
 summary: 2025年是SOMER团队快速成长的一年，我们在土壤有机矿物互作和生态修复方向继续向前。
 ---

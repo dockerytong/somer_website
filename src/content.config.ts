@@ -4,6 +4,7 @@ const news = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string(),
+    category: z.enum(['publication', 'conference', 'project', 'team']),
     date: z.date(),
     summary: z.string(),
   }),

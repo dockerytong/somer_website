@@ -12,7 +12,8 @@ const groups = [
   ['student', '学生'],
 ] as const;
 ---
-<BaseLayout title="Alumni | SOMER研究小组">
+<BaseLayout title="往届成员 | SOMER团队">
+  <h1 class="sr-only">往届成员</h1>
   <PeopleTabs active="alumni" />
   {groups.map(([key, label]) => {
     const members = people.filter((person) => person.data.alumniType === key);
