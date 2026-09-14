@@ -1,8 +1,8 @@
 ---
-name: 王一凡
-role: 2025级硕士生
+name: 吴波伟
+role: 2026级硕士生
 group: master
 note: 客座
 origin: 中国地质大学（北京）
-order: 4
+order: 9
 ---

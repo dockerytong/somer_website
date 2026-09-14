@@ -6,25 +6,6 @@ email: tongliu@rcees.ac.cn
 research: 矿物-微生物界面相互作用、矿物界面电子传递、Fe-C耦合转化与污染控制。
 scholar: https://scholar.google.com/citations?user=Fs0dsfMAAAAJ&hl=en
 researchgate: https://www.researchgate.net/profile/Tong-Liu-25
-assistedStudents:
-  - name: 盛林煊
-    role: 2025级硕士
-    institution: 中国地质大学（北京）
-  - name: 王一凡
-    role: 2025级硕士
-    institution: 中国地质大学（北京）
-  - name: 王浩
-    role: 2026级硕士
-    institution: 中国地质大学（北京）
-  - name: 代济源
-    role: 2026级硕士
-    institution: 中国地质大学（北京）
-  - name: 吴波伟
-    role: 2026级硕士
-    institution: 中国地质大学（北京）
-  - name: 沈乐
-    role: 2026级硕士
-    institution: 中国地质大学（北京）
 order: 3
 ---
 

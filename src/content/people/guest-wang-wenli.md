@@ -1,6 +1,6 @@
 ---
 name: 王雯丽
-role: 客座硕士生
+role: 2024级客座硕士生
 group: alumni
 alumniType: student
 origin: 福建师范大学
