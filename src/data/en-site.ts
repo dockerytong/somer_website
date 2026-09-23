@@ -13,6 +13,16 @@ type EnNewsItem = {
 
 export const enNews: EnNewsItem[] = [
   {
+    slug: 'longbin-huang-invited-talk-2026',
+    category: 'team',
+    title: 'Professor Longbin Huang delivers an invited talk',
+    date: new Date('2026-09-22'),
+    summary: 'Professor Longbin Huang of The University of Queensland delivered an invited academic talk on September 22, 2026.',
+    details: [
+      'On September 22, 2026, Professor Longbin Huang of The University of Queensland, Australia, delivered an invited academic talk. SOMER members had previously visited Professor Huang and exchanged ideas on related research.',
+    ],
+  },
+  {
     slug: "minghan-wang-cej-waste-rock-biochar",
     category: 'publication',
     title: "Minghan Wang paper published in Chemical Engineering Journal",
@@ -490,6 +500,7 @@ export const enPeople: Record<string, {
   'guest-dai-jiyuan': { name: 'Jiyuan Dai', role: 'Master Student, Class of 2026', note: 'Visiting', origin: 'China University of Geosciences (Beijing)' },
   'guest-wu-bowei': { name: 'Bowei Wu', role: 'Master Student, Class of 2026', note: 'Visiting', origin: 'China University of Geosciences (Beijing)' },
   'guest-shen-le': { name: 'Le Shen', role: 'Master Student, Class of 2026', note: 'Visiting', origin: 'China University of Geosciences (Beijing)' },
+  'guest-wen-hule': { name: 'Hule Wen', role: 'Master Student, Class of 2026', note: 'Visiting', origin: 'China University of Geosciences (Beijing)' },
   'visitor-huixia-tian': {
     name: 'Huixia Tian',
     role: 'Visiting Scholar',
