@@ -13,6 +13,19 @@ type EnNewsItem = {
 
 export const enNews: EnNewsItem[] = [
   {
+    slug: 'jian-wang-stxm-talk-2026',
+    category: 'team',
+    title: 'Dr. Jian Wang delivers an invited talk',
+    date: new Date('2026-09-30'),
+    summary:
+      'On the afternoon of September 30, 2026, Dr. Jian Wang of the Canadian Light Source visited RCEES and delivered an invited talk on scanning transmission X-ray microscopy and its applications in environmental and earth sciences.',
+    details: [
+      'On the afternoon of September 30, 2026, at the invitation of Prof. Songlin Wu, Dr. Jian Wang — a scientist on the 10ID-1 Spectro-Microscopy beamline at the Canadian Light Source and at the University of Saskatchewan — visited the Research Center for Eco-Environmental Sciences and delivered an invited talk titled "Scanning Transmission X-ray Microscopy and Applications in Environmental & Earth Sciences".',
+      'The talk introduced the imaging principles and data acquisition of scanning transmission X-ray microscopy (STXM), and used case studies in environmental and earth sciences to illustrate how the technique resolves element speciation and spatial distribution, as well as the association between minerals and organic matter, at the submicron scale. Prof. Liu Juan of Peking University and Prof. Liu Xiaolei of the School of Ocean Sciences, China University of Geosciences (Beijing) attended the talk, together with SOMER members and other researchers, and discussed beamline experiment design, sample preparation, and data analysis with Dr. Jian Wang.',
+    ],
+    image: '/images/news/jian-wang-stxm-talk-2026.webp',
+  },
+  {
     slug: 'longbin-huang-invited-talk-2026',
     category: 'team',
     title: 'Professor Longbin Huang delivers an invited talk',
