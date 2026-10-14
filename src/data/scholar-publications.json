@@ -2,6 +2,18 @@
   "byPerson": {
     "songlin-wu": [
       {
+        "title": "In operando electrochemical stimulation of pyrite autotrophic denitrification",
+        "authors": "Tong Liu, Yutian Hu, Qiuzhi Guo, Hongrui Ding, Nan Chen, Songlin Wu, Chuanping Feng",
+        "journal": "Nitrogen Cycling",
+        "year": 2026
+      },
+      {
+        "title": "Vegetation succession is linked to carbon-nitrogen decoupling in organic matter fractions in copper mine tailings subject to decade-long ecological rehabilitation",
+        "authors": "Bing Zhou, Na Li, Tong Liu, Songlin Wu",
+        "journal": "Journal of Environmental Sciences, 105835",
+        "year": 2026
+      },
+      {
         "title": "Waste-rock mineralogy directs biochar-mediated heavy metal stabilization through geochemical and microbial pathways in contaminated soil",
         "authors": "Guohuan Xiong, Minghan Wang, Haoyu Yue, Wenli Wang, Xiao Tan, Mirezhatijiang Kayoumu, Xuedan Cui, Yanqing Liu, Guilan Duan, Baodong Chen, Weiwei Liu, Songlin Wu",
         "journal": "Chemical Engineering Journal, 180984",
@@ -819,6 +831,18 @@
     ],
     "tong-liu": [
       {
+        "title": "Vegetation succession is linked to carbon-nitrogen decoupling in organic matter fractions in copper mine tailings subject to decade-long ecological rehabilitation",
+        "authors": "Bing Zhou, Na Li, Tong Liu, Songlin Wu",
+        "journal": "Journal of Environmental Sciences, 105835",
+        "year": 2026
+      },
+      {
+        "title": "In operando electrochemical stimulation of pyrite autotrophic denitrification",
+        "authors": "Tong Liu, Yutian Hu, Qiuzhi Guo, Hongrui Ding, Nan Chen, Songlin Wu, Chuanping Feng",
+        "journal": "Nitrogen Cycling",
+        "year": 2026
+      },
+      {
         "title": "Cycling of Fe(II)/Fe(III) in the euphotic zone mediated by mineral photocatalysis",
         "authors": "Tong Liu, Hongrui Ding, Anhuai Lu, Lingzi Meng, Xiao Ge, Ying Liu, Fangchao Zhu, Shuo Yu, Qunjian Yin, Yan Li, Changqiu Wang, Juan Liu, Song Jin",
         "journal": "Nature Communications",
@@ -1047,6 +1071,26 @@
     ]
   },
   "combined": [
+    {
+      "title": "In operando electrochemical stimulation of pyrite autotrophic denitrification",
+      "authors": "Tong Liu, Yutian Hu, Qiuzhi Guo, Hongrui Ding, Nan Chen, Songlin Wu, Chuanping Feng",
+      "journal": "Nitrogen Cycling",
+      "year": 2026,
+      "owners": [
+        "tong-liu",
+        "songlin-wu"
+      ]
+    },
+    {
+      "title": "Vegetation succession is linked to carbon-nitrogen decoupling in organic matter fractions in copper mine tailings subject to decade-long ecological rehabilitation",
+      "authors": "Bing Zhou, Na Li, Tong Liu, Songlin Wu",
+      "journal": "Journal of Environmental Sciences, 105835",
+      "year": 2026,
+      "owners": [
+        "tong-liu",
+        "songlin-wu"
+      ]
+    },
     {
       "title": "Submicron-scale mineral weathering and organo-mineral association in the rhizosphere of iron ore tailings",
       "authors": "Zhen Li, Songlin Wu, Ting-Shan Chan, Cheng-Wei Kao, Jian Wang, Gordon Southam, Longbin Huang",

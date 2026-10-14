@@ -13,6 +13,21 @@ type EnNewsItem = {
 
 export const enNews: EnNewsItem[] = [
   {
+    slug: 'mineral-papers-oct-2026',
+    category: 'publication',
+    title: 'Four mineral-related papers accepted',
+    date: new Date('2026-10-14'),
+    summary:
+      'Four mineral-related studies involving SOMER members have recently been accepted by Journal of Environmental Sciences, Nitrogen Cycling, Environmental Science & Technology, and Separation and Purification Technology.',
+    details: [
+      'Four mineral-related papers involving SOMER members have recently been accepted for publication.',
+      'Journal of Environmental Sciences: "Vegetation succession is linked to carbon-nitrogen decoupling in organic matter fractions in copper mine tailings subject to decade-long ecological rehabilitation" (Songlin Wu, corresponding author). Investigating copper mine tailings in Jiangxi following over a decade of ecological rehabilitation, this study characterizes shifts in carbon and nitrogen coupling across distinct organic matter fractions throughout vegetation succession.',
+      'Nitrogen Cycling: "In operando electrochemical stimulation of pyrite autotrophic denitrification" (Tong Liu, first author; Songlin Wu, co-author). Addressing sluggish mineral oxidation and surface passivation during circumneutral pyrite autotrophic denitrification, the authors applied in operando voltage control in a packed-bed reactor. Nitrate removal increased from 16.9% to 41.3% under 1 V, but dropped to 24.2% at 2 V. Reactive transport modeling coupled with surface characterization revealed that nitrate loss was driven predominantly by microbial denitrification accelerated by electrochemical pyrite oxidation, with negligible direct electrochemical reduction. Iron remained as passivating FeOOH and Fe(OH)3 phases, while sulfur oxidized through soluble intermediates to sulfate as the end product.',
+      'Environmental Science & Technology: "Convergent Biogenic Magnetite Formation from Diverse Iron (Oxyhydr)oxide Precursors Drives Cr(VI) Reduction via an Environmental Battery Mechanism" (Tong Liu and Songlin Wu, co-authors). Five structurally distinct iron (oxyhydr)oxide precursors were incubated in anaerobic sulfur-oxidizing bioreactors under Cr(VI) stress. Despite marked differences in initial precursor reactivity, all biotransformation pathways converged on magnetite. In the ferrihydrite system, biogenic magnetite accounted for 60% of the final solid phase and functioned as an in situ "environmental battery" via reversible Fe(II)/Fe(III) lattice cycling, accelerating Cr(VI) bioreduction 4.77-fold relative to mineral-free controls.',
+      'Separation and Purification Technology: "Breaking the Fe3+ regeneration bottleneck in aerated electro-Fenton systems through reductive pyrite activation" (Tong Liu, co-author). This study demonstrates that the performance ceiling of aerated electro-Fenton (aEF) systems stems not only from H2O2 generation, but also from the sluggish reduction of Fe3+ to Fe2+. By coupling natural pyrite into the system, electron injection preferentially weakens surface S-S antibonding states and yields mobile Fe-S/sulfur reactive intermediates, establishing a pathway for Fe3+ reduction that bypasses the conventional, slow H2O2-mediated route. The system achieved near-complete bisphenol A removal within 60 min, exhibiting an apparent rate constant 6.5 times that of a conventional aEF-Fe2+ system.',
+    ],
+  },
+  {
     slug: 'jian-wang-stxm-talk-2026',
     category: 'team',
     title: 'Dr. Jian Wang delivers an invited talk',
