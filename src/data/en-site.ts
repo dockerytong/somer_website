@@ -502,10 +502,10 @@ export const enPeople: Record<string, {
       'Selected studies include work on organic acid-driven weathering of bauxite residue, haloalkalitolerant plant-driven dealkalization, long-term soil cover effects on Fe ore tailings, segmental defluorination from zinc sulfate electrowinning solution, phase-regulated colloidal FeS for copper-arsenic separation, AI-optimized slow-release iron sulfide for acidic wastewater treatment, and micro-electrolysis composite materials derived from alkaline bauxite residue.',
     ],
   },
-  'master-chen-suixiaochen': { name: 'Suixiaochen Chen', role: 'PhD Student, Class of 2025', research: 'Reactive iron minerals in soils.' },
+  'phd-chen-suixiaochen': { name: 'Suixiaochen Chen', role: 'PhD Student, Class of 2025', research: 'Reactive iron minerals in soils.', origin: 'Fujian Normal University' },
   'phd-feng-qi': { name: 'Qi Feng', role: 'PhD Student, Class of 2026 (Master-to-PhD Transfer)', research: 'Weathering of sulfidic tailings.' },
   'phd-wu-yuqi': { name: 'Yuqi Wu', role: 'Direct-entry PhD Student, Class of 2023', research: 'Adsorption and transformation of AMF exudates on minerals.', origin: 'Tsinghua University' },
-  'master-yang-shuang': { name: 'Shuang Yang', role: 'PhD Student, Class of 2025', note: 'Visiting', research: 'Development of tailing soil structure.', origin: 'China Agricultural University' },
+  'phd-yang-shuang': { name: 'Shuang Yang', role: 'PhD Student, Class of 2025', note: 'Visiting', research: 'Development of tailing soil structure.', origin: 'China Agricultural University' },
   'master-yang-zijie': { name: 'Zijie Yang', role: 'Master Student, Class of 2025', origin: 'University of Chinese Academy of Sciences' },
   'master-wenqi-li': {
     name: 'Wenqi Li',

@@ -89,18 +89,22 @@ const cards = [
         <p class="eyebrow">Capabilities</p>
         <h2 id="capabilities-title">实验与表征能力</h2>
       </div>
-      <div class="facilities-grid">
+      <ol class="capability-list">
         {cards.map((card) => (
-          <section class="facilities-card">
-            <span class="facilities-number">{card.number}</span>
-            <h3>{card.title}</h3>
-            <p class="facilities-summary">{card.summary}</p>
-            <ul>
+          <li class="capability">
+            <div class="capability-head">
+              <span class="capability-index">{card.number}</span>
+              <div>
+                <h3>{card.title}</h3>
+                <p>{card.summary}</p>
+              </div>
+            </div>
+            <ul class="capability-items">
               {card.items.map(([name, detail]) => <li><strong>{name}</strong><span>{detail}</span></li>)}
             </ul>
-          </section>
+          </li>
         ))}
-      </div>
+      </ol>
     </section>
 
     <section class="method-collaboration">

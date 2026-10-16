@@ -8,6 +8,7 @@ const featuredSlugs = ['pedogenesis-mechanisms', 'interface-processes', 'organic
 const featuredResearch = (await getCollection('research'))
   .filter((item) => featuredSlugs.includes(item.slug))
   .sort((a, b) => featuredSlugs.indexOf(a.slug) - featuredSlugs.indexOf(b.slug));
+const cardCover = (cover?: string) => (cover && cover.endsWith('.webp') ? cover.replace(/\.webp$/, '-card.webp') : cover);
 ---
 <BaseLayout title="SOMER团队 | 土壤有机-矿物互作与生态修复">
   <section class="hero compact-hero">
@@ -34,7 +35,7 @@ const featuredResearch = (await getCollection('research'))
     <div class="home-research-grid">
       {featuredResearch.map((item) => (
         <a class="home-research-card" href={`/research/${item.slug}/`}>
-          {item.data.cover && <img src={item.data.cover} alt="" loading="lazy" />}
+          {item.data.cover && <img src={cardCover(item.data.cover)} alt="" loading="lazy" />}
           <div>
             <h3>{item.data.title}</h3>
             <p>{item.data.summary}</p>

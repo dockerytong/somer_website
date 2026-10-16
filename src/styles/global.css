@@ -582,103 +582,164 @@ p {
   line-height: 1.75;
 }
 
+/* Workflow: one tinted band, four numbered steps. */
 .method-workflow-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  border-block: 1px solid var(--line);
+  overflow: hidden;
+  border: 1px solid rgba(47, 114, 85, 0.13);
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(241, 248, 243, 0.95), rgba(241, 248, 243, 0.55));
 }
 
 .method-step {
-  position: relative;
-  padding: 22px 20px 24px;
+  padding: 26px 24px 28px;
 }
 
 .method-step + .method-step {
-  border-left: 1px solid var(--line);
+  border-left: 1px solid rgba(47, 114, 85, 0.14);
 }
 
-.method-step > span,
-.facilities-number {
-  display: block;
-  margin-bottom: 18px;
+.method-step > span {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 16px;
+  border-radius: 50%;
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px rgba(47, 114, 85, 0.28);
   color: var(--green);
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   font-weight: 800;
-  letter-spacing: 0.1em;
 }
 
-.method-step h3,
-.facilities-card h3 {
+.method-step h3 {
   margin: 0 0 8px;
-  font-size: var(--text-md);
+  font-size: 1.05rem;
 }
 
 .method-step p {
   margin: 0;
   color: var(--muted);
-  font-size: 0.93rem;
-  line-height: 1.68;
+  font-size: 0.9rem;
+  line-height: 1.66;
 }
 
-.facilities-grid {
+/* Capabilities: one full-width block each, three method columns inside. */
+.capability-list {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.facilities-card {
-  padding: 24px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.58);
-}
-
-.facilities-number {
-  margin-bottom: 12px;
-}
-
-.facilities-summary {
-  margin: 0 0 18px;
-  color: var(--muted);
-  line-height: 1.65;
-}
-
-.facilities-card ul {
+  gap: 14px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.facilities-card li {
+.capability {
+  padding: 24px 26px 26px;
+  border: 1px solid rgba(47, 114, 85, 0.16);
+  border-radius: 16px;
+  background: var(--surface);
+  box-shadow: 0 1px 2px rgba(37, 52, 45, 0.04);
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.capability:hover {
+  border-color: rgba(47, 114, 85, 0.32);
+  box-shadow: 0 2px 8px rgba(37, 52, 45, 0.06);
+}
+
+.capability-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.capability-index {
+  flex: 0 0 auto;
   display: grid;
-  grid-template-columns: minmax(115px, 0.42fr) 1fr;
-  gap: 12px;
-  padding: 11px 0;
-  border-top: 1px solid var(--line);
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  background: var(--green-light);
+  color: var(--green);
+  font-size: 0.74rem;
+  font-weight: 800;
+}
+
+.capability-head h3 {
+  margin: 2px 0 0;
+  font-size: 1.24rem;
+  line-height: 1.35;
+}
+
+.capability-head p {
+  max-width: 760px;
+  margin: 6px 0 0;
   color: var(--muted);
-  font-size: 0.92rem;
-  line-height: 1.55;
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 
-.facilities-card li strong {
+.capability-items {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 36px;
+  margin: 0;
+  padding: 18px 0 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+
+.capability-items li {
+  min-width: 0;
+}
+
+/* Keep an odd final method on its own full-width row so no half-row hole shows. */
+.capability-items li:nth-child(odd):last-child {
+  grid-column: 1 / -1;
+}
+
+.capability-items strong {
+  display: block;
+  margin-bottom: 5px;
   color: var(--ink);
-  font-size: 0.88rem;
+  font-size: 0.94rem;
+  line-height: 1.45;
 }
 
+.capability-items span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.6;
+}
+
+/* Collaboration: the closing band, mirroring the workflow band. */
 .method-collaboration {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1px;
-  margin-top: 30px;
+  gap: 0;
+  margin-top: 28px;
   overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--line);
+  border: 1px solid rgba(47, 114, 85, 0.13);
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(241, 248, 243, 0.95), rgba(241, 248, 243, 0.55));
 }
 
 .method-collaboration > div {
-  padding: 26px;
-  background: var(--paper);
+  padding: 24px 26px 26px;
+  background: none;
+}
+
+.method-collaboration > div + div {
+  border-left: 1px solid rgba(47, 114, 85, 0.14);
+}
+
+.method-collaboration h2 {
+  margin-top: 0;
 }
 
 .resources-page {
@@ -1608,10 +1669,6 @@ code {
   border-bottom: 2px solid var(--green);
 }
 
-.research-page {
-  max-width: 980px;
-}
-
 .research-intro {
   margin: 0 0 26px;
   color: var(--ink);
@@ -1656,95 +1713,88 @@ code {
 
 .research-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-  margin-top: 30px;
+  gap: 14px;
+  margin-top: 26px;
 }
 
+/* One row per research line: figure left, text right — same card language as the methods page. */
 .research-card {
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  display: grid;
+  grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
+  gap: 26px;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid rgba(47, 114, 85, 0.16);
+  border-radius: 16px;
+  background: var(--surface);
+  box-shadow: 0 1px 2px rgba(37, 52, 45, 0.04);
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
 }
 
 .research-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-  border-color: var(--green-pale, #a3c293);
+  border-color: rgba(47, 114, 85, 0.32);
+  box-shadow: 0 2px 8px rgba(37, 52, 45, 0.06);
 }
 
 .research-card-cover {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  background: #f8faf9;
-  border-bottom: 1px solid var(--line);
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 158px;
+  padding: 10px;
+  border-radius: 12px;
+  background: var(--green-light);
+  overflow: hidden;
 }
 
 .research-card-cover img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   display: block;
-  transition: transform 0.3s ease;
-}
-
-.research-card:hover .research-card-cover img {
-  transform: scale(1.02);
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
 }
 
 .research-card-content {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 18px 20px 16px;
+  min-width: 0;
 }
 
 .research-card-content h2 {
-  font-size: 1.08rem;
-  font-weight: 700;
-  line-height: 1.45;
-  margin-bottom: 10px;
   display: flex;
   align-items: baseline;
-  gap: 8px;
+  gap: 10px;
+  margin: 0 0 10px;
+  font-size: 1.16rem;
+  font-weight: 700;
+  line-height: 1.4;
   color: var(--ink);
 }
 
 .research-num {
-  font-size: 0.88rem;
+  font-size: 0.84rem;
   font-weight: 800;
   color: var(--green);
   opacity: 0.85;
 }
 
 .research-card-summary {
-  font-size: 0.88rem;
-  color: #555;
-  line-height: 1.7;
-  margin-bottom: 16px;
-  flex: 1;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.68;
 }
 
 .research-card-footer {
   margin-top: auto;
-  padding-top: 10px;
-  border-top: 1px solid #f0f2f0;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
 }
 
 .research-card-footer .text-link {
-  font-size: 0.85rem;
+  font-size: 0.86rem;
   font-weight: 600;
   color: var(--green);
   text-decoration: none;
@@ -1853,7 +1903,17 @@ code {
 
   .research-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 14px;
+  }
+
+  .research-card {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .research-card-cover {
+    height: 200px;
   }
 
   .research-detail-header {
@@ -1887,23 +1947,23 @@ code {
   }
 
   .method-workflow-grid,
-  .method-collaboration,
-  .facilities-grid {
+  .method-collaboration {
     grid-template-columns: 1fr;
   }
 
   .method-step + .method-step {
-    border-top: 1px solid var(--line);
+    border-top: 1px solid rgba(47, 114, 85, 0.14);
     border-left: 0;
   }
 
-  .facilities-card {
-    padding: 20px;
+  .method-collaboration > div + div {
+    border-top: 1px solid rgba(47, 114, 85, 0.14);
+    border-left: 0;
   }
 
-  .facilities-card li {
+  .capability-items {
     grid-template-columns: 1fr;
-    gap: 3px;
+    gap: 14px;
   }
 
   .resource-board {
@@ -2546,25 +2606,25 @@ h1 {
 }
 
 .research-grid {
-  gap: 18px;
+  gap: 12px;
   margin-top: 0;
 }
 
-.research-card-content {
-  padding: 15px 17px 13px;
+.research-card {
+  gap: 22px;
+  padding: 17px;
+}
+
+.research-card-cover {
+  height: 150px;
 }
 
 .research-card-content h2 {
-  margin-bottom: 7px;
+  margin-bottom: 8px;
 }
 
 .research-card-summary {
   margin-bottom: 11px;
-  line-height: 1.62;
-}
-
-.research-card-footer {
-  padding-top: 8px;
 }
 
 .research-detail-header {
@@ -2596,28 +2656,26 @@ h1 {
 }
 
 .method-step {
-  padding: 17px 16px 19px;
+  padding: 22px 20px 24px;
 }
 
-.method-step > span,
-.facilities-number {
-  margin-bottom: 10px;
-}
-
-.facilities-grid {
-  gap: 14px;
-}
-
-.facilities-card {
-  padding: 19px;
-}
-
-.facilities-summary {
+.method-step > span {
+  width: 28px;
+  height: 28px;
   margin-bottom: 13px;
 }
 
-.facilities-card li {
-  padding: 8px 0;
+.capability {
+  padding: 21px 22px 23px;
+}
+
+.capability-head {
+  margin-bottom: 15px;
+}
+
+.capability-items {
+  gap: 16px 26px;
+  padding-top: 15px;
 }
 
 .method-collaboration {
@@ -2625,7 +2683,7 @@ h1 {
 }
 
 .method-collaboration > div {
-  padding: 20px;
+  padding: 21px 22px 23px;
 }
 
 @media (max-width: 860px) {
@@ -2716,5 +2774,20 @@ h1 {
 
   .news-entry {
     align-items: flex-start;
+  }
+}
+
+/* Methods page: the mobile layout must win over the compact density pass above. */
+@media (max-width: 860px) {
+  .method-step {
+    padding: 20px 22px 22px;
+  }
+
+  .capability {
+    padding: 20px 20px 22px;
+  }
+
+  .capability-items {
+    grid-template-columns: 1fr;
   }
 }

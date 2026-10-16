@@ -5,6 +5,7 @@ interface Props {
   title?: string;
   description?: string;
   lang?: 'zh' | 'en';
+  image?: string;
   frontmatter?: {
     title?: string;
     description?: string;
@@ -16,6 +17,7 @@ const {
   title,
   description,
   lang,
+  image,
   frontmatter,
 } = Astro.props;
 const pageLang = lang ?? frontmatter?.lang ?? 'zh';
@@ -45,7 +47,20 @@ const navItems = isEn
     ];
 const currentPath = Astro.url.pathname;
 const isCurrent = (href: string) => href === '/' || href === '/en/' ? currentPath === href : currentPath.startsWith(href);
-const languageHref = isEn ? currentPath.replace(/^\/en(?=\/|$)/, '') || '/' : `/en${currentPath === '/' ? '/' : currentPath}`;
+const isNotFoundPage = /(^|\/)404\/?$/.test(currentPath);
+const languageHref = isNotFoundPage
+  ? (isEn ? '/' : '/en/')
+  : isEn
+    ? currentPath.replace(/^\/en(?=\/|$)/, '') || '/'
+    : `/en${currentPath === '/' ? '/' : currentPath}`;
+
+const siteUrl = Astro.site ?? new URL('https://somer.pages.dev/');
+const withTrailingSlash = (path: string) => (path.endsWith('/') || /\.[a-z0-9]+$/i.test(path) ? path : `${path}/`);
+const absolute = (path: string) => new URL(withTrailingSlash(path), siteUrl).href;
+const canonicalUrl = absolute(currentPath);
+const alternateUrl = absolute(languageHref);
+const defaultLocaleUrl = isEn ? alternateUrl : canonicalUrl;
+const shareImage = new URL(image ?? '/og-cover.png', siteUrl).href;
 ---
 <!doctype html>
 <html lang={isEn ? 'en' : 'zh-CN'}>
@@ -55,19 +70,48 @@ const languageHref = isEn ? currentPath.replace(/^\/en(?=\/|$)/, '') || '/' : `/
     <meta name="description" content={pageDescription} />
     <meta name="theme-color" content="#fdfefd" />
     <meta name="color-scheme" content="light" />
+    <title>{pageTitle}</title>
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" hreflang={isEn ? 'en' : 'zh-CN'} href={canonicalUrl} />
+    <link rel="alternate" hreflang={isEn ? 'zh-CN' : 'en'} href={alternateUrl} />
+    <link rel="alternate" hreflang="x-default" href={defaultLocaleUrl} />
+    <link rel="alternate" type="application/rss+xml" title={isEn ? 'SOMER Group · News' : 'SOMER团队 · 团队动态'} href={isEn ? '/en/rss.xml' : '/rss.xml'} />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={isEn ? 'SOMER Group' : 'SOMER团队'} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={pageDescription} />
-    <title>{pageTitle}</title>
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="apple-touch-icon" href="/favicon.png" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={shareImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content={isEn ? 'en_US' : 'zh_CN'} />
+    <meta property="og:locale:alternate" content={isEn ? 'zh_CN' : 'en_US'} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDescription} />
+    <meta name="twitter:image" content={shareImage} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png" />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: isEn ? 'SOMER Group' : 'SOMER团队',
+      alternateName: 'Soil Organo-Mineral Interactions and Ecological Rehabilitation',
+      url: siteUrl.href,
+      logo: new URL('/favicon.png', siteUrl).href,
+      parentOrganization: {
+        '@type': 'Organization',
+        name: 'Research Center for Eco-Environmental Sciences, Chinese Academy of Sciences',
+      },
+    })} />
   </head>
   <body>
     <a class="skip-link" href="#main-content">{isEn ? 'Skip to content' : '跳到正文'}</a>
     <div class="site-shell">
       <header class="site-header" aria-label={isEn ? 'Main navigation' : '主导航'}>
         <a class="brand" href={isEn ? '/en/' : '/'} aria-label={isEn ? 'SOMER Group home' : 'SOMER团队首页'}>
-          <img class="brand-logo" src="/images/docx/image1.png" alt="SOMER logo" width="54" height="54" />
+          <img class="brand-logo" src="/images/somer-logo.png" alt="SOMER logo" width="54" height="54" />
           <span>
             <strong>{isEn ? 'SOMER Group' : 'SOMER团队'}</strong>
             <small>Soil Organo-Mineral Interactions and Ecological Rehabilitation</small>

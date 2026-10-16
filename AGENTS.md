@@ -31,3 +31,12 @@
 - The browser favicon should use the SOMER logo rather than the default Astro icon.
 - Prefer existing site assets and visual style before adding new design patterns.
 - Keep the global visual style clean and light. Prefer softer background colors and clear typography hierarchy, but avoid making the layout heavier or more decorative than necessary.
+- Source material (uncompressed originals) lives in `sources/`, which is not deployed. `public/` should only contain files the pages actually reference. New figures: keep the original in `sources/`, ship a `cwebp -q 82 -resize 1200 0` webp in `public/images/`, plus a `-card.webp` thumbnail (`cwebp -q 72 -resize 620 0`) for card/list use. List and card views derive the thumbnail path from the cover path (`cover.replace(/\.webp$/, '-card.webp')`), so every cover shipped needs its `-card` file to exist.
+
+## Infrastructure
+
+- `astro.config.mjs` sets `site: 'https://somer.pages.dev'`; canonical URLs, `hreflang`, `og:url`, `og:image`, RSS and `sitemap-index.xml` all derive from it. Change the domain there, not per page.
+- `BaseLayout.astro` emits canonical, zh/en `hreflang` alternates (derived from the pathname, so en counterparts must exist at the mirrored path), Open Graph/Twitter tags, the RSS autodiscovery link, and Organization JSON-LD. Pass `image` to override the share image for a page.
+- Share image is `public/og-cover.png` (1200x630); regenerate it from the logo if the naming or affiliation text changes.
+- `public/robots.txt` and `public/_headers` are static; `_headers` sets long cache lifetimes for `/images/*` and the icons.
+- `en-site.ts` string keys use both single and double quotes; regex or grep checks over slugs must cover both, or they will report files as missing.

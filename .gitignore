@@ -12,3 +12,6 @@ dist/
 
 # Local source materials
 材料/
+
+# 本地中间文件/截图
+.scratch/

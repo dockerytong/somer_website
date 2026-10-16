@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { enResearch } from '../../../data/en-site';
+
+const cardCover = (cover?: string) => (cover && cover.endsWith('.webp') ? cover.replace(/\.webp$/, '-card.webp') : cover);
 ---
 <BaseLayout lang="en" title="Research | SOMER Group">
   <article class="research-page">
@@ -11,7 +13,7 @@ import { enResearch } from '../../../data/en-site';
         <section class="research-card">
           {item.cover && (
             <div class="research-card-cover">
-              <img src={item.cover} alt={item.title} loading="lazy" />
+              <img src={cardCover(item.cover)} alt={item.title} loading="lazy" />
             </div>
           )}
           <div class="research-card-content">

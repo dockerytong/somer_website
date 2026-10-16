@@ -6,6 +6,7 @@ import { enNews, enResearch } from '../../data/en-site';
 const news = [...enNews].sort((a, b) => b.date.valueOf() - a.date.valueOf()).slice(0, 5);
 const featuredSlugs = ['pedogenesis-mechanisms', 'interface-processes', 'organic-matter-microecology'];
 const featuredResearch = featuredSlugs.map((slug) => enResearch.find((item) => item.slug === slug)).filter(Boolean);
+const cardCover = (cover?: string) => (cover && cover.endsWith('.webp') ? cover.replace(/\.webp$/, '-card.webp') : cover);
 ---
 <BaseLayout lang="en" title="SOMER Group | Soil Organo-Mineral Interactions and Ecological Rehabilitation">
   <section class="hero compact-hero">
@@ -32,7 +33,7 @@ const featuredResearch = featuredSlugs.map((slug) => enResearch.find((item) => i
     <div class="home-research-grid">
       {featuredResearch.map((item) => item && (
         <a class="home-research-card" href={`/en/research/${item.slug}/`}>
-          {item.cover && <img src={item.cover} alt="" loading="lazy" />}
+          {item.cover && <img src={cardCover(item.cover)} alt="" loading="lazy" />}
           <div>
             <h3>{item.title}</h3>
             <p>{item.summary}</p>

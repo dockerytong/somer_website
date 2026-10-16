@@ -263,11 +263,13 @@ Build output directory: dist
 NODE_VERSION=22
 ```
 
-保存后，Cloudflare 会自动构建并给出一个默认域名，例如：
+保存后，Cloudflare 会自动构建并给出一个默认域名：
 
 ```text
-https://somer-website.pages.dev
+https://somer.pages.dev
 ```
+
+这个域名写在 `astro.config.mjs` 的 `site` 字段里，canonical、hreflang、og:image、RSS 和 sitemap 都由它生成。换域名时改这里。
 
 ## 6. 平时更新网站的完整流程
 

@@ -3,6 +3,8 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const research = (await getCollection('research')).sort((a, b) => a.data.order - b.data.order);
+
+const cardCover = (cover?: string) => (cover && cover.endsWith('.webp') ? cover.replace(/\.webp$/, '-card.webp') : cover);
 ---
 <BaseLayout title="研究方向 | SOMER团队">
   <article class="research-page">
@@ -13,7 +15,7 @@ const research = (await getCollection('research')).sort((a, b) => a.data.order -
         <section class="research-card">
           {item.data.cover && (
             <div class="research-card-cover">
-              <img src={item.data.cover} alt={item.data.title} loading="lazy" />
+              <img src={cardCover(item.data.cover)} alt={item.data.title} loading="lazy" />
             </div>
           )}
           <div class="research-card-content">
