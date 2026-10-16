@@ -528,7 +528,6 @@ export const enPeople: Record<string, {
   'guest-dai-jiyuan': { name: 'Jiyuan Dai', role: 'Master Student, Class of 2026', note: 'Visiting', origin: 'China University of Geosciences (Beijing)' },
   'guest-wu-bowei': { name: 'Bowei Wu', role: 'Master Student, Class of 2026', note: 'Visiting', origin: 'China University of Geosciences (Beijing)' },
   'guest-shen-le': { name: 'Le Shen', role: 'Master Student, Class of 2026', note: 'Visiting', origin: 'China University of Geosciences (Beijing)' },
-  'guest-wen-hule': { name: 'Hule Wen', role: 'Master Student, Class of 2026', note: 'Visiting', origin: 'China University of Geosciences (Beijing)' },
   'visitor-huixia-tian': {
     name: 'Huixia Tian',
     role: 'Visiting Scholar',
