@@ -2,6 +2,12 @@
   "byPerson": {
     "songlin-wu": [
       {
+        "title": "Linking Protist-Bacteria Trophic Interactions to Organic Matter Chemodiversity: Insights from a Coal Mine Ecological Restoration Chronosequence",
+        "authors": "Zhaoyang Zeng, Songlin Wu, Hui Wu, Wei Fu, Yuqi Wu, Dong Cao, Yajun Hu, Yan Yu, Jintian Li, Paul Nevill, Viet-Cuong Han, Laiye Qu, Baodong Chen",
+        "journal": "Environmental Science & Technology",
+        "year": 2026
+      },
+      {
         "title": "In operando electrochemical stimulation of pyrite autotrophic denitrification",
         "authors": "Tong Liu, Yutian Hu, Qiuzhi Guo, Hongrui Ding, Nan Chen, Songlin Wu, Chuanping Feng",
         "journal": "Nitrogen Cycling",
@@ -1071,6 +1077,16 @@
     ]
   },
   "combined": [
+    {
+      "title": "Linking Protist-Bacteria Trophic Interactions to Organic Matter Chemodiversity: Insights from a Coal Mine Ecological Restoration Chronosequence",
+      "authors": "Zhaoyang Zeng, Songlin Wu, Hui Wu, Wei Fu, Yuqi Wu, Dong Cao, Yajun Hu, Yan Yu, Jintian Li, Paul Nevill, Viet-Cuong Han, Laiye Qu, Baodong Chen",
+      "journal": "Environmental Science & Technology",
+      "year": 2026,
+      "doi": "10.1021/acs.est.6c07966",
+      "owners": [
+        "songlin-wu"
+      ]
+    },
     {
       "title": "In operando electrochemical stimulation of pyrite autotrophic denitrification",
       "authors": "Tong Liu, Yutian Hu, Qiuzhi Guo, Hongrui Ding, Nan Chen, Songlin Wu, Chuanping Feng",

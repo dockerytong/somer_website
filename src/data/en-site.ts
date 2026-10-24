@@ -13,6 +13,25 @@ type EnNewsItem = {
 
 export const enNews: EnNewsItem[] = [
   {
+    slug: 'zhaoyang-zeng-est-protist-dom',
+    category: 'publication',
+    title: 'Zhaoyang Zeng paper published in Environmental Science & Technology',
+    date: new Date('2026-10-24'),
+    summary:
+      'Zhaoyang Zeng and coauthors link phagotrophic protist diversity to the molecular chemodiversity and stability of dissolved organic matter along a coal mine restoration chronosequence. Songlin Wu and Baodong Chen are the corresponding authors.',
+    authors: 'Zhaoyang Zeng, Songlin Wu, Hui Wu, Wei Fu, Yuqi Wu, Dong Cao, Yajun Hu, Yan Yu, Jintian Li, Paul Nevill, Viet-Cuong Han, Laiye Qu, Baodong Chen',
+    journal: 'Environmental Science & Technology, 2026, published online',
+    details: [
+      'Zhaoyang Zeng (first author), together with Songlin Wu and Baodong Chen (corresponding authors), published "Linking Protist-Bacteria Trophic Interactions to Organic Matter Chemodiversity: Insights from a Coal Mine Ecological Restoration Chronosequence" in Environmental Science & Technology.',
+      'Ecological restoration of mine sites must do more than re-establish vegetation cover; it has to restart soil biogeochemical processes. Dissolved organic matter (DOM) is the most active fraction of soil organic matter, and its molecular composition determines whether carbon moves toward stability or continues to be decomposed. Which organisms drive that molecular shift has remained unclear in heavily disturbed postmining soils, where microbial communities are simplified. Protists make up roughly half of the soil micro-food web and phagotrophic taxa are the main predators of bacteria and fungi, yet their role in DOM molecular chemistry had barely been considered.',
+      'The study examined an open-pit coal mine in Erenhot, Inner Mongolia. Four stages within a single 2 km x 2 km area were sampled: unrestored control (CK), 1-year restoration (R1), 5-year restoration (R5), and natural grassland (NG). Each stage had four 1 m x 1 m quadrats sampled at 0-10 cm and 10-20 cm, giving 32 soil samples in total, analysed by vegetation survey, ultrahigh-resolution Fourier-transform ion cyclotron resonance mass spectrometry (FT-ICR-MS), and high-throughput 18S/16S sequencing.',
+      'DOM shifted toward thermodynamically more stable compounds: double-bond equivalence (DBE), nominal oxidation state of carbon (NOSC), aromaticity index (AImod) and O/C increased, while H/C, the molecular lability index (MLBL) and Gibbs free energy (dG) decreased toward the natural grassland values. DOM chemodiversity, measured as the number of observed molecular formulae per sample, rose significantly, with a higher share of condensed aromatic-like compounds and lower shares of carbohydrate-like and unsaturated hydrocarbon-like compounds. Lignin-like and tannin-like compounds remained the most abundant classes, accounting for 39.7-65.6% and 12.2-33.1% of assigned molecules, respectively.',
+      'Protistan communities were dominated by Ciliophora (39.35%) and Cercozoa (28.85%), with phagotrophs making up 49.93% of the functional composition. Phagotrophic protist diversity increased significantly with restoration age in the topsoil. Higher phagotrophic diversity coincided with higher bacterial diversity and lower fungal diversity, consistent with top-down predator control.',
+      'Co-occurrence networks and path modelling pointed to the same chain: the share of DOM-protist links and positive cohesion both increased with restoration, and DOM molecules positively associated with microbial nodes carried higher DBE, NOSC and AImod and lower dG. Random forest and partial least-squares path modelling indicated that aboveground plant biomass was positively linked with phagotrophic protistan diversity, which may influence DOM composition through direct transformation of organic matter or indirect regulation of bacterial transformation.',
+      'The authors propose a previously unrecognised trophic cascade in which protist predation reshapes DOM molecular composition and stability through microbial intermediates, implying that protistan regulation should be part of restoration strategies for mine sites. The evidence comes from a field chronosequence with network and structural-equation analysis, so the links reported are correlative and the trophic cascade is presented as the mechanism that best explains the data rather than as a demonstrated causal pathway.',
+    ],
+  },
+  {
     slug: 'mineral-papers-oct-2026',
     category: 'publication',
     title: 'Four mineral-related papers accepted',
