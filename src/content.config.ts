@@ -21,6 +21,7 @@ const people = defineCollection({
     research: z.string().optional(),
     scholar: z.string().url().optional(),
     researchgate: z.string().url().optional(),
+    website: z.string().url().optional(),
     note: z.string().optional(),
     origin: z.string().optional(),
     destination: z.string().optional(),

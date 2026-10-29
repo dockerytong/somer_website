@@ -27,6 +27,8 @@ const person = enPeople[entry.slug] ?? entry.data;
       {entry.data.scholar && <a class="text-link" href={entry.data.scholar}>Google Scholar</a>}
       {entry.data.scholar && entry.data.researchgate && <span> · </span>}
       {entry.data.researchgate && <a class="text-link" href={entry.data.researchgate}>ResearchGate</a>}
+      {(entry.data.scholar || entry.data.researchgate) && entry.data.website && <span> · </span>}
+      {entry.data.website && <a class="text-link" href={entry.data.website}>Homepage</a>}
     </p>
     {(person.origin || person.destination) && (
       <p>
