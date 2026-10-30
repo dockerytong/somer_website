@@ -13,6 +13,21 @@ type EnNewsItem = {
 
 export const enNews: EnNewsItem[] = [
   {
+    slug: 'tong-liu-jhm-fe-sulfide-mineralization',
+    category: 'publication',
+    title: 'Tong Liu paper accepted by Journal of Hazardous Materials',
+    date: new Date('2026-10-30'),
+    summary:
+      'Tong Liu and coauthors show that Fe(III)-mediated sulfide mineralization preserves and reactivates sulfur-derived reductive capacity in autotrophic Cr(VI) bioremediation.',
+    authors: 'Yongheng Zhan, Nan Chen, Yuan Yuan, Penglu Li, Weiwu Hu, Tong Liu, Chuanping Feng',
+    journal: 'Journal of Hazardous Materials, 2026',
+    details: [
+      'Sulfur-based autotrophic bioreduction is an effective strategy for remediating Cr(VI)-contaminated groundwater, yet the fate of sulfur-derived reducing equivalents after Cr(VI) depletion remains poorly constrained: sulfide continuously produced by sulfur disproportionation is both a secondary pollutant and an irreversible loss of system reductive capacity. This study shows that Fe2O3 supplementation (0.2-0.8 g/L) intercepts this loss pathway.',
+      'XANES and EXAFS analyses confirmed that, after Cr(VI) exhaustion, sulfide produced from sulfur disproportionation was immobilized predominantly as FeS, with minor FeS2 formation. Electron-balance calculations showed that the otherwise mobile sulfide-derived reducing equivalents were largely retained in these reactive solid phases, and the resulting FeS reduced Cr(VI) more efficiently than elemental sulfur, indicating that mineral-preserved reductive capacity remains accessible for subsequent contaminant removal.',
+      'In parallel, Fe2O3 accelerated autotrophic Cr(VI) bioreduction, with the pseudo-first-order rate constant reaching 5.3 times that of the Fe-free control. This acceleration was driven by enhanced microbial electron throughput, cell viability, electron transport system activity, and cytochrome c levels, rather than by community restructuring or redirected electron allocation between Cr(VI) reduction and carbon metabolism. The work recasts Fe(III) from a kinetic enhancer of microbial electron transfer into a mineralogical sink that preserves reduction potential across the full remediation cycle, coupling sulfide control with electron conservation in sulfur-driven remediation.',
+    ],
+  },
+  {
     slug: 'zhaoyang-zeng-est-protist-dom',
     category: 'publication',
     title: 'Zhaoyang Zeng paper published in Environmental Science & Technology',

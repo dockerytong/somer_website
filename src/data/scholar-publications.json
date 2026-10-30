@@ -837,6 +837,13 @@
     ],
     "tong-liu": [
       {
+        "title": "Fe(III)-mediated sulfide mineralization preserves and reactivates sulfur-derived reductive capacity in autotrophic Cr(VI) bioremediation",
+        "authors": "Yongheng Zhan, Nan Chen, Yuan Yuan, Penglu Li, Weiwu Hu, Tong Liu, Chuanping Feng",
+        "journal": "Journal of Hazardous Materials, 144077",
+        "year": 2026,
+        "doi": "10.1016/j.jhazmat.2026.144077"
+      },
+      {
         "title": "Vegetation succession is linked to carbon-nitrogen decoupling in organic matter fractions in copper mine tailings subject to decade-long ecological rehabilitation",
         "authors": "Bing Zhou, Na Li, Tong Liu, Songlin Wu",
         "journal": "Journal of Environmental Sciences, 105835",
@@ -1077,6 +1084,16 @@
     ]
   },
   "combined": [
+    {
+      "title": "Fe(III)-mediated sulfide mineralization preserves and reactivates sulfur-derived reductive capacity in autotrophic Cr(VI) bioremediation",
+      "authors": "Yongheng Zhan, Nan Chen, Yuan Yuan, Penglu Li, Weiwu Hu, Tong Liu, Chuanping Feng",
+      "journal": "Journal of Hazardous Materials, 144077",
+      "year": 2026,
+      "doi": "10.1016/j.jhazmat.2026.144077",
+      "owners": [
+        "tong-liu"
+      ]
+    },
     {
       "title": "Linking Protist-Bacteria Trophic Interactions to Organic Matter Chemodiversity: Insights from a Coal Mine Ecological Restoration Chronosequence",
       "authors": "Zhaoyang Zeng, Songlin Wu, Hui Wu, Wei Fu, Yuqi Wu, Dong Cao, Yajun Hu, Yan Yu, Jintian Li, Paul Nevill, Viet-Cuong Han, Laiye Qu, Baodong Chen",
