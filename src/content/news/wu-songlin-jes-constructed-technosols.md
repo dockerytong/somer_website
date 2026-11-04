@@ -7,7 +7,7 @@ summary: Songlin Wu、刘通等关于把合适的矿山固废直接改造为人�
 
 Songlin Wu论文 **To protect landscapes, why can't suitable mine wastes be converted into constructed technosols?** 发表于 *Journal of Environmental Sciences*。
 
-**作者：** Songlin Wu, Tong Liu, Tim T. Werner, Feng Zhu, Haidong Li, 冯传平, 马琳琳
+**作者：** Songlin Wu, Tong Liu, Tim T. Werner, Feng Zhu, Haidong Li, Baodong Chen, Longbin Huang
 
 **期刊：** *Journal of Environmental Sciences*, 2026, 105867. DOI: [10.1016/j.jes.2026.105867](https://doi.org/10.1016/j.jes.2026.105867)
 

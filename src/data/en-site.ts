@@ -19,7 +19,7 @@ export const enNews: EnNewsItem[] = [
     date: new Date('2026-11-04'),
     summary:
       'Songlin Wu, Tong Liu and coauthors argue that suitable mine wastes can be converted directly into constructed technosols, combining waste disposal with landscape rehabilitation on the same site.',
-    authors: 'Songlin Wu, Tong Liu, Tim T. Werner, Feng Zhu, Haidong Li, 冯传平, 马琳琳',
+    authors: 'Songlin Wu, Tong Liu, Tim T. Werner, Feng Zhu, Haidong Li, Baodong Chen, Longbin Huang',
     journal: 'Journal of Environmental Sciences, 2026, 105867',
     details: [
       'Mining generates billions of tonnes of waste annually, leaving vast landscapes that are chemically extreme, physically unstable and ecologically barren. Conventional closure, dominated by engineered covers and revegetation, typically yields systems that require perpetual oversight rather than self-sustaining ecosystems. Soilisation, the eco-engineered transformation of suitable mine wastes into constructed technosols through pedogenesis, offers a complementary and scalable pathway, particularly where topsoil scarcity and large waste volumes constrain traditional rehabilitation.',
