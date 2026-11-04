@@ -2,6 +2,13 @@
   "byPerson": {
     "songlin-wu": [
       {
+        "title": "To protect landscapes, why can't suitable mine wastes be converted into constructed technosols?",
+        "authors": "Songlin Wu, Tong Liu, Tim T. Werner, Feng Zhu, Haidong Li, 冯传平, 马琳琳",
+        "journal": "Journal of Environmental Sciences, 105867",
+        "year": 2026,
+        "doi": "10.1016/j.jes.2026.105867"
+      },
+      {
         "title": "Linking Protist-Bacteria Trophic Interactions to Organic Matter Chemodiversity: Insights from a Coal Mine Ecological Restoration Chronosequence",
         "authors": "Zhaoyang Zeng, Songlin Wu, Hui Wu, Wei Fu, Yuqi Wu, Dong Cao, Yajun Hu, Yan Yu, Jintian Li, Paul Nevill, Viet-Cuong Han, Laiye Qu, Baodong Chen",
         "journal": "Environmental Science & Technology",
@@ -837,6 +844,13 @@
     ],
     "tong-liu": [
       {
+        "title": "To protect landscapes, why can't suitable mine wastes be converted into constructed technosols?",
+        "authors": "Songlin Wu, Tong Liu, Tim T. Werner, Feng Zhu, Haidong Li, 冯传平, 马琳琳",
+        "journal": "Journal of Environmental Sciences, 105867",
+        "year": 2026,
+        "doi": "10.1016/j.jes.2026.105867"
+      },
+      {
         "title": "Fe(III)-mediated sulfide mineralization preserves and reactivates sulfur-derived reductive capacity in autotrophic Cr(VI) bioremediation",
         "authors": "Yongheng Zhan, Nan Chen, Yuan Yuan, Penglu Li, Weiwu Hu, Tong Liu, Chuanping Feng",
         "journal": "Journal of Hazardous Materials, 144077",
@@ -1084,6 +1098,16 @@
     ]
   },
   "combined": [
+    {
+      "title": "To protect landscapes, why can't suitable mine wastes be converted into constructed technosols?",
+      "authors": "Songlin Wu, Tong Liu, Tim T. Werner, Feng Zhu, Haidong Li, 冯传平, 马琳琳",
+      "journal": "Journal of Environmental Sciences, 105867",
+      "year": 2026,
+      "doi": "10.1016/j.jes.2026.105867",
+      "owners": [
+        "tong-liu"
+      ]
+    },
     {
       "title": "Fe(III)-mediated sulfide mineralization preserves and reactivates sulfur-derived reductive capacity in autotrophic Cr(VI) bioremediation",
       "authors": "Yongheng Zhan, Nan Chen, Yuan Yuan, Penglu Li, Weiwu Hu, Tong Liu, Chuanping Feng",

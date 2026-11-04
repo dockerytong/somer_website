@@ -13,6 +13,21 @@ type EnNewsItem = {
 
 export const enNews: EnNewsItem[] = [
   {
+    slug: 'wu-songlin-jes-constructed-technosols',
+    category: 'publication',
+    title: 'Songlin Wu paper published in Journal of Environmental Sciences',
+    date: new Date('2026-11-04'),
+    summary:
+      'Songlin Wu, Tong Liu and coauthors argue that suitable mine wastes can be converted directly into constructed technosols, combining waste disposal with landscape rehabilitation on the same site.',
+    authors: 'Songlin Wu, Tong Liu, Tim T. Werner, Feng Zhu, Haidong Li, 冯传平, 马琳琳',
+    journal: 'Journal of Environmental Sciences, 2026, 105867',
+    details: [
+      'Mining generates billions of tonnes of waste annually, leaving vast landscapes that are chemically extreme, physically unstable and ecologically barren. Conventional closure, dominated by engineered covers and revegetation, typically yields systems that require perpetual oversight rather than self-sustaining ecosystems. Soilisation, the eco-engineered transformation of suitable mine wastes into constructed technosols through pedogenesis, offers a complementary and scalable pathway, particularly where topsoil scarcity and large waste volumes constrain traditional rehabilitation.',
+      'Despite successful demonstrations in Australia and China, and growing policy attention after critical minerals entered the COP30 climate agenda, soilisation remains marginal to mainstream closure practice. The paper identifies four systemic barriers: prescriptive regulatory frameworks that favour containment over transformation; limited long-term performance data and fragmented evidence; a critical shortage of interdisciplinary expertise; and high logistical costs for sourcing and transporting amendments.',
+      'The proposed response is a multi-stakeholder framework: governments contribute performance-based regulation and demonstration funding, industry closure budgets and transparent reporting, researchers harmonised metrics and training, finance risk mitigation and asset recognition, and communities co-design and monitoring. With coordinated action on standards, financing and community engagement, soilisation can shift from isolated pilots to a reliable, value-creating and mainstream practice for restoring resilient mine landscapes.',
+    ],
+  },
+  {
     slug: 'tong-liu-jhm-fe-sulfide-mineralization',
     category: 'publication',
     title: 'Tong Liu paper accepted by Journal of Hazardous Materials',
