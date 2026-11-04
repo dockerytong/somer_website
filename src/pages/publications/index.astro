@@ -10,12 +10,12 @@ const historicalPublications = scholarData.historical;
 <BaseLayout title="研究成果 | SOMER团队">
   <h1 class="sr-only">研究成果</h1>
   {years.map((year) => (
-    <section class="pub-year-section">
-      <h2>{year}</h2>
+    <details class="pub-year-section" open>
+      <summary><h2>{year}</h2></summary>
       <ol class="bib-list">
         {publications.filter((paper) => paper.year === year).map((paper) => <PublicationCard authors={paper.authors} journal={paper.journal} year={paper.year!} title={paper.title} doi={paper.doi} />)}
       </ol>
-    </section>
+    </details>
   ))}
   <section class="pub-year-section">
     <h2>2022年及以前论文发表</h2>
