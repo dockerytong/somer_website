@@ -28,6 +28,19 @@ export const enNews: EnNewsItem[] = [
     ],
   },
   {
+    slug: 'lu-chenglong-geological-testing-training-2026',
+    category: 'conference',
+    title: 'Chenglong Lu attends the 2026 National Training Programme on Geological Testing and Eco-Environmental Monitoring',
+    date: new Date('2026-10-30'),
+    summary:
+      'The 2026 National Advanced Training Programme on Geological Testing and Eco-Environmental Monitoring was held in Jinan. Chenglong Lu, a postdoc in the SOMER group, attended the training and presented at the young researchers session held alongside it.',
+    details: [
+      'From October 28 to 30, 2026, the 2026 National Advanced Training Programme on Geological Testing and Eco-Environmental Monitoring was held in Jinan. The programme was guided by the National Research Center for Geoanalysis and jointly organized by the China Mining Association and the Shandong Geophysical and Geochemical Exploration Institute, and hosted by the Shandong Geological Craftsman College. More than 130 participants attended, including technical staff and laboratory heads from provincial geological testing and eco-environmental monitoring institutions across China.',
+      'The programme covered new techniques, methods, instruments and products in geological testing through lectures and experience exchange, with sessions on X-ray spectroscopy applications, laser microanalysis for geochronology, and monitoring techniques and standards for emerging contaminants. It also explained how geological laboratories should respond to the new “one form, one library” management system for inspection and testing institution accreditation. Laboratory heads from Beijing, Sichuan, Xinjiang, Tianjin and Shandong shared practices on whole-process quality control of geochemical samples, building first-class laboratories, quality management of gemstone testing, and sample preparation.',
+      'A national workshop for outstanding young professionals in geological testing was held alongside the programme, where eight young researchers from the National Research Center for Geoanalysis, the Research Center for Eco-Environmental Sciences of the Chinese Academy of Sciences, Chang’an University, the Guangzhou Marine Geological Survey and the Shandong Geophysical and Geochemical Exploration Institute presented their work. Chenglong Lu attended the training and presented at the workshop, exchanging ideas on the detection of antibiotic compounds, stable isotope platform development, ultra-trace element analysis in seawater, automated traceability of laboratory data, and ecological reconstruction of red mud.'],
+    image: '/images/news/lu-chenglong-geological-testing-training-2026.webp',
+  },
+  {
     slug: 'tong-liu-jhm-fe-sulfide-mineralization',
     category: 'publication',
     title: 'Tong Liu paper accepted by Journal of Hazardous Materials',
